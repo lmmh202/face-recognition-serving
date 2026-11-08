@@ -18,5 +18,8 @@ dependencies = [
     "pillow==12.3.0",
 ]
 
+[project.optional-dependencies]
+dev = ["pytest==9.2.0"]
+
 [tool.setuptools]
 packages = ["ml"]

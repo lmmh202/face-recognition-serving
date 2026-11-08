@@ -13,13 +13,15 @@ import keras
 import numpy as np
 import sklearn
 import tensorflow as tf
-from sklearn.datasets import fetch_lfw_people
+from sklearn.datasets import fetch_lfw_people, get_data_home
 from sklearn.decomposition import PCA
 from sklearn.model_selection import GridSearchCV, StratifiedKFold, train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.pipeline import Pipeline
 from tensorflow.keras.layers import Conv2D, Dense, Dropout, Flatten, MaxPooling2D
 from tensorflow.keras.models import Sequential
+
+from ml.preprocess import DEFAULT_CONFIG
 
 RANDOM_SEED = 0
 MODEL_VERSION = "v1"
@@ -32,10 +34,7 @@ PCA_KNN_FILE = "model.joblib"
 REQUIRED_CLASSES = 62
 IMAGES_PER_CLASS = 20
 MIN_FACES_PER_PERSON = 20
-RESIZE = 0.7
 FUNNELED = True
-COLOR = False
-SLICE = (slice(70, 195), slice(78, 172))
 
 TEST_SIZE = 0.25
 CNN_VAL_SIZE = 0.15
@@ -57,20 +56,41 @@ class Dataset:
     img_test: np.ndarray
     y_train: np.ndarray
     y_test: np.ndarray
+    test_paths: np.ndarray  # source JPGs of the test set
     labels: list[str]
     height: int
     width: int
     pixel_scale: float
 
 
-def load_dataset() -> Dataset:
-    lfw = fetch_lfw_people(
+def fetch_lfw():
+    return fetch_lfw_people(
         min_faces_per_person=MIN_FACES_PER_PERSON,
-        resize=RESIZE,
+        resize=DEFAULT_CONFIG.resize,
         funneled=FUNNELED,
-        color=COLOR,
-        slice_=SLICE,
+        color=False,
+        slice_=DEFAULT_CONFIG.slices,
     )
+
+
+def lfw_image_paths() -> np.ndarray:
+    """JPG paths in the same order as the arrays from fetch_lfw().
+
+    Follows sklearn's _fetch_lfw_people: sorted scan, then a fixed shuffle.
+    """
+    root = Path(get_data_home()) / "lfw_home" / "lfw_funneled"
+    paths = []
+    for person in sorted(p for p in root.iterdir() if p.is_dir()):
+        images = sorted(str(f) for f in person.iterdir())
+        if len(images) >= MIN_FACES_PER_PERSON:
+            paths.extend(images)
+    order = np.arange(len(paths))
+    np.random.RandomState(42).shuffle(order)
+    return np.array(paths)[order]
+
+
+def load_dataset() -> Dataset:
+    lfw = fetch_lfw()
     n_classes = len(lfw.target_names)
     if n_classes != REQUIRED_CLASSES:
         raise ValueError(f"expected {REQUIRED_CLASSES} classes, found {n_classes}")
@@ -86,10 +106,11 @@ def load_dataset() -> Dataset:
     images = lfw.images[indices]
     pixel_scale = 255.0 if np.max(images) > 1.0 else 1.0
 
-    x_train, x_test, y_train, y_test, img_train, img_test = train_test_split(
+    x_train, x_test, y_train, y_test, img_train, img_test, _, test_paths = train_test_split(
         lfw.data[indices] / pixel_scale,
         y,
         images / pixel_scale,
+        lfw_image_paths()[indices],
         test_size=TEST_SIZE,
         stratify=y,
         random_state=RANDOM_SEED,
@@ -101,6 +122,7 @@ def load_dataset() -> Dataset:
         img_test=img_test,
         y_train=y_train,
         y_test=y_test,
+        test_paths=test_paths,
         labels=[str(name) for name in lfw.target_names],
         height=images.shape[1],
         width=images.shape[2],
@@ -191,9 +213,7 @@ def build_manifest(model_name: str, test_accuracy: float, data: Dataset, **extra
         "input_size": {"height": data.height, "width": data.width},
         "preprocessing": {
             "funneled": FUNNELED,
-            "color": COLOR,
-            "resize": RESIZE,
-            "slice": [[s.start, s.stop] for s in SLICE],
+            **DEFAULT_CONFIG.to_manifest(),
             "pixel_scale": data.pixel_scale,
         },
         "test_accuracy": test_accuracy,
