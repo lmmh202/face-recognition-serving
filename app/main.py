@@ -19,6 +19,7 @@ MAX_BODY_BYTES = 5 * 1024 * 1024
 MAX_PIXELS = 20_000_000
 ALLOWED_FORMATS = {"JPEG", "PNG"}
 TOP_K = 3
+UNKNOWN_IDENTITY = "unknown"
 
 
 class PredictBodyLimit:
@@ -111,18 +112,30 @@ def decode_image(data: bytes) -> Image.Image:
         raise HTTPException(400, "could not decode image") from error
 
 
+def decide_identity(name: str, probability: float, threshold: float) -> str:
+    return name if probability >= threshold else UNKNOWN_IDENTITY
+
+
 # A plain def: FastAPI runs it in a thread pool, so CPU inference does not block the event loop.
 @app.post("/predict", response_model=PredictResponse)
 def predict(
     request: Request,
     file: UploadFile = File(),
     model: ModelName = Query(default=ModelName.cnn),
+    detect: bool = Query(default=True, description="false: input is already LFW-framed 250x250"),
 ) -> PredictResponse:
     loaded = request.app.state.models[model]
     fields = request.state.log_fields
-    fields.update(model=model.value, model_version=loaded.version)
+    fields.update(model=model.value, model_version=loaded.version, detect=detect)
 
     image = decode_image(file.file.read())
+    if detect:
+        detect_started = time.perf_counter()
+        image = loaded.face_cropper(image)
+        fields["detection_ms"] = round((time.perf_counter() - detect_started) * 1000, 2)
+        if image is None:
+            raise HTTPException(422, "no face detected")
+
     started = time.perf_counter()
     try:
         face = preprocess(image, loaded.config)
@@ -140,6 +153,9 @@ def predict(
     return PredictResponse(
         model=model,
         model_version=loaded.version,
+        identity=decide_identity(
+            loaded.labels[top[0]], float(probabilities[top[0]]), loaded.unknown_threshold
+        ),
         predictions=[
             {"name": loaded.labels[i], "probability": float(probabilities[i])} for i in top
         ],
@@ -162,6 +178,7 @@ def models(request: Request) -> list[ModelSummary]:
             num_labels=len(loaded.labels),
             input_size=loaded.manifest["input_size"],
             test_accuracy=loaded.manifest["test_accuracy"],
+            unknown_threshold=loaded.unknown_threshold,
         )
         for name, loaded in request.app.state.models.items()
     ]

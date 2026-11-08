@@ -11,6 +11,7 @@ import numpy as np
 import tensorflow as tf
 
 from app.schemas import ModelName
+from ml.face_crop import FaceCropConfig, FaceCropper
 from ml.preprocess import PreprocessConfig
 
 DEFAULT_ARTIFACTS_DIR = Path(__file__).resolve().parent.parent / "artifacts"
@@ -20,11 +21,16 @@ DEFAULT_ARTIFACTS_DIR = Path(__file__).resolve().parent.parent / "artifacts"
 class LoadedModel:
     manifest: dict
     config: PreprocessConfig
+    face_cropper: FaceCropper
     predict_proba: Callable[[np.ndarray], np.ndarray]  # (h, w) face -> class probabilities
 
     @property
     def version(self) -> str:
         return self.manifest["model_version"]
+
+    @property
+    def unknown_threshold(self) -> float:
+        return self.manifest["unknown_threshold"]
 
     @property
     def labels(self) -> list[str]:
@@ -36,6 +42,7 @@ def _load(directory: Path, predict_proba: Callable[[np.ndarray], np.ndarray]) ->
     return LoadedModel(
         manifest=manifest,
         config=PreprocessConfig.from_manifest(manifest["preprocessing"]),
+        face_cropper=FaceCropper(FaceCropConfig(**manifest["face_crop"])),
         predict_proba=predict_proba,
     )
 
@@ -60,7 +67,7 @@ def _load_pca_knn(directory: Path) -> LoadedModel:
 
 
 def load_models() -> dict[ModelName, LoadedModel]:
-    """Raises if an artifact is missing, so the service fails at startup."""
+    """Raises if an artifact or calibration is missing, so the service fails at startup."""
     root = Path(os.environ.get("ARTIFACTS_DIR", DEFAULT_ARTIFACTS_DIR))
     return {
         ModelName.cnn: _load_cnn(root / "cnn-v1"),

@@ -4,13 +4,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project status
 
-Phases 1–3 and 5 (training, model saving, shared preprocessing, FastAPI service, tests and load measurements) are done. Phase 4 was deferred until after Phase 5; when it is built, general-photo face detection gets a `?detect=false` bypass so LFW-format inputs keep the exact accuracy check. `docs/PLAN.md` is the phased plan (in Korean) and `reference/original_train.py` is the original LFW coursework script.
+Phases 1–5 (training, shared preprocessing, FastAPI service, face detection with `unknown`, tests and load measurements) are done. `?detect=false` skips face detection so LFW-format inputs keep the exact accuracy check against the manifest. `docs/PLAN.md` is the phased plan (in Korean) and `reference/original_train.py` is the original LFW coursework script.
 
 ## Commands
 
 ```
 uv sync                       # install from uv.lock into .venv
 uv run python -m ml.train     # train both models, write artifacts/
+uv run python -m ml.calibrate # add face-crop config and unknown threshold to manifests; rerun after ml.train, which overwrites them and the service needs them
 uv run python -m ml.evaluate  # reload models, compare test accuracy with manifests
 uv run python -m ml.mismatch  # accuracy under deliberately wrong preprocessing
 uv run uvicorn app.main:app --no-access-log   # needs artifacts/, or ARTIFACTS_DIR

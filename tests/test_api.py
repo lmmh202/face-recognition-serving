@@ -7,7 +7,7 @@ import pytest
 from PIL import Image
 
 from app.logging import logger
-from app.main import MAX_BODY_BYTES, MAX_PIXELS
+from app.main import MAX_BODY_BYTES, MAX_PIXELS, decide_identity
 from ml.train import load_dataset
 
 MODELS = ["cnn", "pca-knn"]
@@ -29,7 +29,9 @@ def encode(image: Image.Image, image_format: str = "JPEG", **options) -> bytes:
 
 
 def post(client, data: bytes, params: dict | None = None, filename: str = "face.jpg"):
-    return client.post("/predict", params=params, files={"file": (filename, data)})
+    """Skips face detection unless params say otherwise: most inputs here have no face."""
+    query = {"detect": "false", **(params or {})}
+    return client.post("/predict", params=query, files={"file": (filename, data)})
 
 
 @pytest.mark.parametrize("model", MODELS)
@@ -38,7 +40,15 @@ def test_predict_response_schema(client, model):
     assert response.status_code == 200
 
     body = response.json()
-    assert set(body) == {"model", "model_version", "predictions", "inference_ms", "request_id"}
+    assert set(body) == {
+        "model",
+        "model_version",
+        "identity",
+        "predictions",
+        "inference_ms",
+        "request_id",
+    }
+    assert body["identity"] in {body["predictions"][0]["name"], "unknown"}
     assert body["model"] == model
     assert body["model_version"] == "v1"
     assert body["inference_ms"] >= 0
@@ -109,6 +119,46 @@ def test_missing_file_is_422(client):
     assert client.post("/predict").status_code == 422
 
 
+def test_no_face_is_422(client):
+    response = post(client, encode(gradient_image()), {"detect": "true"})
+    assert response.status_code == 422
+    assert response.json()["detail"] == "no face detected"
+
+
+@pytest.mark.parametrize("size", [(1, 1), (5000, 1), (1, 5000)])
+def test_degenerate_sizes_with_detection_are_422(client, size):
+    response = post(client, encode(Image.new("L", size), "PNG"), {"detect": "true"})
+    assert response.status_code == 422
+
+
+def test_detection_is_the_default(client):
+    response = client.post("/predict", files={"file": ("a.jpg", encode(gradient_image()))})
+    assert response.status_code == 422
+
+
+def _first_lfw_image() -> Image.Image:
+    path = load_dataset().test_paths[0]
+    with Image.open(path) as image:
+        return image.convert("RGB")
+
+
+def test_lfw_image_through_detection(client, require_lfw):
+    assert post(client, encode(_first_lfw_image()), {"detect": "true"}).status_code == 200
+
+
+def test_photo_of_any_size_through_detection(client, require_lfw):
+    canvas = Image.new("RGB", (900, 600), (90, 90, 90))
+    canvas.paste(_first_lfw_image().resize((400, 400)), (300, 120))
+    assert post(client, encode(canvas), {"detect": "true"}).status_code == 200
+
+
+@pytest.mark.parametrize(
+    ("probability", "expected"), [(0.81, "unknown"), (0.82, "Name"), (0.9, "Name")]
+)
+def test_decide_identity(probability, expected):
+    assert decide_identity("Name", probability, 0.82) == expected
+
+
 def test_health_reports_loaded_models(client):
     response = client.get("/health")
     assert response.status_code == 200
@@ -122,6 +172,7 @@ def test_models_summary(client):
         assert entry["model_version"] == "v1"
         assert entry["num_labels"] == 62
         assert entry["input_size"] == {"height": 87, "width": 65}
+        assert entry["unknown_threshold"] > 0
 
 
 class _ListHandler(logging.Handler):

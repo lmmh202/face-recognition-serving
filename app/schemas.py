@@ -16,6 +16,7 @@ class Prediction(BaseModel):
 class PredictResponse(BaseModel):
     model: ModelName
     model_version: str
+    identity: str  # the top name, or "unknown" when its probability is below the threshold
     predictions: list[Prediction]
     inference_ms: float
     request_id: str
@@ -37,3 +38,4 @@ class ModelSummary(BaseModel):
     num_labels: int
     input_size: InputSize
     test_accuracy: float
+    unknown_threshold: float

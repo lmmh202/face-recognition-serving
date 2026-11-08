@@ -56,7 +56,8 @@ class Dataset:
     img_test: np.ndarray
     y_train: np.ndarray
     y_test: np.ndarray
-    test_paths: np.ndarray  # source JPGs of the test set
+    train_paths: np.ndarray  # source JPGs
+    test_paths: np.ndarray
     labels: list[str]
     height: int
     width: int
@@ -73,14 +74,18 @@ def fetch_lfw():
     )
 
 
+def lfw_person_dirs() -> list[Path]:
+    root = Path(get_data_home()) / "lfw_home" / "lfw_funneled"
+    return sorted(p for p in root.iterdir() if p.is_dir())
+
+
 def lfw_image_paths() -> np.ndarray:
     """JPG paths in the same order as the arrays from fetch_lfw().
 
     Follows sklearn's _fetch_lfw_people: sorted scan, then a fixed shuffle.
     """
-    root = Path(get_data_home()) / "lfw_home" / "lfw_funneled"
     paths = []
-    for person in sorted(p for p in root.iterdir() if p.is_dir()):
+    for person in lfw_person_dirs():
         images = sorted(str(f) for f in person.iterdir())
         if len(images) >= MIN_FACES_PER_PERSON:
             paths.extend(images)
@@ -106,7 +111,7 @@ def load_dataset() -> Dataset:
     images = lfw.images[indices]
     pixel_scale = 255.0 if np.max(images) > 1.0 else 1.0
 
-    x_train, x_test, y_train, y_test, img_train, img_test, _, test_paths = train_test_split(
+    x_train, x_test, y_train, y_test, img_train, img_test, train_paths, test_paths = train_test_split(
         lfw.data[indices] / pixel_scale,
         y,
         images / pixel_scale,
@@ -122,6 +127,7 @@ def load_dataset() -> Dataset:
         img_test=img_test,
         y_train=y_train,
         y_test=y_test,
+        train_paths=train_paths,
         test_paths=test_paths,
         labels=[str(name) for name in lfw.target_names],
         height=images.shape[1],

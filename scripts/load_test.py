@@ -49,14 +49,14 @@ def wait_until_healthy(process: subprocess.Popen) -> None:
     raise SystemExit("server did not become healthy")
 
 
-def run_load(model: str, concurrency: int, requests: int, image: bytes) -> dict:
+def run_load(model: str, detect: bool, concurrency: int, requests: int, image: bytes) -> dict:
     with httpx.Client(timeout=60) as client:
 
         def send(_: int) -> tuple[float, int]:
             started = time.perf_counter()
             response = client.post(
                 f"{BASE_URL}/predict",
-                params={"model": model},
+                params={"model": model, "detect": str(detect).lower()},
                 files={"file": ("face.jpg", image)},
             )
             return (time.perf_counter() - started) * 1000, response.status_code
@@ -102,15 +102,16 @@ def main() -> None:
         sampler = threading.Thread(target=sample_memory)
         sampler.start()
 
-        print("| Model | Concurrency | p50 (ms) | p95 (ms) | Requests/s | Errors |")
-        print("|---|---|---|---|---|---|")
+        print("| Model | Detection | Concurrency | p50 (ms) | p95 (ms) | Requests/s | Errors |")
+        print("|---|---|---|---|---|---|---|")
         for model in MODELS:
-            for concurrency in CONCURRENCY:
-                r = run_load(model, concurrency, args.requests, image)
-                print(
-                    f"| {model} | {concurrency} | {r['p50']:.1f} | {r['p95']:.1f} "
-                    f"| {r['rps']:.1f} | {r['errors']} |"
-                )
+            for detect in (False, True):
+                for concurrency in CONCURRENCY:
+                    r = run_load(model, detect, concurrency, args.requests, image)
+                    print(
+                        f"| {model} | {'on' if detect else 'off'} | {concurrency} "
+                        f"| {r['p50']:.1f} | {r['p95']:.1f} | {r['rps']:.1f} | {r['errors']} |"
+                    )
         done.set()
         sampler.join()
         print(f"\nServer RSS: idle {idle:.0f} MB, peak {peak[0]:.0f} MB (both models loaded)")
