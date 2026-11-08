@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project status
 
-Phases 1–2 (training, model saving, shared preprocessing) are done. There is no app code yet. `docs/PLAN.md` is the phased plan (in Korean) and `reference/original_train.py` is the original LFW coursework script.
+Phases 1–3 (training, model saving, shared preprocessing, FastAPI service) are done. `docs/PLAN.md` is the phased plan (in Korean) and `reference/original_train.py` is the original LFW coursework script.
 
 ## Commands
 
@@ -13,6 +13,7 @@ Phases 1–2 (training, model saving, shared preprocessing) are done. There is n
 .venv/bin/python -m ml.train      # train both models, write artifacts/
 .venv/bin/python -m ml.evaluate   # reload models, compare test accuracy with manifests
 .venv/bin/python -m ml.mismatch   # accuracy under deliberately wrong preprocessing
+.venv/bin/python -m uvicorn app.main:app --no-access-log   # needs artifacts/, or ARTIFACTS_DIR
 .venv/bin/python -m pytest tests  # single test: add -k test_golden_matches_fetch_lfw_people
 ```
 

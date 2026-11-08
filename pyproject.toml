@@ -16,10 +16,13 @@ dependencies = [
     "scipy==1.18.1",
     "joblib==1.6.0",
     "pillow==12.3.0",
+    "fastapi==0.162.2",
+    "uvicorn==0.54.0",
+    "python-multipart==0.0.33",
 ]
 
 [project.optional-dependencies]
 dev = ["pytest==9.2.0"]
 
 [tool.setuptools]
-packages = ["ml"]
+packages = ["app", "ml"]
