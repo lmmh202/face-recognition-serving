@@ -19,6 +19,7 @@ from ml.train import (
     load_dataset,
     pca_knn_accuracy,
 )
+from ml.train_cnn_v2 import CNN_V2_DIR
 
 
 def recorded_accuracy(directory: Path) -> float:
@@ -32,6 +33,10 @@ def main() -> int:
         "cnn": (
             cnn_accuracy(tf.keras.models.load_model(CNN_DIR / CNN_FILE), data),
             recorded_accuracy(CNN_DIR),
+        ),
+        "cnn-v2": (
+            cnn_accuracy(tf.keras.models.load_model(CNN_V2_DIR / CNN_FILE), data),
+            recorded_accuracy(CNN_V2_DIR),
         ),
         "pca-knn": (
             pca_knn_accuracy(joblib.load(PCA_KNN_DIR / PCA_KNN_FILE), data),

@@ -8,10 +8,11 @@ import cv2
 import numpy as np
 from PIL import Image
 
-from ml.preprocess import LFW_IMAGE_SIZE
+from ml.preprocess import DEFAULT_CONFIG, LFW_IMAGE_SIZE, preprocess
 
 YUNET_MODEL = Path(__file__).resolve().parent.parent / "models" / "face_detection_yunet_2023mar.onnx"
 MAX_DETECTION_SIDE = 640  # larger photos are downscaled for detection only
+MIN_DETECTION_SIDE = 32  # YuNet can return NaN boxes on images thinner than this
 
 
 @dataclass(frozen=True)
@@ -45,13 +46,19 @@ class FaceCropper:
             small = image.resize(
                 (max(1, round(image.width * scale)), max(1, round(image.height * scale)))
             )
+        if min(small.size) < MIN_DETECTION_SIDE:
+            return None
         bgr = cv2.cvtColor(np.asarray(small), cv2.COLOR_RGB2BGR)
         with self._lock:
             self._detector.setInputSize(small.size)
             _, faces = self._detector.detect(bgr)
         if faces is None:
             return None
-        return max(faces, key=lambda face: face[2] * face[3])[:4] / scale
+        boxes = faces[:, :4]
+        boxes = boxes[np.isfinite(boxes).all(axis=1) & (boxes[:, 2] > 0) & (boxes[:, 3] > 0)]
+        if len(boxes) == 0:
+            return None
+        return max(boxes, key=lambda box: box[2] * box[3]) / scale
 
     def __call__(self, image: Image.Image) -> Image.Image | None:
         """Return the cropped face, or None if no face was found."""
@@ -73,3 +80,21 @@ class FaceCropper:
             )
         )
         return rgb.crop(region).resize(LFW_IMAGE_SIZE, Image.Resampling.BICUBIC)
+
+
+@dataclass(frozen=True)
+class Faces:
+    images: np.ndarray  # preprocessed faces, detected ones only
+    detected: np.ndarray  # boolean mask over the input paths
+
+
+def crop_faces(paths, cropper: FaceCropper) -> Faces:
+    faces = []
+    detected = []
+    for path in paths:
+        with Image.open(path) as image:
+            cropped = cropper(image)
+        detected.append(cropped is not None)
+        if cropped is not None:
+            faces.append(preprocess(cropped, DEFAULT_CONFIG))
+    return Faces(np.stack(faces), np.array(detected))

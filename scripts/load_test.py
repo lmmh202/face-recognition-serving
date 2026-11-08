@@ -19,7 +19,7 @@ from sklearn.datasets import get_data_home
 HOST = "127.0.0.1"
 PORT = 8799
 BASE_URL = f"http://{HOST}:{PORT}"
-MODELS = ["cnn", "pca-knn"]
+MODELS = ["cnn", "cnn-v2", "pca-knn"]
 CONCURRENCY = [1, 8]
 STARTUP_TIMEOUT_SECONDS = 120
 
@@ -114,7 +114,7 @@ def main() -> None:
                     )
         done.set()
         sampler.join()
-        print(f"\nServer RSS: idle {idle:.0f} MB, peak {peak[0]:.0f} MB (both models loaded)")
+        print(f"\nServer RSS: idle {idle:.0f} MB, peak {peak[0]:.0f} MB (all models loaded)")
     finally:
         done.set()
         server.terminate()

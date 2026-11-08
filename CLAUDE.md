@@ -11,6 +11,7 @@ Phases 1–5 (training, shared preprocessing, FastAPI service, face detection wi
 ```
 uv sync                       # install from uv.lock into .venv
 uv run python -m ml.train     # train both models, write artifacts/
+uv run python -m ml.train_cnn_v2  # train cnn-v2 (needs no v1 artifacts; ml.calibrate does)
 uv run python -m ml.calibrate # add face-crop config and unknown threshold to manifests; rerun after ml.train, which overwrites them and the service needs them
 uv run python -m ml.evaluate  # reload models, compare test accuracy with manifests
 uv run python -m ml.mismatch  # accuracy under deliberately wrong preprocessing

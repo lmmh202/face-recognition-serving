@@ -8,17 +8,14 @@ only used for the final report. Run after ml.train:
 """
 
 import json
-from dataclasses import dataclass
 
 import joblib
 import numpy as np
 import tensorflow as tf
-from PIL import Image
 from sklearn.base import clone
 from sklearn.model_selection import StratifiedKFold, train_test_split
 
-from ml.face_crop import DEFAULT_FACE_CROP, FaceCropper
-from ml.preprocess import DEFAULT_CONFIG, preprocess
+from ml.face_crop import DEFAULT_FACE_CROP, FaceCropper, crop_faces
 from ml.train import (
     CNN_DIR,
     CNN_FILE,
@@ -32,27 +29,10 @@ from ml.train import (
     load_dataset,
     write_manifest,
 )
+from ml.train_cnn_v2 import CNN_V2_DIR, load_pool
 
 TARGET_UNKNOWN_ACCEPT_RATE = 0.05
 ALWAYS_UNKNOWN = 1.01  # used when no reachable score meets the target
-
-
-@dataclass(frozen=True)
-class Faces:
-    images: np.ndarray  # preprocessed faces, detected ones only
-    detected: np.ndarray  # boolean mask over the input paths
-
-
-def crop_faces(paths, cropper: FaceCropper) -> Faces:
-    faces = []
-    detected = []
-    for path in paths:
-        with Image.open(path) as image:
-            cropped = cropper(image)
-        detected.append(cropped is not None)
-        if cropped is not None:
-            faces.append(preprocess(cropped, DEFAULT_CONFIG))
-    return Faces(np.stack(faces), np.array(detected))
 
 
 def unknown_person_paths() -> tuple[list[str], list[str]]:
@@ -120,6 +100,12 @@ def cnn_validation(model, data, cropper) -> tuple[np.ndarray, np.ndarray, int]:
     return cnn_probabilities(model, faces.images), val_y[faces.detected], len(val_y)
 
 
+def cnn_v2_validation(model, data, cropper) -> tuple[np.ndarray, np.ndarray, int]:
+    pool = load_pool(data, cropper)
+    val_idx = pool.val_idx[pool.detected[pool.val_idx]]
+    return cnn_probabilities(model, pool.images[val_idx]), pool.y[val_idx], len(pool.val_idx)
+
+
 def main() -> None:
     data = load_dataset()
     cropper = FaceCropper()
@@ -136,10 +122,13 @@ def main() -> None:
     )
 
     cnn = tf.keras.models.load_model(CNN_DIR / CNN_FILE)
+    cnn_v2 = tf.keras.models.load_model(CNN_V2_DIR / CNN_FILE)
     pca_knn = joblib.load(PCA_KNN_DIR / PCA_KNN_FILE)
     models = {
         "cnn": (CNN_DIR, lambda faces: cnn_probabilities(cnn, faces),
                 lambda: cnn_validation(cnn, data, cropper)),
+        "cnn-v2": (CNN_V2_DIR, lambda faces: cnn_probabilities(cnn_v2, faces),
+                   lambda: cnn_v2_validation(cnn_v2, data, cropper)),
         "pca-knn": (PCA_KNN_DIR, lambda faces: pca_knn.predict_proba(faces.reshape(len(faces), -1)),
                     lambda: pca_knn_validation(pca_knn, data, cropper)),
     }

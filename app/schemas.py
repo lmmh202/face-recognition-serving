@@ -5,6 +5,7 @@ from pydantic import BaseModel
 
 class ModelName(StrEnum):
     cnn = "cnn"
+    cnn_v2 = "cnn-v2"
     pca_knn = "pca-knn"
 
 

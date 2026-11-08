@@ -71,5 +71,6 @@ def load_models() -> dict[ModelName, LoadedModel]:
     root = Path(os.environ.get("ARTIFACTS_DIR", DEFAULT_ARTIFACTS_DIR))
     return {
         ModelName.cnn: _load_cnn(root / "cnn-v1"),
+        ModelName.cnn_v2: _load_cnn(root / "cnn-v2"),
         ModelName.pca_knn: _load_pca_knn(root / "pca-knn-v1"),
     }

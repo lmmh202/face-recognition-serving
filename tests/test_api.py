@@ -10,7 +10,8 @@ from app.logging import logger
 from app.main import MAX_BODY_BYTES, MAX_PIXELS, decide_identity
 from ml.train import load_dataset
 
-MODELS = ["cnn", "pca-knn"]
+MODELS = ["cnn", "cnn-v2", "pca-knn"]
+VERSIONS = {"cnn": "v1", "cnn-v2": "v2", "pca-knn": "v1"}
 
 
 def gradient_image(size: tuple[int, int] = (250, 250)) -> Image.Image:
@@ -50,7 +51,7 @@ def test_predict_response_schema(client, model):
     }
     assert body["identity"] in {body["predictions"][0]["name"], "unknown"}
     assert body["model"] == model
-    assert body["model_version"] == "v1"
+    assert body["model_version"] == VERSIONS[model]
     assert body["inference_ms"] >= 0
     assert body["request_id"] == response.headers["X-Request-ID"]
 
@@ -125,7 +126,7 @@ def test_no_face_is_422(client):
     assert response.json()["detail"] == "no face detected"
 
 
-@pytest.mark.parametrize("size", [(1, 1), (5000, 1), (1, 5000)])
+@pytest.mark.parametrize("size", [(1, 1), (5000, 1), (1, 5000), (2, 640), (640, 2), (3, 5000)])
 def test_degenerate_sizes_with_detection_are_422(client, size):
     response = post(client, encode(Image.new("L", size), "PNG"), {"detect": "true"})
     assert response.status_code == 422
@@ -169,7 +170,7 @@ def test_models_summary(client):
     body = client.get("/models").json()
     assert [entry["model"] for entry in body] == MODELS
     for entry in body:
-        assert entry["model_version"] == "v1"
+        assert entry["model_version"] == VERSIONS[entry["model"]]
         assert entry["num_labels"] == 62
         assert entry["input_size"] == {"height": 87, "width": 65}
         assert entry["unknown_threshold"] > 0
