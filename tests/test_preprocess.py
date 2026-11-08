@@ -6,12 +6,9 @@ from ml.preprocess import DEFAULT_CONFIG, PreprocessConfig, preprocess
 from ml.train import fetch_lfw, lfw_image_paths
 
 
-def test_golden_matches_fetch_lfw_people():
-    try:
-        expected = fetch_lfw().images
-        paths = lfw_image_paths()
-    except (OSError, FileNotFoundError) as error:
-        pytest.skip(f"LFW dataset unavailable: {error}")
+def test_golden_matches_fetch_lfw_people(require_lfw):
+    expected = fetch_lfw().images
+    paths = lfw_image_paths()
 
     assert len(paths) == len(expected)
     worst = 0.0

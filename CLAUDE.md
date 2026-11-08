@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project status
 
-Phases 1–3 (training, model saving, shared preprocessing, FastAPI service) are done. `docs/PLAN.md` is the phased plan (in Korean) and `reference/original_train.py` is the original LFW coursework script.
+Phases 1–3 and 5 (training, model saving, shared preprocessing, FastAPI service, tests and load measurements) are done. Phase 4 was deferred until after Phase 5; when it is built, general-photo face detection gets a `?detect=false` bypass so LFW-format inputs keep the exact accuracy check. `docs/PLAN.md` is the phased plan (in Korean) and `reference/original_train.py` is the original LFW coursework script.
 
 ## Commands
 
@@ -15,6 +15,7 @@ uv run python -m ml.evaluate  # reload models, compare test accuracy with manife
 uv run python -m ml.mismatch  # accuracy under deliberately wrong preprocessing
 uv run uvicorn app.main:app --no-access-log   # needs artifacts/, or ARTIFACTS_DIR
 uv run pytest tests           # single test: add -k test_golden_matches_fetch_lfw_people
+uv run python scripts/load_test.py   # p50/p95 latency and server memory
 ```
 
 Change dependencies with `uv add` / `uv remove`, or edit `pyproject.toml` and run `uv lock`; commit `uv.lock`.
