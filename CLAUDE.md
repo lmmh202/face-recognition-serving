@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project status
 
-Phases 1–5 (training, shared preprocessing, FastAPI service, face detection with `unknown`, tests and load measurements) are done. `?detect=false` skips face detection so LFW-format inputs keep the exact accuracy check against the manifest. `docs/PLAN.md` is the phased plan (in Korean) and `reference/original_train.py` is the original LFW coursework script.
+Phases 1–6 (training, shared preprocessing, FastAPI service, face detection with `unknown`, tests and load measurements, Docker) are done. Phase 7 deploys to AWS ECS with Terraform in `infra/`. The image is `linux/arm64` because `tensorflow-cpu` has no arm64 wheel for the pinned release, and it bakes in `artifacts/`. Docker build and test commands are in `README.md`. `?detect=false` skips face detection so LFW-format inputs keep the exact accuracy check against the manifest. `docs/PLAN.md` is the phased plan (in Korean) and `reference/original_train.py` is the original LFW coursework script.
 
 ## Commands
 

@@ -22,11 +22,27 @@ uv run python -m ml.calibrate
 uv run uvicorn app.main:app --no-access-log
 ```
 
+## Docker
+
+이미지는 `linux/arm64`로 빌드하며 `artifacts/`의 모델을 포함하므로, 빌드 전에 학습이 끝나 있어야 한다. 크기는 약 2.3GB이고 non-root로 실행된다.
+
+```
+docker buildx build --platform linux/arm64 --load -t face-recognition-serving:local .
+docker run --rm -p 8000:8000 face-recognition-serving:local
+```
+
+컨테이너 안에서 테스트하려면 `--target test`로 빌드한다. LFW 데이터를 마운트해야 golden test와 정확도 검증까지 실행된다.
+
+```
+docker buildx build --platform linux/arm64 --load --target test -t face-recognition-serving:test .
+docker run --rm -v ~/scikit_learn_data:/data:ro -e SCIKIT_LEARN_DATA=/data face-recognition-serving:test
+```
+
 ## API
 
 | 엔드포인트 | 설명 |
 |---|---|
-| `POST /predict?model=cnn\|cnn-v2\|pca-knn&detect=true\|false` | multipart `file`을 받아 판정 결과(`identity`)와 상위 3개 인물·확률을 반환한다. 기본 모델은 `cnn`이다. `detect=false`는 얼굴 검출을 건너뛰며 LFW 형식(250×250)만 받는다. |
+| `POST /predict?model=cnn\|cnn-v2\|pca-knn&detect=true\|false` | multipart `file`을 받아 판정 결과(`identity`)와 상위 3개 인물·확률을 반환한다. 기본 모델은 `cnn-v2`다. `detect=false`는 얼굴 검출을 건너뛰며 LFW 형식(250×250)만 받는다. |
 | `GET /health` | 로드된 모델 목록을 반환한다. |
 | `GET /models` | 모델 버전, 라벨 수, 입력 크기, test 정확도, unknown 임계값을 반환한다. |
 

@@ -64,8 +64,8 @@ def test_predict_response_schema(client, model):
     assert sum(probabilities) <= 1 + 1e-6
 
 
-def test_default_model_is_cnn(client):
-    assert post(client, encode(gradient_image())).json()["model"] == "cnn"
+def test_default_model_is_cnn_v2(client):
+    assert post(client, encode(gradient_image())).json()["model"] == "cnn-v2"
 
 
 def test_png_is_accepted(client):
@@ -196,8 +196,8 @@ def test_request_log_has_fields_and_no_upload_details(client):
     fields = handler.records[-1].fields
     assert fields["request_id"] == response.json()["request_id"]
     assert fields["status_code"] == 200
-    assert fields["model"] == "cnn"
-    assert fields["model_version"] == "v1"
+    assert fields["model"] == "cnn-v2"
+    assert fields["model_version"] == "v2"
     assert fields["preprocess_ms"] >= 0
     assert fields["inference_ms"] >= 0
     assert "private_person_name" not in repr(fields)

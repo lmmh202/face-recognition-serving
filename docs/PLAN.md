@@ -109,10 +109,12 @@ README.md
 
 ## Phase 7: AWS ECS
 
-1. ECR에 이미지를 push한다.
+인프라는 `infra/`의 Terraform 코드로 구성한다. 모듈 없이 단일 디렉터리로 두고, `terraform.tfstate`와 `terraform.tfvars`는 git에서 제외한다. state는 로컬에 둔다.
+
+1. `terraform apply -target=aws_ecr_repository.app`로 ECR을 먼저 만들고 이미지를 push한다. 이후 전체를 apply한다.
 2. VPC를 직접 구성한다. ALB는 public subnet, Fargate 태스크는 private subnet에 두고, 외부 통신은 NAT나 VPC endpoint로 처리한다.
 3. 보안 그룹은 ALB→태스크 8000 포트만 허용하고, ALB 접근은 내 IP로 제한한다. 실존 인물의 얼굴을 다루므로 공개 데모로 열어 두지 않는다.
-4. Task Definition은 2GB부터 시작해 Phase 5에서 측정한 메모리로 조정한다.
+4. Task Definition은 2GB부터 시작해 Phase 6 컨테이너에서 측정한 메모리로 조정한다. 이미지가 `linux/arm64`이므로 `runtime_platform`을 ARM64로 지정한다.
 5. 로그는 CloudWatch로 보내고, ALB 헬스체크는 `/health`로 지정한다.
 6. 네트워크 구성 과정과 막혔던 지점을 README에 기록한다.
-7. 끝나면 ALB와 NAT를 삭제한다. 켜 두는 동안 계속 과금된다.
+7. 끝나면 `terraform destroy`로 삭제한다. ALB와 NAT는 켜 두는 동안 계속 과금된다.

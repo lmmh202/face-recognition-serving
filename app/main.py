@@ -121,7 +121,7 @@ def decide_identity(name: str, probability: float, threshold: float) -> str:
 def predict(
     request: Request,
     file: UploadFile = File(),
-    model: ModelName = Query(default=ModelName.cnn),
+    model: ModelName = Query(default=ModelName.cnn_v2),
     detect: bool = Query(default=True, description="false: input is already LFW-framed 250x250"),
 ) -> PredictResponse:
     loaded = request.app.state.models[model]
