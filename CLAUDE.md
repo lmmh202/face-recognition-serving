@@ -9,13 +9,15 @@ Phases 1–3 (training, model saving, shared preprocessing, FastAPI service) are
 ## Commands
 
 ```
-/opt/homebrew/bin/python3.14 -m venv .venv && .venv/bin/pip install -e ".[dev]"
-.venv/bin/python -m ml.train      # train both models, write artifacts/
-.venv/bin/python -m ml.evaluate   # reload models, compare test accuracy with manifests
-.venv/bin/python -m ml.mismatch   # accuracy under deliberately wrong preprocessing
-.venv/bin/python -m uvicorn app.main:app --no-access-log   # needs artifacts/, or ARTIFACTS_DIR
-.venv/bin/python -m pytest tests  # single test: add -k test_golden_matches_fetch_lfw_people
+uv sync                       # install from uv.lock into .venv
+uv run python -m ml.train     # train both models, write artifacts/
+uv run python -m ml.evaluate  # reload models, compare test accuracy with manifests
+uv run python -m ml.mismatch  # accuracy under deliberately wrong preprocessing
+uv run uvicorn app.main:app --no-access-log   # needs artifacts/, or ARTIFACTS_DIR
+uv run pytest tests           # single test: add -k test_golden_matches_fetch_lfw_people
 ```
+
+Change dependencies with `uv add` / `uv remove`, or edit `pyproject.toml` and run `uv lock`; commit `uv.lock`.
 
 Python 3.14 needs the pinned `tensorflow==2.22.0rc0` and `keras-nightly`: stable TensorFlow is not offered to pip on 3.14, so `pip install tensorflow` fails with "No matching distribution".
 
