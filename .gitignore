@@ -6,3 +6,7 @@ build/
 .DS_Store
 artifacts/
 figures/
+infra/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars

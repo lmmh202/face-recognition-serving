@@ -1,4 +1,4 @@
-# Build for linux/arm64: tensorflow-cpu has no arm64 wheel for this release.
+# Build for linux/amd64: Azure Container Apps does not run arm64 images.
 FROM python:3.14.6-slim AS builder
 COPY --from=ghcr.io/astral-sh/uv:0.13.7 /uv /usr/local/bin/uv
 ENV UV_PROJECT_ENVIRONMENT=/opt/venv \

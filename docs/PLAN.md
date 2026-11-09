@@ -107,14 +107,15 @@ README.md
 - Mac에서 빌드하면 ARM 이미지가 나온다. `docker buildx --platform linux/amd64`로 빌드하거나 Fargate도 ARM64로 맞춘다.
 - 로컬 컨테이너에서 Phase 5의 테스트를 다시 통과시킨다.
 
-## Phase 7: AWS ECS
+## Phase 7: Azure Container Apps
 
-인프라는 `infra/`의 Terraform 코드로 구성한다. 모듈 없이 단일 디렉터리로 두고, `terraform.tfstate`와 `terraform.tfvars`는 git에서 제외한다. state는 로컬에 둔다.
+크레딧이 있는 Azure for Students 구독에 배포한다. 인프라는 `infra/`의 Terraform 코드로 구성한다. 모듈 없이 단일 디렉터리로 두고, `terraform.tfstate`와 `terraform.tfvars`는 git에서 제외한다. state는 로컬에 둔다. 구독 정책상 리전은 `koreacentral`을 쓴다.
 
-1. `terraform apply -target=aws_ecr_repository.app`로 ECR을 먼저 만들고 이미지를 push한다. 이후 전체를 apply한다.
-2. VPC를 직접 구성한다. ALB는 public subnet, Fargate 태스크는 private subnet에 두고, 외부 통신은 NAT나 VPC endpoint로 처리한다.
-3. 보안 그룹은 ALB→태스크 8000 포트만 허용하고, ALB 접근은 내 IP로 제한한다. 실존 인물의 얼굴을 다루므로 공개 데모로 열어 두지 않는다.
-4. Task Definition은 2GB부터 시작해 Phase 6 컨테이너에서 측정한 메모리로 조정한다. 이미지가 `linux/arm64`이므로 `runtime_platform`을 ARM64로 지정한다.
-5. 로그는 CloudWatch로 보내고, ALB 헬스체크는 `/health`로 지정한다.
-6. 네트워크 구성 과정과 막혔던 지점을 README에 기록한다.
-7. 끝나면 `terraform destroy`로 삭제한다. ALB와 NAT는 켜 두는 동안 계속 과금된다.
+1. Container Apps는 `linux/amd64`만 지원하므로 이미지를 amd64로 전환한다. `tensorflow-cpu`로 바꾸고 `uv.lock`을 갱신한 뒤, x86 환경에서 Phase 5의 테스트를 다시 통과시킨다.
+2. Azure Container Registry를 먼저 만들고(`terraform apply -target`), `az acr build`로 이미지를 빌드해 push한다. 이후 전체를 apply한다.
+3. Container Apps 환경과 앱을 만든다. CPU·메모리는 1 vCPU / 2Gi부터 시작해 측정값으로 조정하고, 켜 두는 비용을 줄이기 위해 최소 레플리카는 0으로 둔다.
+4. ingress는 HTTPS만 허용하고 내 IP로 제한한다. 실존 인물의 얼굴을 다루므로 공개 데모로 열어 두지 않는다.
+5. 로그는 Log Analytics로 보내고, health probe는 `/health`로 지정한다.
+6. Azure 기본 주소로 동작을 확인한 뒤 `serving.hyeong.xyz`를 연결한다. CNAME과 `asuid.serving` TXT 레코드를 등록하고 관리형 인증서를 쓴다.
+7. 구성 과정과 막혔던 지점을 README에 기록한다.
+8. 끝나면 `terraform destroy`로 삭제하고, 서브도메인 탈취를 막기 위해 DNS 레코드도 지운다.
