@@ -1,6 +1,6 @@
 # face-recognition-serving 작업 계획
 
-LFW 얼굴 분류 과제의 CNN과 PCA+KNN 모델을 FastAPI로 서빙하고, Docker와 AWS ECS로 배포한다.
+LFW 얼굴 분류 과제의 CNN과 PCA+KNN 모델을 FastAPI로 서빙하고, Docker와 Azure Container Apps로 배포한다. 처음에는 AWS ECS로 계획했으나 크레딧이 있는 Azure로 바꿨다.
 
 **핵심 인사이트:** 학습 때와 서빙 때 전처리가 달라지면 모델이 틀린다. 학습 때 fit한 PCA 객체와 전처리 설정을 그대로 저장해 재사용한다.
 
@@ -112,10 +112,10 @@ README.md
 크레딧이 있는 Azure for Students 구독에 배포한다. 인프라는 `infra/`의 Terraform 코드로 구성한다. 모듈 없이 단일 디렉터리로 두고, `terraform.tfstate`와 `terraform.tfvars`는 git에서 제외한다. state는 로컬에 둔다. 구독 정책상 리전은 `koreacentral`을 쓴다.
 
 1. Container Apps는 `linux/amd64`만 지원하므로 이미지를 amd64로 전환한다. `tensorflow-cpu`로 바꾸고 `uv.lock`을 갱신한 뒤, x86 환경에서 Phase 5의 테스트를 다시 통과시킨다.
-2. Azure Container Registry를 먼저 만들고(`terraform apply -target`), `az acr build`로 이미지를 빌드해 push한다. 이후 전체를 apply한다.
+2. Azure Container Registry를 먼저 만들고(`terraform apply -target`), 이미지를 빌드해 push한다. 이후 전체를 apply한다. 학생 구독에서는 `az acr build`가 막혀 있어 로컬에서 빌드한다.
 3. Container Apps 환경과 앱을 만든다. CPU·메모리는 1 vCPU / 2Gi부터 시작해 측정값으로 조정하고, 켜 두는 비용을 줄이기 위해 최소 레플리카는 0으로 둔다.
 4. ingress는 HTTPS만 허용하고 공개 데모로 연다. 학습 대상이 LFW의 공인 62명이라 공개하되, 신원 확인 용도가 아니라는 안내를 README와 `/docs`에 둔다. 남용 시 비용은 최대 레플리카 1개로 제한한다. 처음에는 내 IP로 제한했다가 이 판단에 따라 풀었다.
 5. 로그는 Log Analytics로 보내고, health probe는 `/health`로 지정한다.
-6. Azure 기본 주소로 동작을 확인한 뒤 `serving.hyeong.xyz`를 연결한다. CNAME과 `asuid.serving` TXT 레코드를 등록하고 관리형 인증서를 쓴다.
+6. Azure 기본 주소로 동작을 확인한 뒤 `face-recognition-serving.hyeong.space`를 연결한다. CNAME과 `asuid.face-recognition-serving` TXT 레코드를 등록하고 관리형 인증서를 쓴다. 사용자 지정 도메인은 Express 환경에서 지원되지 않으므로 환경 모드를 `WorkloadProfiles`로 지정한다.
 7. 구성 과정과 막혔던 지점을 README에 기록한다.
 8. 끝나면 `terraform destroy`로 삭제하고, 서브도메인 탈취를 막기 위해 DNS 레코드도 지운다.

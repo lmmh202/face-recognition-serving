@@ -28,7 +28,7 @@ Python 3.14 needs the pinned `tensorflow==2.22.0rc0` and `keras-nightly`: stable
 
 ## What is being built
 
-A FastAPI service that serves two 62-person LFW face classifiers, a CNN (`.keras`) and PCA+KNN (a single `sklearn.Pipeline` saved with joblib), later deployed with Docker on AWS ECS. `ml/` holds training and preprocessing, `app/` holds serving, and `artifacts/<model>-v1/` holds the git-ignored models, which `ml/train.py` regenerates.
+A FastAPI service that serves 62-person LFW face classifiers (CNN v1 and `cnn-v2` as `.keras`, PCA+KNN as one `sklearn.Pipeline` saved with joblib), deployed with Docker on Azure Container Apps at https://face-recognition-serving.hyeong.space. `ml/` holds training and preprocessing, `app/` holds serving, and `artifacts/` holds the git-ignored models, which the `ml.train*` modules regenerate. Deployment steps, the custom domain binding (done with `az`, outside Terraform), and known snags are in `README.md`.
 
 ## Core invariant: training/serving preprocessing parity
 
