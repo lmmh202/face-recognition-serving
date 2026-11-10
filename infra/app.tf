@@ -26,24 +26,59 @@ resource "azurerm_role_assignment" "acr_pull" {
   principal_type       = "ServicePrincipal"
 }
 
-# Azure creates a workload profiles environment with this Consumption profile.
-# Plan management is charged only when a Dedicated profile exists, so none is added.
-resource "azurerm_container_app_environment" "app" {
-  name                       = "cae-face-recognition-serving"
-  resource_group_name        = azurerm_resource_group.app.name
-  location                   = azurerm_resource_group.app.location
-  log_analytics_workspace_id = azurerm_log_analytics_workspace.app.id
+# Created with azapi to pin environmentMode: left unset, Azure made an Express
+# environment, and Express doesn't support custom domains. Only the Consumption
+# profile is used; plan management is charged only for Dedicated profiles.
+resource "azapi_resource" "environment" {
+  type      = "Microsoft.App/managedEnvironments@2026-07-01"
+  name      = "cae-face-recognition-serving"
+  parent_id = azurerm_resource_group.app.id
+  location  = azurerm_resource_group.app.location
 
-  workload_profile {
-    name                  = "Consumption"
-    workload_profile_type = "Consumption"
+  # azapi's embedded schema predates environmentMode (added in 2026-07-01);
+  # Azure still validates the request.
+  schema_validation_enabled = false
+
+  body = {
+    properties = {
+      environmentMode = "WorkloadProfiles"
+      workloadProfiles = [
+        {
+          name                = "Consumption"
+          workloadProfileType = "Consumption"
+        }
+      ]
+      appLogsConfiguration = {
+        destination = "log-analytics"
+        logAnalyticsConfiguration = {
+          customerId = azurerm_log_analytics_workspace.app.workspace_id
+        }
+      }
+    }
+  }
+
+  # Write-only: Azure never returns the key, so keep it out of the drift check.
+  sensitive_body = {
+    properties = {
+      appLogsConfiguration = {
+        logAnalyticsConfiguration = {
+          sharedKey = azurerm_log_analytics_workspace.app.primary_shared_key
+        }
+      }
+    }
+  }
+
+  response_export_values = {
+    mode            = "properties.environmentMode"
+    default_domain  = "properties.defaultDomain"
+    verification_id = "properties.customDomainConfiguration.customDomainVerificationId"
   }
 }
 
 resource "azurerm_container_app" "app" {
   name                         = "ca-face-recognition-serving"
   resource_group_name          = azurerm_resource_group.app.name
-  container_app_environment_id = azurerm_container_app_environment.app.id
+  container_app_environment_id = azapi_resource.environment.id
   revision_mode                = "Single"
   workload_profile_name        = "Consumption"
 
