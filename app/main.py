@@ -62,7 +62,14 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
     yield
 
 
-app = FastAPI(title="face-recognition-serving", lifespan=lifespan)
+DESCRIPTION = """
+LFW 데이터셋의 공인 62명 중 업로드한 얼굴과 가장 닮은 사람을 고르는 데모입니다.
+
+- 신원 확인 용도로 쓰면 안 됩니다. 학습에 없는 사람의 사진에도 62명 중 한 명의 이름을 돌려줄 수 있습니다.
+- 업로드한 이미지는 저장하거나 로그에 남기지 않습니다.
+"""
+
+app = FastAPI(title="face-recognition-serving", description=DESCRIPTION, lifespan=lifespan)
 app.add_middleware(PredictBodyLimit)
 
 

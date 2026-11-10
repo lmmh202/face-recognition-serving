@@ -10,6 +10,11 @@ variable "resource_group_name" {
   default     = "rg-face-recognition-serving"
 }
 
+variable "image_tag" {
+  description = "Image tag in the registry."
+  type        = string
+}
+
 variable "acr_name" {
   description = "Container registry name: globally unique, alphanumeric."
   type        = string

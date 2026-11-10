@@ -2,6 +2,8 @@
 
 LFW 얼굴 분류 모델(CNN, PCA+KNN)을 FastAPI로 서빙하는 프로젝트다. 학습 때와 같은 전처리를 서빙에서 그대로 재사용하는 것이 핵심이다.
 
+> LFW 데이터셋의 공인 62명 중 업로드한 얼굴과 가장 닮은 사람을 고르는 데모다. 신원 확인 용도로 쓰면 안 되며, 학습에 없는 사람의 사진에도 62명 중 한 명의 이름을 돌려줄 수 있다.
+
 ## 지원 범위와 한계
 
 - JPEG·PNG 사진에서 가장 큰 얼굴 하나를 찾아 학습된 62명 중 한 명으로 분류한다.
@@ -24,17 +26,17 @@ uv run uvicorn app.main:app --no-access-log
 
 ## Docker
 
-이미지는 `linux/arm64`로 빌드하며 `artifacts/`의 모델을 포함하므로, 빌드 전에 학습이 끝나 있어야 한다. 크기는 약 2.3GB이고 non-root로 실행된다.
+이미지는 Azure Container Apps에 맞춰 `linux/amd64`로 빌드하며 `artifacts/`의 모델을 포함하므로, 빌드 전에 학습이 끝나 있어야 한다. non-root로 실행된다. Azure for Students 구독에서는 ACR Tasks(`az acr build`)가 막혀 있어 로컬에서 빌드해 push한다.
 
 ```
-docker buildx build --platform linux/arm64 --load -t face-recognition-serving:local .
+docker buildx build --platform linux/amd64 --load -t face-recognition-serving:local .
 docker run --rm -p 8000:8000 face-recognition-serving:local
 ```
 
 컨테이너 안에서 테스트하려면 `--target test`로 빌드한다. LFW 데이터를 마운트해야 golden test와 정확도 검증까지 실행된다.
 
 ```
-docker buildx build --platform linux/arm64 --load --target test -t face-recognition-serving:test .
+docker buildx build --platform linux/amd64 --load --target test -t face-recognition-serving:test .
 docker run --rm -v ~/scikit_learn_data:/data:ro -e SCIKIT_LEARN_DATA=/data face-recognition-serving:test
 ```
 

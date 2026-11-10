@@ -2,6 +2,7 @@ resource "azurerm_resource_provider_registration" "required" {
   for_each = toset([
     "Microsoft.App",
     "Microsoft.ContainerRegistry",
+    "Microsoft.ManagedIdentity",
     "Microsoft.Network",
     "Microsoft.OperationalInsights",
   ])

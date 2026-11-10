@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project status
 
-Phases 1–6 (training, shared preprocessing, FastAPI service, face detection with `unknown`, tests and load measurements, Docker) are done. Phase 7 deploys to Azure Container Apps with Terraform in `infra/`. The image is currently `linux/arm64` because `tensorflow-cpu` has no arm64 wheel for the pinned release, but Container Apps needs `linux/amd64`, so Phase 7 switches it. The image bakes in `artifacts/`. Docker build and test commands are in `README.md`. `?detect=false` skips face detection so LFW-format inputs keep the exact accuracy check against the manifest. `docs/PLAN.md` is the phased plan (in Korean) and `reference/original_train.py` is the original LFW coursework script.
+Phases 1–6 (training, shared preprocessing, FastAPI service, face detection with `unknown`, tests and load measurements, Docker) are done. Phase 7 deploys to Azure Container Apps with Terraform in `infra/`. The image is `linux/amd64` because Container Apps doesn't run arm64, and it bakes in `artifacts/`. ACR Tasks (`az acr build`) is blocked on the Azure for Students subscription, so build locally under emulation and `docker push`. Docker build and test commands are in `README.md`. `?detect=false` skips face detection so LFW-format inputs keep the exact accuracy check against the manifest. `docs/PLAN.md` is the phased plan (in Korean) and `reference/original_train.py` is the original LFW coursework script.
 
 ## Commands
 
@@ -60,7 +60,7 @@ Phase 1 is done when reloaded models match the post-training test accuracy.
 - Load models once in the lifespan handler.
 - Declare inference endpoints with `def`, not `async def`, because inference is blocking CPU work.
 - Enforce file size and pixel limits before decoding, and apply EXIF rotation.
-- Never store or log uploaded images. Real people's faces are involved, so the ALB also stays restricted to the owner's IP rather than being a public demo.
+- Never store or log uploaded images. The service is a public demo over real public figures, so keep the "not for identity verification" notice in `README.md` and the FastAPI description, and keep `max_replicas = 1` as the cost cap.
 
 ## Repository publishing
 
