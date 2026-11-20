@@ -158,6 +158,18 @@ uv run pytest tests
 
 LFW 데이터나 모델 파일이 없으면 해당 테스트는 건너뛴다. 전처리 검증과 불일치 실험 결과는 [docs/PREPROCESS.md](docs/PREPROCESS.md)에 있다.
 
+### CI
+
+`.github/workflows/test.yml`이 `main` push와 PR마다 전체 테스트를 실행한다. LFW는 처음 한 번 내려받아 캐시하고, 모델은 GitHub Release `models-2026-11-08`의 `artifacts.tar.gz`를 SHA-256으로 확인한 뒤 쓴다. CI는 `REQUIRE_TEST_DATA=1`로 실행하므로 LFW나 모델이 없으면 테스트를 건너뛰지 않고 실패한다.
+
+모델을 다시 학습했다면 새 Release를 올리고 workflow의 `MODELS_RELEASE`와 `MODELS_SHA256`을 바꾼다.
+
+```
+COPYFILE_DISABLE=1 tar --no-xattrs -czf artifacts.tar.gz artifacts
+shasum -a 256 artifacts.tar.gz
+gh release create models-YYYY-MM-DD artifacts.tar.gz --title "Models YYYY-MM-DD"
+```
+
 ## 성능 측정
 
 `uv run python scripts/load_test.py`로 재현한다. 조합마다 LFW 이미지 1장을 300번 요청했다.

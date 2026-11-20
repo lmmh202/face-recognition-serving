@@ -1,0 +1,52 @@
+name: test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  # Models are git-ignored; the trained artifacts/ directory is attached to this
+  # release. Update both values when the models are retrained (see README).
+  MODELS_RELEASE: models-2026-11-08
+  MODELS_SHA256: 7698a29d8f98a524e6e68163d0f4a06d5e37b0599b7fb69f8d378ede8e5a4250
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7.0.1
+
+      - uses: astral-sh/setup-uv@v10.4.0
+        with:
+          enable-cache: true
+
+      - name: Install dependencies
+        run: uv sync --frozen
+
+      - name: Restore LFW
+        uses: actions/cache@v6.1.0
+        with:
+          path: ~/scikit_learn_data/lfw_home
+          key: lfw-funneled-sklearn-1.9.1
+
+      - name: Download LFW
+        run: uv run python -c "from ml.train import fetch_lfw; fetch_lfw()"
+
+      - name: Download models
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release download "$MODELS_RELEASE" --pattern artifacts.tar.gz
+          echo "$MODELS_SHA256  artifacts.tar.gz" | sha256sum --check -
+          tar -xzf artifacts.tar.gz
+
+      - name: Test
+        env:
+          REQUIRE_TEST_DATA: "1"
+        run: uv run pytest tests -v
