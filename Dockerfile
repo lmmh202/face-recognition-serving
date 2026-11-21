@@ -32,6 +32,7 @@ COPY pyproject.toml uv.lock ./
 RUN UV_PROJECT_ENVIRONMENT=/opt/venv UV_PYTHON_DOWNLOADS=never UV_NO_CACHE=1 \
     uv sync --frozen --no-install-project
 COPY tests ./tests
+COPY data/real_photos/*.json ./data/real_photos/
 USER app
 CMD ["python", "-m", "pytest", "tests", "-q", "-p", "no:cacheprovider"]
 

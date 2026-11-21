@@ -10,3 +10,5 @@ infra/.terraform/
 *.tfstate
 *.tfstate.*
 *.tfvars
+data/real_photos/images/
+data/real_photos/cache/

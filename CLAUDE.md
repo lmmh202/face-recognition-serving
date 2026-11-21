@@ -18,6 +18,8 @@ uv run python -m ml.mismatch  # accuracy under deliberately wrong preprocessing
 uv run uvicorn app.main:app --no-access-log   # needs artifacts/, or ARTIFACTS_DIR
 uv run pytest tests           # single test: add -k test_golden_matches_fetch_lfw_people
 uv run python scripts/load_test.py   # p50/p95 latency and server memory
+uv run python -m ml.evaluate_real    # accuracy on the committed Wikimedia Commons photo set (downloads it)
+uv run python scripts/collect_real_photos.py  # rebuild that set; slow under Wikimedia rate limits, resumable
 ```
 
 Change dependencies with `uv add` / `uv remove`, or edit `pyproject.toml` and run `uv lock`; commit `uv.lock`.
