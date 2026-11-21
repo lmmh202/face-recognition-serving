@@ -1,0 +1,4063 @@
+{
+  "created": "2026-11-21",
+  "complete": true,
+  "source": "Wikimedia Commons, files whose structured data depicts (P180) the person",
+  "selection": {
+    "seed": 0,
+    "per_person": 5,
+    "search_limit": 500,
+    "thumb_widths": [
+      250,
+      330,
+      500,
+      960,
+      1280
+    ],
+    "count_score": 0.5,
+    "second_face_ratio": 0.5,
+    "min_face_side": 64,
+    "duplicate_correlation": 0.95,
+    "several_people_title": "\\b(and|with|y|e|et|und|con|mit|avec|meets?|meeting|met|greets?|receives?|visits?|toured|impone|signing|attended)\\b",
+    "category_fallback": true,
+    "excluded": [
+      7622152,
+      24269191,
+      52156591,
+      63183106,
+      67777419,
+      80626570,
+      99560967,
+      112762668,
+      113491037,
+      117412099,
+      126639802,
+      132341201,
+      143580014,
+      155427187,
+      194627867,
+      196203466
+    ],
+    "upload_limits": [
+      5242880,
+      20000000
+    ]
+  },
+  "people": {
+    "Alejandro Toledo": {
+      "depicts": 38,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 12,
+        "title_names_others": 5,
+        "ok": 5,
+        "too_small": 2,
+        "several_faces": 1,
+        "same_day": 2
+      }
+    },
+    "Alvaro Uribe": {
+      "depicts": 26,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 15,
+        "title_names_others": 2,
+        "ok": 5,
+        "not_a_photograph": 1,
+        "several_faces": 2,
+        "excluded_after_review": 1
+      }
+    },
+    "Amelie Mauresmo": {
+      "depicts": 56,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 21,
+        "ok": 5
+      }
+    },
+    "Andre Agassi": {
+      "depicts": 39,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 10,
+        "ok": 5,
+        "several_faces": 2,
+        "no_face": 1,
+        "small_face": 1,
+        "same_day": 1
+      }
+    },
+    "Angelina Jolie": {
+      "depicts": 153,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 6,
+        "ok": 5,
+        "several_faces": 4,
+        "too_small": 1,
+        "excluded_after_review": 1,
+        "same_day": 1
+      }
+    },
+    "Ariel Sharon": {
+      "depicts": 257,
+      "category": "Ariel Sharon",
+      "category_files": 74,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 222,
+        "title_names_others": 13,
+        "ok": 5,
+        "several_faces": 23,
+        "same_day": 3,
+        "too_small": 2,
+        "excluded_after_review": 1,
+        "not_jpeg_or_png": 2,
+        "not_a_photograph": 2,
+        "small_face": 1
+      }
+    },
+    "Arnold Schwarzenegger": {
+      "depicts": 259,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 9,
+        "ok": 5,
+        "same_day": 7,
+        "several_faces": 2,
+        "title_names_others": 2
+      }
+    },
+    "Atal Bihari Vajpayee": {
+      "depicts": 279,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 51,
+        "several_faces": 33,
+        "too_small": 2,
+        "title_names_others": 41,
+        "ok": 5,
+        "excluded_after_review": 1
+      }
+    },
+    "Bill Clinton": {
+      "depicts": 500,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 22,
+        "several_faces": 5,
+        "title_names_others": 10,
+        "ok": 5,
+        "not_jpeg_or_png": 1,
+        "same_day": 1,
+        "small_face": 1
+      }
+    },
+    "Carlos Menem": {
+      "depicts": 356,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 95,
+        "several_faces": 66,
+        "title_names_others": 43,
+        "small_face": 6,
+        "ok": 5,
+        "not_jpeg_or_png": 1,
+        "same_day": 1,
+        "not_a_photograph": 2,
+        "excluded_after_review": 1
+      }
+    },
+    "Colin Powell": {
+      "depicts": 75,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 45,
+        "title_names_others": 9,
+        "ok": 5,
+        "same_day": 1,
+        "too_small": 1,
+        "several_faces": 5
+      }
+    },
+    "David Beckham": {
+      "depicts": 34,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 9,
+        "several_faces": 1,
+        "ok": 5,
+        "no_face": 2,
+        "small_face": 1,
+        "not_a_photograph": 4,
+        "title_names_others": 1,
+        "same_day": 1
+      }
+    },
+    "Donald Rumsfeld": {
+      "depicts": 305,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 43,
+        "ok": 5,
+        "title_names_others": 19,
+        "several_faces": 2,
+        "same_day": 1
+      }
+    },
+    "George Robertson": {
+      "depicts": 37,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 12,
+        "several_faces": 4,
+        "title_names_others": 2,
+        "ok": 5
+      }
+    },
+    "George W Bush": {
+      "depicts": 500,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 100,
+        "title_names_others": 41,
+        "ok": 5,
+        "several_faces": 23,
+        "not_a_photograph": 1,
+        "no_face": 3,
+        "small_face": 1
+      }
+    },
+    "Gerhard Schroeder": {
+      "depicts": 62,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 19,
+        "several_faces": 3,
+        "small_face": 1,
+        "ok": 5,
+        "same_day": 3,
+        "title_names_others": 1
+      }
+    },
+    "Gloria Macapagal Arroyo": {
+      "depicts": 163,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 61,
+        "not_jpeg_or_png": 2,
+        "several_faces": 11,
+        "ok": 5,
+        "title_names_others": 8,
+        "too_small": 1,
+        "no_face": 2
+      }
+    },
+    "Gray Davis": {
+      "depicts": 5,
+      "category": "Gray Davis",
+      "category_files": 38,
+      "chosen": 3,
+      "checked": {
+        "other_people_depicted": 7,
+        "not_jpeg_or_png": 5,
+        "too_small": 4,
+        "several_faces": 9,
+        "title_names_others": 6,
+        "small_face": 3,
+        "ok": 3,
+        "same_day": 1,
+        "not_a_photograph": 1
+      }
+    },
+    "Guillermo Coria": {
+      "depicts": 5,
+      "category": "Guillermo Coria",
+      "category_files": 7,
+      "chosen": 1,
+      "checked": {
+        "other_people_depicted": 2,
+        "title_names_others": 1,
+        "small_face": 1,
+        "too_small": 1,
+        "several_faces": 1,
+        "ok": 1
+      }
+    },
+    "Hamid Karzai": {
+      "depicts": 148,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 77,
+        "ok": 5,
+        "same_day": 1,
+        "title_names_others": 9,
+        "too_small": 1,
+        "several_faces": 1
+      }
+    },
+    "Hans Blix": {
+      "depicts": 97,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 27,
+        "several_faces": 12,
+        "title_names_others": 3,
+        "ok": 5,
+        "same_day": 2
+      }
+    },
+    "Hugo Chavez": {
+      "depicts": 162,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 70,
+        "ok": 5,
+        "several_faces": 19,
+        "title_names_others": 3,
+        "same_day": 2,
+        "not_jpeg_or_png": 1
+      }
+    },
+    "Igor Ivanov": {
+      "depicts": 4,
+      "category": "Igor Sergeyevich Ivanov",
+      "category_files": 0,
+      "chosen": 1,
+      "checked": {
+        "other_people_depicted": 3,
+        "ok": 1
+      }
+    },
+    "Jack Straw": {
+      "depicts": 38,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 14,
+        "ok": 5,
+        "same_day": 1,
+        "too_small": 1
+      }
+    },
+    "Jacques Chirac": {
+      "depicts": 230,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 28,
+        "several_faces": 6,
+        "ok": 5,
+        "same_day": 1,
+        "too_small": 1
+      }
+    },
+    "Jean Chretien": {
+      "depicts": 76,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 21,
+        "ok": 5,
+        "title_names_others": 3,
+        "several_faces": 2,
+        "not_a_photograph": 1,
+        "too_small": 3
+      }
+    },
+    "Jennifer Aniston": {
+      "depicts": 27,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 6,
+        "ok": 5,
+        "title_names_others": 1,
+        "no_face": 1,
+        "excluded_after_review": 1,
+        "same_day": 2,
+        "too_small": 1,
+        "several_faces": 1
+      }
+    },
+    "Jennifer Capriati": {
+      "depicts": 5,
+      "category": "Jennifer Capriati",
+      "category_files": 5,
+      "chosen": 1,
+      "checked": {
+        "other_people_depicted": 1,
+        "ok": 1,
+        "small_face": 1,
+        "same_day": 1,
+        "too_small": 1
+      }
+    },
+    "Jennifer Lopez": {
+      "depicts": 63,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 18,
+        "several_faces": 4,
+        "small_face": 1,
+        "ok": 5,
+        "excluded_after_review": 1
+      }
+    },
+    "Jeremy Greenstock": {
+      "depicts": 5,
+      "category": "Jeremy Greenstock",
+      "category_files": 6,
+      "chosen": 2,
+      "checked": {
+        "other_people_depicted": 2,
+        "ok": 2,
+        "several_faces": 2
+      }
+    },
+    "Jiang Zemin": {
+      "depicts": 31,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 11,
+        "ok": 5,
+        "several_faces": 2,
+        "excluded_after_review": 1
+      }
+    },
+    "John Ashcroft": {
+      "depicts": 35,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 5,
+        "title_names_others": 3,
+        "ok": 5,
+        "several_faces": 3,
+        "too_small": 1
+      }
+    },
+    "John Negroponte": {
+      "depicts": 33,
+      "category": "John Negroponte",
+      "category_files": 45,
+      "chosen": 3,
+      "checked": {
+        "other_people_depicted": 12,
+        "ok": 3,
+        "title_names_others": 5,
+        "several_faces": 18,
+        "too_small": 3,
+        "same_day": 2,
+        "no_face": 1,
+        "not_jpeg_or_png": 1
+      }
+    },
+    "Jose Maria Aznar": {
+      "depicts": 236,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 27,
+        "several_faces": 4,
+        "title_names_others": 6,
+        "ok": 5,
+        "too_small": 2,
+        "same_day": 2
+      }
+    },
+    "Juan Carlos Ferrero": {
+      "depicts": 34,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 5,
+        "several_faces": 4,
+        "ok": 5,
+        "small_face": 1,
+        "same_day": 1
+      }
+    },
+    "Junichiro Koizumi": {
+      "depicts": 45,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 27,
+        "ok": 5,
+        "too_small": 4,
+        "not_jpeg_or_png": 1,
+        "several_faces": 1,
+        "title_names_others": 1
+      }
+    },
+    "Kofi Annan": {
+      "depicts": 166,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 23,
+        "title_names_others": 1,
+        "not_jpeg_or_png": 1,
+        "ok": 5,
+        "several_faces": 4,
+        "small_face": 1
+      }
+    },
+    "Laura Bush": {
+      "depicts": 500,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 283,
+        "several_faces": 29,
+        "title_names_others": 25,
+        "ok": 5,
+        "not_a_photograph": 2,
+        "small_face": 4
+      }
+    },
+    "Lindsay Davenport": {
+      "depicts": 31,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 13,
+        "several_faces": 4,
+        "ok": 5,
+        "same_day": 2
+      }
+    },
+    "Lleyton Hewitt": {
+      "depicts": 95,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 14,
+        "ok": 5,
+        "small_face": 1,
+        "no_face": 2,
+        "several_faces": 1
+      }
+    },
+    "Luiz Inacio Lula da Silva": {
+      "depicts": 500,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 30,
+        "several_faces": 20,
+        "ok": 5,
+        "title_names_others": 8,
+        "excluded_after_review": 2,
+        "no_face": 1
+      }
+    },
+    "Mahmoud Abbas": {
+      "depicts": 160,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 26,
+        "too_small": 1,
+        "several_faces": 12,
+        "ok": 5,
+        "title_names_others": 4,
+        "same_day": 1
+      }
+    },
+    "Megawati Sukarnoputri": {
+      "depicts": 67,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 14,
+        "title_names_others": 8,
+        "ok": 5,
+        "several_faces": 3,
+        "too_small": 1
+      }
+    },
+    "Michael Bloomberg": {
+      "depicts": 273,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 23,
+        "ok": 5,
+        "too_small": 1
+      }
+    },
+    "Naomi Watts": {
+      "depicts": 91,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 13,
+        "several_faces": 2,
+        "ok": 5,
+        "same_day": 5
+      }
+    },
+    "Nestor Kirchner": {
+      "depicts": 131,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 63,
+        "ok": 5,
+        "several_faces": 3,
+        "title_names_others": 21,
+        "too_small": 1,
+        "same_day": 1
+      }
+    },
+    "Paul Bremer": {
+      "depicts": 3,
+      "category": "Paul Bremer",
+      "category_files": 55,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 17,
+        "ok": 5,
+        "same_day": 1,
+        "small_face": 1,
+        "several_faces": 4,
+        "title_names_others": 1,
+        "no_face": 1
+      }
+    },
+    "Pete Sampras": {
+      "depicts": 16,
+      "category": "Pete Sampras",
+      "category_files": 17,
+      "chosen": 3,
+      "checked": {
+        "other_people_depicted": 8,
+        "ok": 3,
+        "too_small": 1,
+        "same_day": 4,
+        "several_faces": 1
+      }
+    },
+    "Recep Tayyip Erdogan": {
+      "depicts": 411,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 74,
+        "title_names_others": 7,
+        "several_faces": 7,
+        "ok": 5,
+        "same_day": 1,
+        "excluded_after_review": 1,
+        "no_face": 1,
+        "too_small": 1
+      }
+    },
+    "Ricardo Lagos": {
+      "depicts": 87,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 11,
+        "ok": 5,
+        "title_names_others": 1
+      }
+    },
+    "Roh Moo-hyun": {
+      "depicts": 82,
+      "category": "Roh Moo-hyun",
+      "category_files": 25,
+      "chosen": 4,
+      "checked": {
+        "other_people_depicted": 41,
+        "not_a_photograph": 1,
+        "several_faces": 23,
+        "too_small": 8,
+        "title_names_others": 5,
+        "small_face": 1,
+        "ok": 4,
+        "same_day": 3,
+        "no_face": 8,
+        "excluded_after_review": 1,
+        "not_jpeg_or_png": 2
+      }
+    },
+    "Rudolph Giuliani": {
+      "depicts": 265,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 16,
+        "small_face": 2,
+        "ok": 5,
+        "same_day": 12,
+        "not_a_photograph": 1,
+        "several_faces": 6,
+        "title_names_others": 3,
+        "not_jpeg_or_png": 1
+      }
+    },
+    "Saddam Hussein": {
+      "depicts": 37,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 14,
+        "ok": 5,
+        "not_a_photograph": 1,
+        "small_face": 1,
+        "excluded_after_review": 1,
+        "title_names_others": 1,
+        "same_day": 4
+      }
+    },
+    "Serena Williams": {
+      "depicts": 500,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 11,
+        "ok": 5,
+        "same_day": 2,
+        "over_upload_limit": 1
+      }
+    },
+    "Silvio Berlusconi": {
+      "depicts": 500,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 26,
+        "ok": 5,
+        "too_small": 2,
+        "several_faces": 9
+      }
+    },
+    "Tiger Woods": {
+      "depicts": 290,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 17,
+        "no_face": 6,
+        "several_faces": 3,
+        "small_face": 3,
+        "ok": 5,
+        "same_day": 5,
+        "excluded_after_review": 1
+      }
+    },
+    "Tom Daschle": {
+      "depicts": 17,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 1,
+        "ok": 5,
+        "same_day": 4,
+        "not_jpeg_or_png": 1,
+        "no_face": 1,
+        "several_faces": 1
+      }
+    },
+    "Tom Ridge": {
+      "depicts": 26,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 3,
+        "ok": 5,
+        "title_names_others": 8,
+        "several_faces": 4,
+        "small_face": 1,
+        "not_a_photograph": 2
+      }
+    },
+    "Tony Blair": {
+      "depicts": 500,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 21,
+        "several_faces": 8,
+        "ok": 5,
+        "same_day": 3,
+        "title_names_others": 1,
+        "too_small": 1
+      }
+    },
+    "Vicente Fox": {
+      "depicts": 130,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 5,
+        "ok": 5,
+        "same_day": 6,
+        "title_names_others": 1
+      }
+    },
+    "Vladimir Putin": {
+      "depicts": 500,
+      "category": null,
+      "category_files": 0,
+      "chosen": 5,
+      "checked": {
+        "other_people_depicted": 42,
+        "ok": 5,
+        "several_faces": 15,
+        "title_names_others": 12,
+        "excluded_after_review": 1,
+        "not_jpeg_or_png": 1
+      }
+    },
+    "Winona Ryder": {
+      "depicts": 19,
+      "category": "Winona Ryder",
+      "category_files": 6,
+      "chosen": 4,
+      "checked": {
+        "other_people_depicted": 7,
+        "several_faces": 5,
+        "ok": 4,
+        "same_day": 4,
+        "not_a_photograph": 1,
+        "excluded_after_review": 1,
+        "no_face": 1,
+        "not_jpeg_or_png": 1
+      }
+    }
+  },
+  "photos": [
+    {
+      "label": "Alejandro Toledo",
+      "label_source": "depicts",
+      "file": "alejandro-toledo_97056446.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Alejandro_Toledo_2002.jpg/1280px-Alejandro_Toledo_2002.jpg",
+      "sha256": "73d7c8aa806e93a86d6eb3cf063f4feca4e82299fa11dcdbd2bb838fa33afc0c",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Alejandro_Toledo_2002.jpg",
+      "license": "No restrictions",
+      "artist": "",
+      "year": 2002
+    },
+    {
+      "label": "Alejandro Toledo",
+      "label_source": "depicts",
+      "file": "alejandro-toledo_3483859.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Alejandro_Toledo_DAVOS2003.jpg/1280px-Alejandro_Toledo_DAVOS2003.jpg",
+      "sha256": "be84232287bcfd60bffb506c4a2e00e354b22078d194db899ea3b7861ec5f1d3",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Alejandro_Toledo_DAVOS2003.jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "Copyright World Economic Forum (www.weforum.org), swiss-image.ch/Photo by Daniel Ammann",
+      "year": 2003
+    },
+    {
+      "label": "Alejandro Toledo",
+      "label_source": "depicts",
+      "file": "alejandro-toledo_39779458.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Alejandro_Toledo_2015_%28cropped%29.jpg/1280px-Alejandro_Toledo_2015_%28cropped%29.jpg",
+      "sha256": "2b6d0833cffa1deee39380c8b0d808257579765cc0e055e4cd517446ed88b971",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Alejandro_Toledo_2015_(cropped).jpg",
+      "license": "CC BY 2.0",
+      "artist": "San Francisco Foghorn",
+      "year": 2015
+    },
+    {
+      "label": "Alejandro Toledo",
+      "label_source": "depicts",
+      "file": "alejandro-toledo_3395980.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Alejandro_Toledo_%288682%29.jpg/500px-Alejandro_Toledo_%288682%29.jpg",
+      "sha256": "e4ff50a9347c4585efb59cd66d5b53b22336dc735fcee30af63450e803e38bbc",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Alejandro_Toledo_(8682).jpg",
+      "license": "Attribution",
+      "artist": "Marcello Casal Jr./ABr",
+      "year": 2003
+    },
+    {
+      "label": "Alejandro Toledo",
+      "label_source": "depicts",
+      "file": "alejandro-toledo_17613742.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Alejandro_Toledo_-_Jerusalem_2011.jpg/960px-Alejandro_Toledo_-_Jerusalem_2011.jpg",
+      "sha256": "8c44372e73933cde73422fb7ba2387ca4e17f8b147f6c218cf959199fc567fba",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Alejandro_Toledo_-_Jerusalem_2011.jpg",
+      "license": "CC BY-SA 3.0",
+      "artist": "Michael Thaidigsmann",
+      "year": 2011
+    },
+    {
+      "label": "Alvaro Uribe",
+      "label_source": "depicts",
+      "file": "alvaro-uribe_21355751.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/%C3%81lvaro_Uribe_V%C3%A9lez.jpg/330px-%C3%81lvaro_Uribe_V%C3%A9lez.jpg",
+      "sha256": "a4c7f1e31c2671afdb8565a2287bdf4a1f20e4bc56080f3b2eba67a8303ca75a",
+      "page_url": "https://commons.wikimedia.org/wiki/File:%C3%81lvaro_Uribe_V%C3%A9lez.jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "World Economic Forum",
+      "year": 2012
+    },
+    {
+      "label": "Alvaro Uribe",
+      "label_source": "depicts",
+      "file": "alvaro-uribe_71592673.png",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/%C3%81lvaro_Uribe_V%C3%A9lez.png/500px-%C3%81lvaro_Uribe_V%C3%A9lez.png",
+      "sha256": "e98a2bd27821181dcbfaf9a58d1ea38fdcff31ece1a1ec16c38768d215182b25",
+      "page_url": "https://commons.wikimedia.org/wiki/File:%C3%81lvaro_Uribe_V%C3%A9lez.png",
+      "license": "CC BY-SA 2.0",
+      "artist": "Ministerio de Relaciones Exteriores",
+      "year": 2010
+    },
+    {
+      "label": "Alvaro Uribe",
+      "label_source": "depicts",
+      "file": "alvaro-uribe_147340197.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/La_presidenta_Diaz_Ayuso_y_%C3%81lvaro_Uribe_%28cropped%29.jpg/500px-La_presidenta_Diaz_Ayuso_y_%C3%81lvaro_Uribe_%28cropped%29.jpg",
+      "sha256": "bc95bae0f1c22111544b66f52ec08a15cb18ac9d91f3acb9efdefbfa235d4d61",
+      "page_url": "https://commons.wikimedia.org/wiki/File:La_presidenta_Diaz_Ayuso_y_%C3%81lvaro_Uribe_(cropped).jpg",
+      "license": "CC BY-SA 2.5",
+      "artist": "PP Comunidad de Madrid",
+      "year": 2024
+    },
+    {
+      "label": "Alvaro Uribe",
+      "label_source": "depicts",
+      "file": "alvaro-uribe_3368658.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/%C3%81lvaro_Uribe_%28cropped%29.jpg/330px-%C3%81lvaro_Uribe_%28cropped%29.jpg",
+      "sha256": "ca310bee7975649c87e4f3616280602258b290b31f2d215603d6ccc71a4e3441",
+      "page_url": "https://commons.wikimedia.org/wiki/File:%C3%81lvaro_Uribe_(cropped).jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "Center for American Progress",
+      "year": 2007
+    },
+    {
+      "label": "Alvaro Uribe",
+      "label_source": "depicts",
+      "file": "alvaro-uribe_799203.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Kolumbianischer_Pr%C3%A4sident_Alvaro_Uribe_2004.jpg/1280px-Kolumbianischer_Pr%C3%A4sident_Alvaro_Uribe_2004.jpg",
+      "sha256": "2464ca08ab204770f265f26a6a2106e1b62b2ec6002a1c00784e96033af20bfa",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Kolumbianischer_Pr%C3%A4sident_Alvaro_Uribe_2004.jpg",
+      "license": "Public domain",
+      "artist": "Helene C. Stikkel",
+      "year": 2004
+    },
+    {
+      "label": "Amelie Mauresmo",
+      "label_source": "depicts",
+      "file": "amelie-mauresmo_17366291.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Mauresmo_Canada_2009.jpg/330px-Mauresmo_Canada_2009.jpg",
+      "sha256": "a78bec48117b2f28d8d7de7b1d9619f03f75a0ba19fca411f897e6d8afd21603",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Mauresmo_Canada_2009.jpg",
+      "license": "CC BY 2.0",
+      "artist": "ataelw",
+      "year": 2009
+    },
+    {
+      "label": "Amelie Mauresmo",
+      "label_source": "depicts",
+      "file": "amelie-mauresmo_36825442.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Amelie_Mauresmo_%2814235906458%29.jpg/960px-Amelie_Mauresmo_%2814235906458%29.jpg",
+      "sha256": "2e7e042bbf66f179da2a877dbc97b1c6f1d24e3247fbf55ce5cf0a80af5833c2",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Amelie_Mauresmo_(14235906458).jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "Carine06 from UK",
+      "year": 2014
+    },
+    {
+      "label": "Amelie Mauresmo",
+      "label_source": "depicts",
+      "file": "amelie-mauresmo_8368415.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Am%C3%A9lie_Mauresmo_at_the_2009_US_Open_03.jpg/960px-Am%C3%A9lie_Mauresmo_at_the_2009_US_Open_03.jpg",
+      "sha256": "e1835a3c9e722d3f262850e86054bc741d2b84b4ba7067dd0bafa68a3c131466",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Am%C3%A9lie_Mauresmo_at_the_2009_US_Open_03.jpg",
+      "license": "CC BY 2.0",
+      "artist": "Charlie Cowins",
+      "year": 2009
+    },
+    {
+      "label": "Amelie Mauresmo",
+      "label_source": "depicts",
+      "file": "amelie-mauresmo_5123499.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Am%C3%A9lie_Mauresmo_2008.jpg/960px-Am%C3%A9lie_Mauresmo_2008.jpg",
+      "sha256": "2f419925195fb71dc601177557d6106c2ab196b754b7e7d9abdebf719b484e71",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Am%C3%A9lie_Mauresmo_2008.jpg",
+      "license": "CC BY 2.0",
+      "artist": "Jean &amp; Nathalie",
+      "year": 2008
+    },
+    {
+      "label": "Amelie Mauresmo",
+      "label_source": "depicts",
+      "file": "amelie-mauresmo_8848447.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Amelie_Mauresmo.jpg/330px-Amelie_Mauresmo.jpg",
+      "sha256": "50d83eb58fc4b703672edc21240776ae7d91110c243a01454cdd6406a37cc6bc",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Amelie_Mauresmo.jpg",
+      "license": "Attribution",
+      "artist": "Bill Mitchell",
+      "year": 2004
+    },
+    {
+      "label": "Andre Agassi",
+      "label_source": "depicts",
+      "file": "andre-agassi_74930260.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Andre_Agassi_1999.jpg/960px-Andre_Agassi_1999.jpg",
+      "sha256": "5aad905f08e49ddc479e05eba324487e4e3185890f522455f8e4d2f15a62be29",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Andre_Agassi_1999.jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "Kingkongphoto &amp; www.celebrity-photos.com from Laurel Maryland, USA",
+      "year": 2018
+    },
+    {
+      "label": "Andre Agassi",
+      "label_source": "depicts",
+      "file": "andre-agassi_16872375.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Andre_Agassi6.jpg/1280px-Andre_Agassi6.jpg",
+      "sha256": "9ece213b25fbb925396e49f4d840f7fceb2e2917c1378ce3acda34564f1dc7cd",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Andre_Agassi6.jpg",
+      "license": "CC BY-SA 3.0",
+      "artist": "Laslovarga",
+      "year": 2011
+    },
+    {
+      "label": "Andre Agassi",
+      "label_source": "depicts",
+      "file": "andre-agassi_16104375.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/RogersCup2011_Legends_AndreAgassi7.jpg/1280px-RogersCup2011_Legends_AndreAgassi7.jpg",
+      "sha256": "430d7329d6fedf72f4036c644af962caa12cd09fd852c5d6efe195a8a63a2ab4",
+      "page_url": "https://commons.wikimedia.org/wiki/File:RogersCup2011_Legends_AndreAgassi7.jpg",
+      "license": "CC BY-SA 3.0",
+      "artist": "ZankaM",
+      "year": 2011
+    },
+    {
+      "label": "Andre Agassi",
+      "label_source": "depicts",
+      "file": "andre-agassi_1728661.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Andre_Agassi_2005_US_Clay_Court.jpg/500px-Andre_Agassi_2005_US_Clay_Court.jpg",
+      "sha256": "e3e38ff8224055b7b612723eae79dbf77f1cf27abd843642abeb5d062b77aa31",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Andre_Agassi_2005_US_Clay_Court.jpg",
+      "license": "CC BY-SA 2.5",
+      "artist": "Chris Josefy",
+      "year": 2005
+    },
+    {
+      "label": "Andre Agassi",
+      "label_source": "depicts",
+      "file": "andre-agassi_145790173.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Andre_Agassi.jpg/1280px-Andre_Agassi.jpg",
+      "sha256": "525cc6e4df305073363ef925c8c353297cfe0cdb0d30a5b329f9d05069db7610",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Andre_Agassi.jpg",
+      "license": "CC BY 4.0",
+      "artist": "Xfranksun",
+      "year": 2015
+    },
+    {
+      "label": "Angelina Jolie",
+      "label_source": "depicts",
+      "file": "angelina-jolie_15975285.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Angelina_Jolie_Cannes_2011.jpg/250px-Angelina_Jolie_Cannes_2011.jpg",
+      "sha256": "34fafa04cc75859a4e46f14d4b56642b5cf4a2efee1154bda7876739a003b4b1",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Angelina_Jolie_Cannes_2011.jpg",
+      "license": "CC BY-SA 3.0",
+      "artist": "Georges Biard",
+      "year": 2011
+    },
+    {
+      "label": "Angelina Jolie",
+      "label_source": "depicts",
+      "file": "angelina-jolie_153809480.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Angelina_Jolie_at_the_2024_Toronto_International_Film_Festival.jpg/1280px-Angelina_Jolie_at_the_2024_Toronto_International_Film_Festival.jpg",
+      "sha256": "0ed33f920e00c0e763164de818bcfc9be1a819d06e1314c424f7074a7814f820",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Angelina_Jolie_at_the_2024_Toronto_International_Film_Festival.jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "John Sears",
+      "year": 2024
+    },
+    {
+      "label": "Angelina Jolie",
+      "label_source": "depicts",
+      "file": "angelina-jolie_81056094.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Angelina_Jolie_%2848462857807%29.jpg/1280px-Angelina_Jolie_%2848462857807%29.jpg",
+      "sha256": "04452226637ee81f5312f9fdf10b20c5e5db2768b344e6de20aa009dd5a03bcc",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Angelina_Jolie_(48462857807).jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "Gage Skidmore from Peoria, AZ, United States of America",
+      "year": 2019
+    },
+    {
+      "label": "Angelina Jolie",
+      "label_source": "depicts",
+      "file": "angelina-jolie_36817027.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Angelina_Jolie_November_2014.jpg/1280px-Angelina_Jolie_November_2014.jpg",
+      "sha256": "324937e732d0ae68a64885f73a13f60424a81e5267af5a010c480cde44358226",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Angelina_Jolie_November_2014.jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "Eva Rinaldi",
+      "year": 2014
+    },
+    {
+      "label": "Angelina Jolie",
+      "label_source": "depicts",
+      "file": "angelina-jolie_61000284.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Angelina_Jolie_March_2017.jpg/1280px-Angelina_Jolie_March_2017.jpg",
+      "sha256": "850ef355fd881e645f72a9bacb869c7a78cb0032f8e8dbffaad2f02b67d544c4",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Angelina_Jolie_March_2017.jpg",
+      "license": "CC BY 2.0",
+      "artist": "Foreign and Commonwealth Office",
+      "year": 2017
+    },
+    {
+      "label": "Ariel Sharon",
+      "label_source": "depicts",
+      "file": "ariel-sharon_120252954.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Ariel_Sharon%2C_by_Jim_Wallace_%28Smithsonian_Institution%29_%281%29.jpg/500px-Ariel_Sharon%2C_by_Jim_Wallace_%28Smithsonian_Institution%29_%281%29.jpg",
+      "sha256": "f589d50f9a63b4175c07ce130262ca36f6eaa0e6ba1eea362deb44ee18648afa",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Ariel_Sharon,_by_Jim_Wallace_(Smithsonian_Institution)_(1).jpg",
+      "license": "CC BY 2.0",
+      "artist": "Jim Wallace (Smithsonian Institution)",
+      "year": 2004
+    },
+    {
+      "label": "Ariel Sharon",
+      "label_source": "depicts",
+      "file": "ariel-sharon_20585564.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ci-Club16.jpg/1280px-Ci-Club16.jpg",
+      "sha256": "cdca430bd528060bec7957e7c53ac4647e6e6fe5a6ae52da239a98e45faba03c",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Ci-Club16.jpg",
+      "license": "CC BY-SA 3.0",
+      "artist": "Itzuvit",
+      "year": 2012
+    },
+    {
+      "label": "Ariel Sharon",
+      "label_source": "depicts",
+      "file": "ariel-sharon_498320.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Ariel_Sharon_2001-03-19.jpg/500px-Ariel_Sharon_2001-03-19.jpg",
+      "sha256": "3529b5143c547173bdfcc6e822105ada6c291f56adb1f3af672f7da528e94036",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Ariel_Sharon_2001-03-19.jpg",
+      "license": "Public domain",
+      "artist": "Robert D. Ward",
+      "year": 2001
+    },
+    {
+      "label": "Ariel Sharon",
+      "label_source": "depicts",
+      "file": "ariel-sharon_156029164.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Ariel_Sharon_%2800320172%29.jpg/1280px-Ariel_Sharon_%2800320172%29.jpg",
+      "sha256": "4067ee9755aba9103f35feb49e1805b720dc84890000431d95f64e0f4adc2876",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Ariel_Sharon_(00320172).jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "Knesset photographer",
+      "year": 1974
+    },
+    {
+      "label": "Ariel Sharon",
+      "label_source": "category",
+      "file": "ariel-sharon_148266254.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Ariel_Sharon_official_portrait_%28cropped%29.jpg/1280px-Ariel_Sharon_official_portrait_%28cropped%29.jpg",
+      "sha256": "8764ce42f63265d53cba0cac66abc19e7f5383fc81582d2855bf4ae283d7cf0c",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Ariel_Sharon_official_portrait_(cropped).jpg",
+      "license": "CC BY-SA 3.0",
+      "artist": "Yaakov Saar",
+      "year": 2021
+    },
+    {
+      "label": "Arnold Schwarzenegger",
+      "label_source": "depicts",
+      "file": "arnold-schwarzenegger_73731522.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Arnold_Schwarzenegger_speaks_at_New_Way_California_Press_event_in_Los_Angeles_%2827088445338%29.jpg/1280px-Arnold_Schwarzenegger_speaks_at_New_Way_California_Press_event_in_Los_Angeles_%2827088445338%29.jpg",
+      "sha256": "73dfe05ae4ffc83a292a0d83c94d7523c0a86f23a09adc64f12b2374d6fc821c",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Arnold_Schwarzenegger_speaks_at_New_Way_California_Press_event_in_Los_Angeles_(27088445338).jpg",
+      "license": "CC BY 2.0",
+      "artist": "IVN News",
+      "year": 2018
+    },
+    {
+      "label": "Arnold Schwarzenegger",
+      "label_source": "depicts",
+      "file": "arnold-schwarzenegger_111152932.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Arnold_Schwarzenegger_in_Film_Festival_%28cropped%29.jpg/1280px-Arnold_Schwarzenegger_in_Film_Festival_%28cropped%29.jpg",
+      "sha256": "850eff37ee95f610e5cd7f2400e6575ada3d860e5d552735fed8c1d62b049080",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Arnold_Schwarzenegger_in_Film_Festival_(cropped).jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "Mario Pena",
+      "year": 2017
+    },
+    {
+      "label": "Arnold Schwarzenegger",
+      "label_source": "depicts",
+      "file": "arnold-schwarzenegger_158069250.png",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Governor_Schwarzenegger_%28headshot%29.png/330px-Governor_Schwarzenegger_%28headshot%29.png",
+      "sha256": "77cc62d277277395223bda6272bdaced7d357e609a1fae87185b909ae9939d00",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Governor_Schwarzenegger_(headshot).png",
+      "license": "Public domain",
+      "artist": "State of California",
+      "year": 2003
+    },
+    {
+      "label": "Arnold Schwarzenegger",
+      "label_source": "depicts",
+      "file": "arnold-schwarzenegger_80706141.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Arnold_Schwarzenegger_%2848354873321%29.jpg/1280px-Arnold_Schwarzenegger_%2848354873321%29.jpg",
+      "sha256": "181f5f7777784a7518edab1a39a752445c44117c0740a8400979e95489fb1e73",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Arnold_Schwarzenegger_(48354873321).jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "Gage Skidmore from Peoria, AZ, United States of America",
+      "year": 2019
+    },
+    {
+      "label": "Arnold Schwarzenegger",
+      "label_source": "depicts",
+      "file": "arnold-schwarzenegger_155075177.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Arnold_Schwarzenegger_1984_%28cropped%29.jpg/1280px-Arnold_Schwarzenegger_1984_%28cropped%29.jpg",
+      "sha256": "e585a0820a8754bb886fb24f016b797e020b313aa0fd77f68e52aacaddd1ec5a",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Arnold_Schwarzenegger_1984_(cropped).jpg",
+      "license": "CC BY 4.0",
+      "artist": "Mary Frampton, Los Angeles Times",
+      "year": 1984
+    },
+    {
+      "label": "Atal Bihari Vajpayee",
+      "label_source": "depicts",
+      "file": "atal-bihari-vajpayee_71724044.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Ab_vajpayee_cropped.jpg/250px-Ab_vajpayee_cropped.jpg",
+      "sha256": "8813473d1ffe0b12951c8a7288fd067d5ef706f6a8499f09cd02b2593b75d97c",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Ab_vajpayee_cropped.jpg",
+      "license": "Public domain",
+      "artist": "",
+      "year": null
+    },
+    {
+      "label": "Atal Bihari Vajpayee",
+      "label_source": "depicts",
+      "file": "atal-bihari-vajpayee_71508628.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/The_Prime_Minister_Shri_Atal_Bihari_Vajpayee_casting_his_vote_at_a_polling_booth_in_Lucknow%2C_Uttar_Pradesh_on_May_5%2C_2004.jpg/500px-The_Prime_Minister_Shri_Atal_Bihari_Vajpayee_casting_his_vote_at_a_polling_booth_in_Lucknow%2C_Uttar_Pradesh_on_May_5%2C_2004.jpg",
+      "sha256": "533d9a9febd2f8c0bef3c23dce802f53f415fd0d207b58c8b003a3a3b8b00f29",
+      "page_url": "https://commons.wikimedia.org/wiki/File:The_Prime_Minister_Shri_Atal_Bihari_Vajpayee_casting_his_vote_at_a_polling_booth_in_Lucknow,_Uttar_Pradesh_on_May_5,_2004.jpg",
+      "license": "GODL-India",
+      "artist": "Government of India",
+      "year": 2004
+    },
+    {
+      "label": "Atal Bihari Vajpayee",
+      "label_source": "depicts",
+      "file": "atal-bihari-vajpayee_79269107.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/The_Prime_Minister_Shri_Atal_Bihari_Vajpayee_delivering_his_speech_at_the_12th_SAARC_Summit_in_Islamabad%2C_Pakistan_on_January_4%2C_2004_%281%29_%28cropped%29.jpg/330px-The_Prime_Minister_Shri_Atal_Bihari_Vajpayee_delivering_his_speech_at_the_12th_SAARC_Summit_in_Islamabad%2C_Pakistan_on_January_4%2C_2004_%281%29_%28cropped%29.jpg",
+      "sha256": "7056058b276219e81c6c6dd14872403057f97a3abd85d1f5007c4d2cbcb573cc",
+      "page_url": "https://commons.wikimedia.org/wiki/File:The_Prime_Minister_Shri_Atal_Bihari_Vajpayee_delivering_his_speech_at_the_12th_SAARC_Summit_in_Islamabad,_Pakistan_on_January_4,_2004_(1)_(cropped).jpg",
+      "license": "GODL-India",
+      "artist": "Government of India",
+      "year": 2004
+    },
+    {
+      "label": "Atal Bihari Vajpayee",
+      "label_source": "depicts",
+      "file": "atal-bihari-vajpayee_90928038.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Atal_Bihari_Vajpayee_2004_%28cropped%29.jpg/500px-Atal_Bihari_Vajpayee_2004_%28cropped%29.jpg",
+      "sha256": "266281e729faf07ae275624be42ad487a4338c743912dfd6d32def31e27ddf0e",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Atal_Bihari_Vajpayee_2004_(cropped).jpg",
+      "license": "GODL-India",
+      "artist": "Government of India",
+      "year": 2004
+    },
+    {
+      "label": "Atal Bihari Vajpayee",
+      "label_source": "depicts",
+      "file": "atal-bihari-vajpayee_106079198.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/A_B_Vajpayee.jpg/960px-A_B_Vajpayee.jpg",
+      "sha256": "47ef797617c90271deb5de85fe55ca7c73b1d77ece9db368eda66bedd7859195",
+      "page_url": "https://commons.wikimedia.org/wiki/File:A_B_Vajpayee.jpg",
+      "license": "CC BY 2.0",
+      "artist": "Deccan Herald",
+      "year": 2017
+    },
+    {
+      "label": "Bill Clinton",
+      "label_source": "depicts",
+      "file": "bill-clinton_57595027.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Post-DNC_rally_%2828020181334%29.jpg/1280px-Post-DNC_rally_%2828020181334%29.jpg",
+      "sha256": "9df902c3502d0f0d069c8e7b5c70ca36dbdb777cb41005d4aa78c932790e0fbe",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Post-DNC_rally_(28020181334).jpg",
+      "license": "CC BY 2.0",
+      "artist": "neverbutterfly",
+      "year": 2016
+    },
+    {
+      "label": "Bill Clinton",
+      "label_source": "depicts",
+      "file": "bill-clinton_52316239.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Bill_Clinton_%2830349135525%29.jpg/1280px-Bill_Clinton_%2830349135525%29.jpg",
+      "sha256": "e72f715a97d341cfd3b2861cbe627327ab383411c0652e0623a157c1406f39db",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Bill_Clinton_(30349135525).jpg",
+      "license": "CC BY 2.0",
+      "artist": "Hayden Schiff from Cincinnati, USA",
+      "year": 2016
+    },
+    {
+      "label": "Bill Clinton",
+      "label_source": "depicts",
+      "file": "bill-clinton_52818325.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Bill_Clinton_Rally_%2830041810824%29.jpg/1280px-Bill_Clinton_Rally_%2830041810824%29.jpg",
+      "sha256": "b20a304740c70f8eb12edecfb14a9d0b8dd6f20ccc68af79f5ad83258516393b",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Bill_Clinton_Rally_(30041810824).jpg",
+      "license": "CC BY 2.0",
+      "artist": "Kristopher Harris from Charlotte, NC",
+      "year": 2016
+    },
+    {
+      "label": "Bill Clinton",
+      "label_source": "depicts",
+      "file": "bill-clinton_154821079.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Bill_Clinton_%2854112747499%29.jpg/1280px-Bill_Clinton_%2854112747499%29.jpg",
+      "sha256": "aa88327aa0329ba9e229deed6ae4f650d1822b4df436964fc3fdab46976be330",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Bill_Clinton_(54112747499).jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "Gage Skidmore from Surprise, AZ, United States of America",
+      "year": 2024
+    },
+    {
+      "label": "Bill Clinton",
+      "label_source": "depicts",
+      "file": "bill-clinton_136198440.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/P20230202AS-2337_%2852681155714%29_%28cropped%29.jpg/500px-P20230202AS-2337_%2852681155714%29_%28cropped%29.jpg",
+      "sha256": "bef13d75548bae25efe7fbdf57b9bca4fbecb57949cda3828caaa52156b6e4fe",
+      "page_url": "https://commons.wikimedia.org/wiki/File:P20230202AS-2337_(52681155714)_(cropped).jpg",
+      "license": "Public domain",
+      "artist": "The White House",
+      "year": 2023
+    },
+    {
+      "label": "Carlos Menem",
+      "label_source": "depicts",
+      "file": "carlos-menem_99863613.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Fernando_collor_de_melo_1991.jpg/1280px-Fernando_collor_de_melo_1991.jpg",
+      "sha256": "f7d47cba07de1580ba5626ec9cb199bd82a5a38ae6f251bf1c5039149f39f3f3",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Fernando_collor_de_melo_1991.jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "IAEA Imagebank",
+      "year": 1991
+    },
+    {
+      "label": "Carlos Menem",
+      "label_source": "depicts",
+      "file": "carlos-menem_80614943.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Menem_en_IAEF_02.jpg/330px-Menem_en_IAEF_02.jpg",
+      "sha256": "c0e1971d11a001b436b8ded69d9effa76eb371f735edac9bc0c4bc346ac74a4c",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Menem_en_IAEF_02.jpg",
+      "license": "CC BY 2.0",
+      "artist": "Víctor Bugge",
+      "year": 1996
+    },
+    {
+      "label": "Carlos Menem",
+      "label_source": "depicts",
+      "file": "carlos-menem_80581552.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Menem_en_La_Caja.jpg/330px-Menem_en_La_Caja.jpg",
+      "sha256": "f3171730cbb3ec6294fb088320a5e199714fddf3d1c26b70c8e82fac5a43d0e8",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Menem_en_La_Caja.jpg",
+      "license": "CC BY 2.0",
+      "artist": "Víctor Bugge",
+      "year": 1986
+    },
+    {
+      "label": "Carlos Menem",
+      "label_source": "depicts",
+      "file": "carlos-menem_97130369.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Carlos-menem-1989-crop.jpg/250px-Carlos-menem-1989-crop.jpg",
+      "sha256": "9a8e5705d756e98f4c05b796fdd5564e5fa86ffcc277f23b2adddf77b366abf8",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Carlos-menem-1989-crop.jpg",
+      "license": "CC BY 2.5 ar",
+      "artist": "Casa Rosada",
+      "year": 1989
+    },
+    {
+      "label": "Carlos Menem",
+      "label_source": "depicts",
+      "file": "carlos-menem_80640954.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Menem_encabeza_reuni%C3%B3n_de_gabinete_19_dic_1996.jpg/330px-Menem_encabeza_reuni%C3%B3n_de_gabinete_19_dic_1996.jpg",
+      "sha256": "b9bd5b7a583b9cdab8af9a40602290a1b38d948c1c1c58dd6e648b5483db03ed",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Menem_encabeza_reuni%C3%B3n_de_gabinete_19_dic_1996.jpg",
+      "license": "CC BY 2.0",
+      "artist": "Víctor Bugge",
+      "year": 1996
+    },
+    {
+      "label": "Colin Powell",
+      "label_source": "depicts",
+      "file": "colin-powell_93283990.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Colin_Powell_2017_%281%29.jpg/330px-Colin_Powell_2017_%281%29.jpg",
+      "sha256": "ab6a4113236eb8a0b3007d8fcb464a25a55a6bf356d06c5593e30d942deff46c",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Colin_Powell_2017_(1).jpg",
+      "license": "Public domain",
+      "artist": "U.S. Department of State from United States",
+      "year": 2017
+    },
+    {
+      "label": "Colin Powell",
+      "label_source": "depicts",
+      "file": "colin-powell_18214914.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/ColinPowell.JPEG/1280px-ColinPowell.JPEG",
+      "sha256": "beda014a944238d52fb6e5a0cab5c9a3e130a2fc748c5b688af36b47801cbc23",
+      "page_url": "https://commons.wikimedia.org/wiki/File:ColinPowell.JPEG",
+      "license": "Public domain",
+      "artist": "U.S. Army",
+      "year": 1986
+    },
+    {
+      "label": "Colin Powell",
+      "label_source": "depicts",
+      "file": "colin-powell_822172.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Colin_Powell_official_Secretary_of_State_photo.jpg/1280px-Colin_Powell_official_Secretary_of_State_photo.jpg",
+      "sha256": "e1b29ded7614172ccca557d7c7d9c3defbd676b7b96b818766f572ca38b083e0",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Colin_Powell_official_Secretary_of_State_photo.jpg",
+      "license": "Public domain",
+      "artist": "Department of State of the United States of America",
+      "year": 2001
+    },
+    {
+      "label": "Colin Powell",
+      "label_source": "depicts",
+      "file": "colin-powell_692308.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Genpowell.jpg/250px-Genpowell.jpg",
+      "sha256": "6094153f6510ebf9aecd18cc37b71ce69a1cd449df372c5b6bfc54560e9c35e2",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Genpowell.jpg",
+      "license": "Public domain",
+      "artist": "",
+      "year": null
+    },
+    {
+      "label": "Colin Powell",
+      "label_source": "depicts",
+      "file": "colin-powell_60099248.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Colin_Powell_arrives_for_2009_Obama_inauguration_%28cropped%29.JPG/1280px-Colin_Powell_arrives_for_2009_Obama_inauguration_%28cropped%29.JPG",
+      "sha256": "ceeb0e485fe16198b46abe674c5b962321d7d5b22ab3fe87587c54a01b903151",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Colin_Powell_arrives_for_2009_Obama_inauguration_(cropped).JPG",
+      "license": "Public domain",
+      "artist": "Tech. Sgt. Suzanne M. Day, USAF",
+      "year": 2009
+    },
+    {
+      "label": "David Beckham",
+      "label_source": "depicts",
+      "file": "david-beckham_33884766.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Beckswimbledon.jpg/1280px-Beckswimbledon.jpg",
+      "sha256": "df3cb48c072d23be57c31b9020ffad5601865ad2eb56ebd38bed73518ed945de",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Beckswimbledon.jpg",
+      "license": "CC BY-SA 3.0",
+      "artist": "Brian MInkoff-London Pixels",
+      "year": 2014
+    },
+    {
+      "label": "David Beckham",
+      "label_source": "depicts",
+      "file": "david-beckham_16627374.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/David_Beckham_MLS_All_Stars_2011.jpg/1280px-David_Beckham_MLS_All_Stars_2011.jpg",
+      "sha256": "16c1c3b5f2beaa18716aa7617948bb284291540096f02493a482275689153f05",
+      "page_url": "https://commons.wikimedia.org/wiki/File:David_Beckham_MLS_All_Stars_2011.jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "Ian C",
+      "year": 2011
+    },
+    {
+      "label": "David Beckham",
+      "label_source": "depicts",
+      "file": "david-beckham_26953908.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/David_Beckham_2005.jpg/330px-David_Beckham_2005.jpg",
+      "sha256": "28db71252c862a1cfe0371110758ffe71a9bf074a229ded730ad3b8b40f4f9b3",
+      "page_url": "https://commons.wikimedia.org/wiki/File:David_Beckham_2005.jpg",
+      "license": "CC BY-SA 3.0",
+      "artist": "Christophe95",
+      "year": 2005
+    },
+    {
+      "label": "David Beckham",
+      "label_source": "depicts",
+      "file": "david-beckham_19888861.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/David_Beckham_2012.jpg/1280px-David_Beckham_2012.jpg",
+      "sha256": "8bf9be35c2116e78e3fbeac8e851583e4ac19116d47020dcb6aa6379be089387",
+      "page_url": "https://commons.wikimedia.org/wiki/File:David_Beckham_2012.jpg",
+      "license": "CC BY 2.0",
+      "artist": "Kunal Shah",
+      "year": 2012
+    },
+    {
+      "label": "David Beckham",
+      "label_source": "depicts",
+      "file": "david-beckham_108345381.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/David_Beckham_UNICEF_%28cropped%29.jpg/960px-David_Beckham_UNICEF_%28cropped%29.jpg",
+      "sha256": "5626f49e772e226d708bc186a0fc7109abd44259dcd2b89e20534aa7a747afd9",
+      "page_url": "https://commons.wikimedia.org/wiki/File:David_Beckham_UNICEF_(cropped).jpg",
+      "license": "CC BY 3.0",
+      "artist": "Soccer Aid for Unicef",
+      "year": 2021
+    },
+    {
+      "label": "Donald Rumsfeld",
+      "label_source": "depicts",
+      "file": "donald-rumsfeld_6445554.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Donald_Rumsfeld_speaks_at_the_42nd_Munich_Security_Conference_2006_%283%29.jpg/1280px-Donald_Rumsfeld_speaks_at_the_42nd_Munich_Security_Conference_2006_%283%29.jpg",
+      "sha256": "3ecdf3b186b0db9efd245bc4cdeba0fd99b4d813c506d3f222199f8d56d39a5e",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Donald_Rumsfeld_speaks_at_the_42nd_Munich_Security_Conference_2006_(3).jpg",
+      "license": "CC BY 3.0 de",
+      "artist": "Sebastian Zwez",
+      "year": 2006
+    },
+    {
+      "label": "Donald Rumsfeld",
+      "label_source": "depicts",
+      "file": "donald-rumsfeld_173221714.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Donald_Rumsfeld_2019_v2.jpg/500px-Donald_Rumsfeld_2019_v2.jpg",
+      "sha256": "760ed1973835076a572f126eb42884d5c0b25ff87722ce278bae50c30422d3bc",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Donald_Rumsfeld_2019_v2.jpg",
+      "license": "CC BY 2.0",
+      "artist": "U.S. Secretary of Defense",
+      "year": 2019
+    },
+    {
+      "label": "Donald Rumsfeld",
+      "label_source": "depicts",
+      "file": "donald-rumsfeld_84875884.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Donald_Rumsfeld%2C_Exec._Dir._Cost_of_Living_Council.jpg/1280px-Donald_Rumsfeld%2C_Exec._Dir._Cost_of_Living_Council.jpg",
+      "sha256": "a6004bfc82ddb95b4f70764e4cd18cc8c4f7241285cd65453313191a3f9da09b",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Donald_Rumsfeld,_Exec._Dir._Cost_of_Living_Council.jpg",
+      "license": "Public domain",
+      "artist": "Marion S. Trikosko",
+      "year": 1971
+    },
+    {
+      "label": "Donald Rumsfeld",
+      "label_source": "depicts",
+      "file": "donald-rumsfeld_44808420.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Donald_Rumsfeld_%285446240385%29.jpg/1280px-Donald_Rumsfeld_%285446240385%29.jpg",
+      "sha256": "f021c07bae8ffbd0c8d2c17180c0eaa52ab253d38fffd11a917b9926a3197ce4",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Donald_Rumsfeld_(5446240385).jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "Gage Skidmore from Peoria, AZ, United States of America",
+      "year": 2011
+    },
+    {
+      "label": "Donald Rumsfeld",
+      "label_source": "depicts",
+      "file": "donald-rumsfeld_3861956.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Rumsfeld_Donald_1976_DD-SN-07-12483.JPEG/1280px-Rumsfeld_Donald_1976_DD-SN-07-12483.JPEG",
+      "sha256": "0a4d3dd6d917350a68e6e005bed92875c21f03adb344aeff29a717755af491d4",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Rumsfeld_Donald_1976_DD-SN-07-12483.JPEG",
+      "license": "Public domain",
+      "artist": "Robert D. Ward",
+      "year": 1976
+    },
+    {
+      "label": "George Robertson",
+      "label_source": "depicts",
+      "file": "george-robertson_44824297.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Lord_Robertson_-_Oct15.JPG/1280px-Lord_Robertson_-_Oct15.JPG",
+      "sha256": "9904e3e411f339d61eee3e642738df883e39cf0fb5ad2971402559bfee836003",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Lord_Robertson_-_Oct15.JPG",
+      "license": "CC BY-SA 4.0",
+      "artist": "Gresham College",
+      "year": 2015
+    },
+    {
+      "label": "George Robertson",
+      "label_source": "depicts",
+      "file": "george-robertson_20810807.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Defense.gov_News_Photo_021021-D-2987S-018.jpg/1280px-Defense.gov_News_Photo_021021-D-2987S-018.jpg",
+      "sha256": "2627fe9f87e899c238ed11217268d00a319ad97cdfb62dee90572452280160d3",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Defense.gov_News_Photo_021021-D-2987S-018.jpg",
+      "license": "Public domain",
+      "artist": "Helene C. Stikkel",
+      "year": 2002
+    },
+    {
+      "label": "George Robertson",
+      "label_source": "depicts",
+      "file": "george-robertson_67597974.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Official_portrait_of_Lord_Robertson_of_Port_Ellen_crop_3.jpg/1280px-Official_portrait_of_Lord_Robertson_of_Port_Ellen_crop_3.jpg",
+      "sha256": "a9a86d28af6ddfc60c5f4585dddfaeff1f6cb3c098a7895c0a4a64345996d885",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Official_portrait_of_Lord_Robertson_of_Port_Ellen_crop_3.jpg",
+      "license": "CC BY 3.0",
+      "artist": "Chris McAndrew",
+      "year": 2018
+    },
+    {
+      "label": "George Robertson",
+      "label_source": "depicts",
+      "file": "george-robertson_105012655.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/George_Robertson_2001_%283x4_crop%29.jpg/960px-George_Robertson_2001_%283x4_crop%29.jpg",
+      "sha256": "1d0d53bf578c8845ba7cc4bf22132736f609c9c07a62ccdb5601e53add52b42d",
+      "page_url": "https://commons.wikimedia.org/wiki/File:George_Robertson_2001_(3x4_crop).jpg",
+      "license": "Public domain",
+      "artist": "Helene C. Stikkel",
+      "year": 2001
+    },
+    {
+      "label": "George Robertson",
+      "label_source": "depicts",
+      "file": "george-robertson_60633775.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/George_Robertson_%28cropped%29.jpg/960px-George_Robertson_%28cropped%29.jpg",
+      "sha256": "45d7d6a79a54d128f5eb5ddd0662344500ef43b0873a6fb53fddc8dbc05e047b",
+      "page_url": "https://commons.wikimedia.org/wiki/File:George_Robertson_(cropped).jpg",
+      "license": "Public domain",
+      "artist": "Helene C. Stikkel",
+      "year": 2001
+    },
+    {
+      "label": "George W Bush",
+      "label_source": "depicts",
+      "file": "george-w-bush_151570119.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/911-_President_George_W._Bush_Addresses_Joint_Session_of_Congress%2C_09-20-2001._%286124236009%29_%28cropped%29.jpg/1280px-911-_President_George_W._Bush_Addresses_Joint_Session_of_Congress%2C_09-20-2001._%286124236009%29_%28cropped%29.jpg",
+      "sha256": "5984b044b0efe7a7439e867b1f390b690b83eb3615bb520e0f3a7d8e06e29ae9",
+      "page_url": "https://commons.wikimedia.org/wiki/File:911-_President_George_W._Bush_Addresses_Joint_Session_of_Congress,_09-20-2001._(6124236009)_(cropped).jpg",
+      "license": "No restrictions",
+      "artist": "The U.S. National Archives",
+      "year": 2001
+    },
+    {
+      "label": "George W Bush",
+      "label_source": "depicts",
+      "file": "george-w-bush_19766744.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/George-W-Bush_edit2.jpg/960px-George-W-Bush_edit2.jpg",
+      "sha256": "85cb31c27859114fe35b4e2a757e1e5fe2866a809590b68a890f15e8b17a0213",
+      "page_url": "https://commons.wikimedia.org/wiki/File:George-W-Bush_edit2.jpg",
+      "license": "Public domain",
+      "artist": "Eric Draper",
+      "year": null
+    },
+    {
+      "label": "George W Bush",
+      "label_source": "depicts",
+      "file": "george-w-bush_158069735.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/GW-Bush-in-uniform_%283x4_cropped%29.jpg/960px-GW-Bush-in-uniform_%283x4_cropped%29.jpg",
+      "sha256": "1107aaf83425f4f8cb6179d5121a4346d4d3a50a0d1f0e19ca81fbc073297387",
+      "page_url": "https://commons.wikimedia.org/wiki/File:GW-Bush-in-uniform_(3x4_cropped).jpg",
+      "license": "Public domain",
+      "artist": "USAF",
+      "year": 1968
+    },
+    {
+      "label": "George W Bush",
+      "label_source": "depicts",
+      "file": "george-w-bush_258586.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Bush_43_10-19-04_Stpete.jpg/500px-Bush_43_10-19-04_Stpete.jpg",
+      "sha256": "e7e8bfd87ed9397392fccdb8cfa4cbf663fe14077a4de700ad4aef0e97c2879f",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Bush_43_10-19-04_Stpete.jpg",
+      "license": "CC BY 2.0",
+      "artist": "Shawn Clark of Lazyeights Photography",
+      "year": 2004
+    },
+    {
+      "label": "George W Bush",
+      "label_source": "depicts",
+      "file": "george-w-bush_158730315.png",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/George_W._Bush_2003_%284x5%29.png/1280px-George_W._Bush_2003_%284x5%29.png",
+      "sha256": "cfdbfeb28428375b3e06084582d9374d9464142a7e3c442e49d6a7b1a84683ad",
+      "page_url": "https://commons.wikimedia.org/wiki/File:George_W._Bush_2003_(4x5).png",
+      "license": "Public domain",
+      "artist": "Eric Draper",
+      "year": 2003
+    },
+    {
+      "label": "Gerhard Schroeder",
+      "label_source": "depicts",
+      "file": "gerhard-schroeder_45734523.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/2015-12_Gerhard_Schr%C3%B6der_SPD_Bundesparteitag_by_Olaf_Kosinsky-6.jpg/1280px-2015-12_Gerhard_Schr%C3%B6der_SPD_Bundesparteitag_by_Olaf_Kosinsky-6.jpg",
+      "sha256": "3dc8560ea490bfcc6d3ae4a34796595cbac9b3e10b3ddcb8efdd26a4bbbaa249",
+      "page_url": "https://commons.wikimedia.org/wiki/File:2015-12_Gerhard_Schr%C3%B6der_SPD_Bundesparteitag_by_Olaf_Kosinsky-6.jpg",
+      "license": "CC BY-SA 3.0 de",
+      "artist": "Olaf Kosinsky",
+      "year": 2015
+    },
+    {
+      "label": "Gerhard Schroeder",
+      "label_source": "depicts",
+      "file": "gerhard-schroeder_117392440.png",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Gerhard_Schr%C3%B6der_%28cropped%29_in_2016.png/330px-Gerhard_Schr%C3%B6der_%28cropped%29_in_2016.png",
+      "sha256": "e73e5286936955c35040fc520201035d11d078f4fd630d471122f1c8f0d54266",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Gerhard_Schr%C3%B6der_(cropped)_in_2016.png",
+      "license": "CC BY-SA 4.0",
+      "artist": "LennBr",
+      "year": 2022
+    },
+    {
+      "label": "Gerhard Schroeder",
+      "label_source": "depicts",
+      "file": "gerhard-schroeder_77308054.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Gerhard_Schr%C3%B6der_20160112_07.jpg/960px-Gerhard_Schr%C3%B6der_20160112_07.jpg",
+      "sha256": "f2a0c30b0124be553755807d1474c0e15d38fce49dadd8c147acd49395c5505b",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Gerhard_Schr%C3%B6der_20160112_07.jpg",
+      "license": "CC BY 4.0",
+      "artist": "Ashraf Tabatabaei",
+      "year": 2016
+    },
+    {
+      "label": "Gerhard Schroeder",
+      "label_source": "depicts",
+      "file": "gerhard-schroeder_7716093.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Gerhard_Schr%C3%B6der_2009-08-31.jpg/500px-Gerhard_Schr%C3%B6der_2009-08-31.jpg",
+      "sha256": "4898b5731576901bf1cb6491f03748b58c6a4afec12e7a85f0e07ab8bedfa1d2",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Gerhard_Schr%C3%B6der_2009-08-31.jpg",
+      "license": "CC BY 3.0",
+      "artist": "Outanxio",
+      "year": 2009
+    },
+    {
+      "label": "Gerhard Schroeder",
+      "label_source": "depicts",
+      "file": "gerhard-schroeder_72741912.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Gerhard_Schr%C3%B6der_8816.jpg/1280px-Gerhard_Schr%C3%B6der_8816.jpg",
+      "sha256": "70a64a898a3ec5d1f6b1d6ed34c3b81dbe251fd54c52a7d9752989670990e3da",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Gerhard_Schr%C3%B6der_8816.jpg",
+      "license": "CC BY 3.0",
+      "artist": "Henning Schlottmann (User:H-stt)",
+      "year": 2018
+    },
+    {
+      "label": "Gloria Macapagal Arroyo",
+      "label_source": "depicts",
+      "file": "gloria-macapagal-arroyo_3612042.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Gloria_Macapagal-Arroyo%2C_Davos.jpg/500px-Gloria_Macapagal-Arroyo%2C_Davos.jpg",
+      "sha256": "4a2dd8f8ba4ad5419d1470896bb20b9923efb9a2e81f221542c2ec6c1886cafd",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Gloria_Macapagal-Arroyo,_Davos.jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "World Economic Forum from Cologny, Switzerland",
+      "year": 2007
+    },
+    {
+      "label": "Gloria Macapagal Arroyo",
+      "label_source": "depicts",
+      "file": "gloria-macapagal-arroyo_73471386.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/President_Arroyo_in_Spain_%282006%29.jpg/500px-President_Arroyo_in_Spain_%282006%29.jpg",
+      "sha256": "49af7ffd6676432b584edae4ae56d422798e3d310c54d767c077943cea1f0911",
+      "page_url": "https://commons.wikimedia.org/wiki/File:President_Arroyo_in_Spain_(2006).jpg",
+      "license": "Public domain",
+      "artist": "Marcelino Pascua -- OPS-NIB Photo",
+      "year": 2006
+    },
+    {
+      "label": "Gloria Macapagal Arroyo",
+      "label_source": "depicts",
+      "file": "gloria-macapagal-arroyo_170627587.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Rep._Gloria_Macapagal-Arroyo_%2820th_Congress%29.jpg/250px-Rep._Gloria_Macapagal-Arroyo_%2820th_Congress%29.jpg",
+      "sha256": "fb58fe3ce066916b954c799d91557741626c32ed86c49c301377450faa51bfc2",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Rep._Gloria_Macapagal-Arroyo_(20th_Congress).jpg",
+      "license": "Public domain",
+      "artist": "House of Representatives of the Philippines",
+      "year": 2025
+    },
+    {
+      "label": "Gloria Macapagal Arroyo",
+      "label_source": "depicts",
+      "file": "gloria-macapagal-arroyo_172414526.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/President_Gloria_Macapagal-Arroyo.jpg/960px-President_Gloria_Macapagal-Arroyo.jpg",
+      "sha256": "7e8b26ab87d320f9ceaa09cda3bea7651703e8e8253f24482bd1c3c58ebd40af",
+      "page_url": "https://commons.wikimedia.org/wiki/File:President_Gloria_Macapagal-Arroyo.jpg",
+      "license": "Public domain",
+      "artist": "Malacanang Photo",
+      "year": 2002
+    },
+    {
+      "label": "Gloria Macapagal Arroyo",
+      "label_source": "depicts",
+      "file": "gloria-macapagal-arroyo_192274121.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Gloria_Macapagal-Arroyo_Presidential_Portrait.jpg/330px-Gloria_Macapagal-Arroyo_Presidential_Portrait.jpg",
+      "sha256": "7ff3a717a8f5ca2923a89c460b1a7a32469642c2be3590a4cbb782d5a8528732",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Gloria_Macapagal-Arroyo_Presidential_Portrait.jpg",
+      "license": "Public domain",
+      "artist": "Unknown authorUnknown author",
+      "year": 2006
+    },
+    {
+      "label": "Gray Davis",
+      "label_source": "category",
+      "file": "gray-davis_147065583.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Gray_Davis%2C_portrait_%283x4%29.jpg/960px-Gray_Davis%2C_portrait_%283x4%29.jpg",
+      "sha256": "e71b4a77ee1dc8063314fd23769654132e23affb0d147a4b06b2ec1bee02d359",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Gray_Davis,_portrait_(3x4).jpg",
+      "license": "Public domain",
+      "artist": "Governor of California",
+      "year": 1999
+    },
+    {
+      "label": "Gray Davis",
+      "label_source": "category",
+      "file": "gray-davis_155382724.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Gray_Davis%2C_1986_%28cropped%29.jpg/250px-Gray_Davis%2C_1986_%28cropped%29.jpg",
+      "sha256": "fd2a14dee3b31b62534142849dfcf2918769b0e526904208d19c851f6a737cbe",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Gray_Davis,_1986_(cropped).jpg",
+      "license": "CC BY 4.0",
+      "artist": "Al Seib, Los Angeles Times",
+      "year": 1986
+    },
+    {
+      "label": "Gray Davis",
+      "label_source": "category",
+      "file": "gray-davis_106156972.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Gray_Davis_%282010%29.jpg/500px-Gray_Davis_%282010%29.jpg",
+      "sha256": "61a44cd472dbbcd6acc5899786edf507164066f37c90a686ad13c143dd812aa1",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Gray_Davis_(2010).jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "Neon Tommy",
+      "year": 2010
+    },
+    {
+      "label": "Guillermo Coria",
+      "label_source": "depicts",
+      "file": "guillermo-coria_72430079.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Guillermo_Coria_2018_%28cropped%29.jpg/250px-Guillermo_Coria_2018_%28cropped%29.jpg",
+      "sha256": "221957ecded2d306e0b25cf60f2040b2bd176847b258224cd4206b40ebc2e4a3",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Guillermo_Coria_2018_(cropped).jpg",
+      "license": "CC BY 2.5 ar",
+      "artist": "Secretaría de Deportes",
+      "year": 2018
+    },
+    {
+      "label": "Hamid Karzai",
+      "label_source": "depicts",
+      "file": "hamid-karzai_1218981.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Hamid_Karzai_2006-09-26.jpg/330px-Hamid_Karzai_2006-09-26.jpg",
+      "sha256": "fc8316909f06c1b82431f31c517b38a3c0072ab1d2c3091d28206cd16cc347e4",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Hamid_Karzai_2006-09-26.jpg",
+      "license": "Public domain",
+      "artist": "Paul Morse",
+      "year": 2006
+    },
+    {
+      "label": "Hamid Karzai",
+      "label_source": "depicts",
+      "file": "hamid-karzai_159720212.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Hamid_Karzai_in_2005.jpg/330px-Hamid_Karzai_in_2005.jpg",
+      "sha256": "b0fa4f1c1a3e254cea7e14abf9dd150318fc61c16fdea4a6d0ec39812fb47968",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Hamid_Karzai_in_2005.jpg",
+      "license": "Public domain",
+      "artist": "Tech. Sgt. Cherie A. Thurlby, U.S. Air Force",
+      "year": 2005
+    },
+    {
+      "label": "Hamid Karzai",
+      "label_source": "depicts",
+      "file": "hamid-karzai_63480146.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Hamid_Karzai_%282017-10-19%29.jpg/1280px-Hamid_Karzai_%282017-10-19%29.jpg",
+      "sha256": "2380c3a0fd952aaa439de95175d87a6cf9691229c4ba96b59e7aa5a343bc203b",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Hamid_Karzai_(2017-10-19).jpg",
+      "license": "CC BY 4.0",
+      "artist": "Пресс-служба Президента Российской Федерации",
+      "year": 2017
+    },
+    {
+      "label": "Hamid Karzai",
+      "label_source": "depicts",
+      "file": "hamid-karzai_3086517.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Hamid_Karzai_in_2002.jpg/1280px-Hamid_Karzai_in_2002.jpg",
+      "sha256": "9c17dab18d8fa975ac33b1dac76ee452ecf49d60de0de1da8fcffddbc702af1c",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Hamid_Karzai_in_2002.jpg",
+      "license": "Public domain",
+      "artist": "USAID",
+      "year": 2002
+    },
+    {
+      "label": "Hamid Karzai",
+      "label_source": "depicts",
+      "file": "hamid-karzai_1218924.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Hamid_Karzai_2004-06-14-D-9880W-075_cropped.jpg/960px-Hamid_Karzai_2004-06-14-D-9880W-075_cropped.jpg",
+      "sha256": "6085e51b07298767d82fce74564aacd6d496e86af89bf54315634babe7161f4f",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Hamid_Karzai_2004-06-14-D-9880W-075_cropped.jpg",
+      "license": "Public domain",
+      "artist": "Robert D. Ward",
+      "year": 2004
+    },
+    {
+      "label": "Hans Blix",
+      "label_source": "depicts",
+      "file": "hans-blix_26763207.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Hans_Blix_Reykjavik_Event_at_SnT_2013_Conference.jpg/500px-Hans_Blix_Reykjavik_Event_at_SnT_2013_Conference.jpg",
+      "sha256": "8ae9037534d7bf7c60207119b55ccbb49b6c0beb1e76eac690249efcf43cbf9b",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Hans_Blix_Reykjavik_Event_at_SnT_2013_Conference.jpg",
+      "license": "CC BY 2.0",
+      "artist": "The Official CTBTO Photostream",
+      "year": 2013
+    },
+    {
+      "label": "Hans Blix",
+      "label_source": "depicts",
+      "file": "hans-blix_160079942.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Hans_Blix_close-up_%28cropped%29.jpg/960px-Hans_Blix_close-up_%28cropped%29.jpg",
+      "sha256": "9cd1c258c729de09e365e0af0e2030d975bd52568b173db2200b96ec9a406939",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Hans_Blix_close-up_(cropped).jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "Frankie Fouganthin",
+      "year": 2015
+    },
+    {
+      "label": "Hans Blix",
+      "label_source": "depicts",
+      "file": "hans-blix_110945767.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Hans_Blix_%2803010033%29_%288428397135%29.jpg/1280px-Hans_Blix_%2803010033%29_%288428397135%29.jpg",
+      "sha256": "61b427000ceabbd36065a76f721f1389c6d71fd7038cbfe53484cc2846c56e82",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Hans_Blix_(03010033)_(8428397135).jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "IAEA Imagebank",
+      "year": 2002
+    },
+    {
+      "label": "Hans Blix",
+      "label_source": "depicts",
+      "file": "hans-blix_47860622.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Former_IAEA_Director_General_Hans_Blix_%2813758070163%29.jpg/1280px-Former_IAEA_Director_General_Hans_Blix_%2813758070163%29.jpg",
+      "sha256": "ac6c7932d770e55f11d10daf07a7fa72fef135a7c4a3fad13b981df04b3f87cf",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Former_IAEA_Director_General_Hans_Blix_(13758070163).jpg",
+      "license": "CC BY 2.0",
+      "artist": "The Official CTBTO Photostream",
+      "year": 2014
+    },
+    {
+      "label": "Hans Blix",
+      "label_source": "depicts",
+      "file": "hans-blix_10556250.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Hans_Blix_Expo_Pavillion.jpg/1280px-Hans_Blix_Expo_Pavillion.jpg",
+      "sha256": "1157a239a0e0cec8db9f6d6c4e31aebe97d9351a7f729befba715a90493a3d75",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Hans_Blix_Expo_Pavillion.jpg",
+      "license": "CC BY 2.0",
+      "artist": "Tobias Andersson Åkerblom Swedish Pavilion at Shanghai Expo 2010",
+      "year": 2010
+    },
+    {
+      "label": "Hugo Chavez",
+      "label_source": "depicts",
+      "file": "hugo-chavez_181642926.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Hugo_Ch%C3%A1vez_%2802-04-2010%29_%28cropped%29.jpg/1280px-Hugo_Ch%C3%A1vez_%2802-04-2010%29_%28cropped%29.jpg",
+      "sha256": "1972dc286471517c9f9f895861858b3a594204082af42cfebd427b2689c0281a",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Hugo_Ch%C3%A1vez_(02-04-2010)_(cropped).jpg",
+      "license": "CC BY 4.0",
+      "artist": "Premier.gov.ru",
+      "year": 2010
+    },
+    {
+      "label": "Hugo Chavez",
+      "label_source": "depicts",
+      "file": "hugo-chavez_45851614.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Hugo_Ch%C3%A1vez_cropped.jpg/330px-Hugo_Ch%C3%A1vez_cropped.jpg",
+      "sha256": "23b0f0afa219fb2a96f8b709fa945a3283e7008956a17260d4f073dcc5dad3ad",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Hugo_Ch%C3%A1vez_cropped.jpg",
+      "license": "CC BY 3.0 br",
+      "artist": "Marcello Casal Jr./Abr",
+      "year": 2015
+    },
+    {
+      "label": "Hugo Chavez",
+      "label_source": "depicts",
+      "file": "hugo-chavez_38130461.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Hugo_Rafael_Ch%C3%A1vez_Fr%C3%ADas.jpeg/960px-Hugo_Rafael_Ch%C3%A1vez_Fr%C3%ADas.jpeg",
+      "sha256": "29db17acb50b69d8e6ad60917dc010a150f70600bdac30af61d0122b5cdeff8d",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Hugo_Rafael_Ch%C3%A1vez_Fr%C3%ADas.jpeg",
+      "license": "CC BY-SA 2.0",
+      "artist": "Office of the President of Brazil",
+      "year": 2011
+    },
+    {
+      "label": "Hugo Chavez",
+      "label_source": "depicts",
+      "file": "hugo-chavez_10470433.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Hugo-Chavez-2009-.jpg/500px-Hugo-Chavez-2009-.jpg",
+      "sha256": "a9fe97ea9dde570cb7a7a384f624c2c91c0a374193ab2877d4e768ff51339978",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Hugo-Chavez-2009-.jpg",
+      "license": "CC BY 2.0",
+      "artist": "Cláudio Vaz",
+      "year": 2005
+    },
+    {
+      "label": "Hugo Chavez",
+      "label_source": "depicts",
+      "file": "hugo-chavez_71385120.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Hugo_Chavez%2C_Oliver_Stone_66%C3%A8me_Festival_de_Venise_%28Mostra%29_8_%28cropped%29.jpg/250px-Hugo_Chavez%2C_Oliver_Stone_66%C3%A8me_Festival_de_Venise_%28Mostra%29_8_%28cropped%29.jpg",
+      "sha256": "a97981a3278f3fb548ca5224e81531d3f0c19700782d193eaf0563be1323312f",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Hugo_Chavez,_Oliver_Stone_66%C3%A8me_Festival_de_Venise_(Mostra)_8_(cropped).jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "nicolas genin from Paris, France",
+      "year": 2009
+    },
+    {
+      "label": "Igor Ivanov",
+      "label_source": "depicts",
+      "file": "igor-ivanov_66663297.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Igor_Ivanov_2014.jpg/500px-Igor_Ivanov_2014.jpg",
+      "sha256": "ea6a9a550d121c96719cea0761e65823677fa2a110dcd579efcfa639ebcb6ac5",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Igor_Ivanov_2014.jpg",
+      "license": "CC BY 4.0",
+      "artist": "Press Service",
+      "year": 2014
+    },
+    {
+      "label": "Jack Straw",
+      "label_source": "depicts",
+      "file": "jack-straw_8640956.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Jack_Straw_031113-D-9880W-020.jpg/960px-Jack_Straw_031113-D-9880W-020.jpg",
+      "sha256": "7a1f9e7021a490a4ce7462c4c716f08cf95c375172e803e4bb3c258d829b17f0",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Jack_Straw_031113-D-9880W-020.jpg",
+      "license": "Public domain",
+      "artist": "DoD photo by R. D. Ward.",
+      "year": 2003
+    },
+    {
+      "label": "Jack Straw",
+      "label_source": "depicts",
+      "file": "jack-straw_8577113.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Jack_Straw_011024-D-9880W-030.jpg/960px-Jack_Straw_011024-D-9880W-030.jpg",
+      "sha256": "c8d56df7bed7e7c2eba5461d4cd193907d7d1611afb7228c48ed89b34ae704ac",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Jack_Straw_011024-D-9880W-030.jpg",
+      "license": "Public domain",
+      "artist": "DoD photo by R. D. Ward. (Released)",
+      "year": 2001
+    },
+    {
+      "label": "Jack Straw",
+      "label_source": "depicts",
+      "file": "jack-straw_26223977.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/The_Whitehead_Lecture_Jack_Straw_%285243233379%29.jpg/1280px-The_Whitehead_Lecture_Jack_Straw_%285243233379%29.jpg",
+      "sha256": "9b12c4eb64ee2c7c932484aaf08fc813b7664ee481d2059550fe4065c1f286b2",
+      "page_url": "https://commons.wikimedia.org/wiki/File:The_Whitehead_Lecture_Jack_Straw_(5243233379).jpg",
+      "license": "CC BY 2.0",
+      "artist": "Chatham House",
+      "year": 2010
+    },
+    {
+      "label": "Jack Straw",
+      "label_source": "depicts",
+      "file": "jack-straw_57789140.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/A_55_0305_%289728872824%29.jpg/500px-A_55_0305_%289728872824%29.jpg",
+      "sha256": "535e7ad1c474f308f03ad4bf22b04d55a26730fb943aa56e984f54179debcc2d",
+      "page_url": "https://commons.wikimedia.org/wiki/File:A_55_0305_(9728872824).jpg",
+      "license": "CC BY 2.0",
+      "artist": "Anders Henrikson",
+      "year": 2013
+    },
+    {
+      "label": "Jack Straw",
+      "label_source": "depicts",
+      "file": "jack-straw_190246394.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Brussels_Extraordinary_European_Council%2C_21.09.2001_%28P-008403_00-10%29.jpg/1280px-Brussels_Extraordinary_European_Council%2C_21.09.2001_%28P-008403_00-10%29.jpg",
+      "sha256": "74e629cf6d76c40fe51d170b80368ec9c2739cf1ddcab3c79d13437a7f09fd5a",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Brussels_Extraordinary_European_Council,_21.09.2001_(P-008403_00-10).jpg",
+      "license": "CC BY 4.0",
+      "artist": "Christian Lambiotte",
+      "year": 2001
+    },
+    {
+      "label": "Jacques Chirac",
+      "label_source": "depicts",
+      "file": "jacques-chirac_1367434.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Jacques_Chirac.JPG/960px-Jacques_Chirac.JPG",
+      "sha256": "e6c41b9f027fae3c9ffd6b5ea3880cee1936a5ee9789ef6a1397bdc3c743cd3d",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Jacques_Chirac.JPG",
+      "license": "CC BY-SA 3.0",
+      "artist": "No machine-readable author provided. CaptainHaddock assumed (based on copyright claims).",
+      "year": 2006
+    },
+    {
+      "label": "Jacques Chirac",
+      "label_source": "depicts",
+      "file": "jacques-chirac_60683460.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Mr_JACQUES_CHIRAC_au_SIA_1990-67-cliche_Jean_Weber_%2834509500576%29.jpg/1280px-Mr_JACQUES_CHIRAC_au_SIA_1990-67-cliche_Jean_Weber_%2834509500576%29.jpg",
+      "sha256": "002d58e617b666a41f1c598115ea1c736f9d903ea24e593b4ffe08f0da269c70",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Mr_JACQUES_CHIRAC_au_SIA_1990-67-cliche_Jean_Weber_(34509500576).jpg",
+      "license": "CC BY 2.0",
+      "artist": "INRA DIST from France",
+      "year": 1990
+    },
+    {
+      "label": "Jacques Chirac",
+      "label_source": "depicts",
+      "file": "jacques-chirac_2250649.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Jacques_Chirac%2C_1999.jpg/330px-Jacques_Chirac%2C_1999.jpg",
+      "sha256": "fe99310bc31118cb77648893bc790c2cb5a0c3177c0094151a5e1bf47d75c266",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Jacques_Chirac,_1999.jpg",
+      "license": "Public domain",
+      "artist": "David Scull",
+      "year": 1999
+    },
+    {
+      "label": "Jacques Chirac",
+      "label_source": "depicts",
+      "file": "jacques-chirac_143806405.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Jacques_Chirac_%281997%29.jpg/1280px-Jacques_Chirac_%281997%29.jpg",
+      "sha256": "188987c65fd934edd85f5c65636040aa784935d024f33f3bd0d41ae54beee30a",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Jacques_Chirac_(1997).jpg",
+      "license": "CC BY 4.0",
+      "artist": "Christian Lambiotte",
+      "year": 1997
+    },
+    {
+      "label": "Jacques Chirac",
+      "label_source": "depicts",
+      "file": "jacques-chirac_59596673.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Jacques_Chirac_1980.jpg/500px-Jacques_Chirac_1980.jpg",
+      "sha256": "07a87101fb23023e4dc74a768bc537fa0edb4be1237accfa4163776fd1cd0caf",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Jacques_Chirac_1980.jpg",
+      "license": "CC BY-SA 3.0",
+      "artist": "Photo Claude TRUONG-NGOC",
+      "year": 1980
+    },
+    {
+      "label": "Jean Chretien",
+      "label_source": "depicts",
+      "file": "jean-chretien_128086793.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/APEC_Summit_1993_-_Jean_Chr%C3%A9tien_%28cropped%29.jpg/960px-APEC_Summit_1993_-_Jean_Chr%C3%A9tien_%28cropped%29.jpg",
+      "sha256": "223a30ff87699b0c4148ac7d30c1ef9f5abb1a629893c1e591865c18ff8ec3e4",
+      "page_url": "https://commons.wikimedia.org/wiki/File:APEC_Summit_1993_-_Jean_Chr%C3%A9tien_(cropped).jpg",
+      "license": "Public domain",
+      "artist": "Ralph Alswang",
+      "year": 1993
+    },
+    {
+      "label": "Jean Chretien",
+      "label_source": "depicts",
+      "file": "jean-chretien_164298696.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Jean_Chr%C3%A9tien_pictured_in_Ottawa%2C_1979_%28cropped%29.jpg/960px-Jean_Chr%C3%A9tien_pictured_in_Ottawa%2C_1979_%28cropped%29.jpg",
+      "sha256": "d37678d0ac080b17c5735544919127c354707425d89d601d2a480859949ed88e",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Jean_Chr%C3%A9tien_pictured_in_Ottawa,_1979_(cropped).jpg",
+      "license": "Public domain",
+      "artist": "United Press International",
+      "year": 1979
+    },
+    {
+      "label": "Jean Chretien",
+      "label_source": "depicts",
+      "file": "jean-chretien_39482814.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Jean_Chr%C3%A9tien_cropped.jpg/330px-Jean_Chr%C3%A9tien_cropped.jpg",
+      "sha256": "6dcc26a47acb3b4f361dc079e7d2980987c9372c66e5fbd5a287470a99869769",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Jean_Chr%C3%A9tien_cropped.jpg",
+      "license": "CC BY-SA 3.0",
+      "artist": "Chiloa",
+      "year": 2013
+    },
+    {
+      "label": "Jean Chretien",
+      "label_source": "depicts",
+      "file": "jean-chretien_158070765.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ignatieff_and_Chr%C3%A9tien_at_Rise_Up_for_Canada_Rally_002_%285663157895%29_%28cropped%29.jpg/500px-Ignatieff_and_Chr%C3%A9tien_at_Rise_Up_for_Canada_Rally_002_%285663157895%29_%28cropped%29.jpg",
+      "sha256": "4a910fcb421129b9b1153830f75fc129962445b2c5a561b6eceeaf92215161a3",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Ignatieff_and_Chr%C3%A9tien_at_Rise_Up_for_Canada_Rally_002_(5663157895)_(cropped).jpg",
+      "license": "CC BY 2.0",
+      "artist": "Michael Ignatieff",
+      "year": 2011
+    },
+    {
+      "label": "Jean Chretien",
+      "label_source": "depicts",
+      "file": "jean-chretien_25250969.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Former_PM_Jean_Chr%C3%A9tien.jpg/1280px-Former_PM_Jean_Chr%C3%A9tien.jpg",
+      "sha256": "d1c86a6e97ec44d14fb7ab58a526202154bed456db58074d7eee625d87736ae4",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Former_PM_Jean_Chr%C3%A9tien.jpg",
+      "license": "CC BY 2.0",
+      "artist": "JasonParis from Toronto, Canada",
+      "year": 2011
+    },
+    {
+      "label": "Jennifer Aniston",
+      "label_source": "depicts",
+      "file": "jennifer-aniston_84928587.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/2013_TIFF_-_LIfe_Of_Crime_-_Jennifer_Aniston.jpg/500px-2013_TIFF_-_LIfe_Of_Crime_-_Jennifer_Aniston.jpg",
+      "sha256": "5d257bd6643014673176f0d4659063e1bf68952e157d2f83ec361ccdf9df580e",
+      "page_url": "https://commons.wikimedia.org/wiki/File:2013_TIFF_-_LIfe_Of_Crime_-_Jennifer_Aniston.jpg",
+      "license": "CC BY 2.0",
+      "artist": "Ross",
+      "year": 2013
+    },
+    {
+      "label": "Jennifer Aniston",
+      "label_source": "depicts",
+      "file": "jennifer-aniston_61742353.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Jennifer_Aniston_image_2_%28cropped%29.jpg/500px-Jennifer_Aniston_image_2_%28cropped%29.jpg",
+      "sha256": "de6038e2a9ead148f0d5c0058fb41fb7fe6db7fccc0529520de8945e00170245",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Jennifer_Aniston_image_2_(cropped).jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "Andres Useche from Los Angeles, CA, U.S.A.",
+      "year": 2010
+    },
+    {
+      "label": "Jennifer Aniston",
+      "label_source": "depicts",
+      "file": "jennifer-aniston_81447553.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Jennifer_Aniston_and_Kristin_Hahn_%28cropped%29_%28cropped%29.jpg/330px-Jennifer_Aniston_and_Kristin_Hahn_%28cropped%29_%28cropped%29.jpg",
+      "sha256": "9eb1fafad697dc2a85ae6fdc37a47cd37f45b66338fd58a9a48fbfb1563520f8",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Jennifer_Aniston_and_Kristin_Hahn_(cropped)_(cropped).jpg",
+      "license": "Public domain",
+      "artist": "Official White House Photo by Chuck Kennedy",
+      "year": 2011
+    },
+    {
+      "label": "Jennifer Aniston",
+      "label_source": "depicts",
+      "file": "jennifer-aniston_71539314.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Jennifer_Aniston_08.jpg/250px-Jennifer_Aniston_08.jpg",
+      "sha256": "7b17c4bb25297c325d7f034cdcf79b4e0e5608cd39e20ca1821b3dc5aafd534a",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Jennifer_Aniston_08.jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "gdcgraphics at https://www.flickr.com/photos/gdcgraphics/",
+      "year": 2008
+    },
+    {
+      "label": "Jennifer Aniston",
+      "label_source": "depicts",
+      "file": "jennifer-aniston_90471524.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Jennifer_Aniston_at_85th_Acamdey_Awards.jpg/500px-Jennifer_Aniston_at_85th_Acamdey_Awards.jpg",
+      "sha256": "6b04569c2d5217f9bccc0b9911664150c9e8a0dfa1bccaa3b263eb18655e969a",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Jennifer_Aniston_at_85th_Acamdey_Awards.jpg",
+      "license": "Public domain",
+      "artist": "Staff Sgt. Addie Zinone",
+      "year": 2013
+    },
+    {
+      "label": "Jennifer Capriati",
+      "label_source": "depicts",
+      "file": "jennifer-capriati_9198500.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Jennifer_Capriati_mugshot.jpg/250px-Jennifer_Capriati_mugshot.jpg",
+      "sha256": "26acd6f99a0fd1011c2bbe56364b416b5488c549ff225a2b7404003e9ef37b89",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Jennifer_Capriati_mugshot.jpg",
+      "license": "Public domain",
+      "artist": "Coral Gables Sheriff's Department. The original uploader was AnonEMouse at English Wikipedia.",
+      "year": 1994
+    },
+    {
+      "label": "Jennifer Lopez",
+      "label_source": "depicts",
+      "file": "jennifer-lopez_175255465.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Katarina_Metzger_and_Jennifer_Lopez_%28cropped%29.jpg/250px-Katarina_Metzger_and_Jennifer_Lopez_%28cropped%29.jpg",
+      "sha256": "45a4c10e01fd2d1608e62b97c69a7731161287633ce5e18e52e3108d4e864955",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Katarina_Metzger_and_Jennifer_Lopez_(cropped).jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "Montymetzger",
+      "year": 2024
+    },
+    {
+      "label": "Jennifer Lopez",
+      "label_source": "depicts",
+      "file": "jennifer-lopez_99135419.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/210120-D-WD757-1993_%2850861328492%29.jpg/1280px-210120-D-WD757-1993_%2850861328492%29.jpg",
+      "sha256": "ff0e5eb94a62f0e174e69c8a5989b0c0862014ee3da6c28eed9943d185c90088",
+      "page_url": "https://commons.wikimedia.org/wiki/File:210120-D-WD757-1993_(50861328492).jpg",
+      "license": "CC BY 2.0",
+      "artist": "Chairman of the Joint Chiefs of Staff from Washington D.C, United States",
+      "year": 2021
+    },
+    {
+      "label": "Jennifer Lopez",
+      "label_source": "depicts",
+      "file": "jennifer-lopez_72388558.png",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Jennifer_Lopez_performing_at_MTV_VMAs_2018_11.png/960px-Jennifer_Lopez_performing_at_MTV_VMAs_2018_11.png",
+      "sha256": "9b863ad861e26ac4e6b4e62219a165ad9954e4ac8ba21c0e48c433a6463e83dd",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Jennifer_Lopez_performing_at_MTV_VMAs_2018_11.png",
+      "license": "CC BY 3.0",
+      "artist": "MTV International",
+      "year": 2018
+    },
+    {
+      "label": "Jennifer Lopez",
+      "label_source": "depicts",
+      "file": "jennifer-lopez_159477179.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Jennifer_Lopez_at_the_2025_Sundance_Film_Festival_%28cropped_2%29.jpg/1280px-Jennifer_Lopez_at_the_2025_Sundance_Film_Festival_%28cropped_2%29.jpg",
+      "sha256": "31482ed808917572ceab968202ef46b74543c8fa0f748312dceda58337a9b81c",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Jennifer_Lopez_at_the_2025_Sundance_Film_Festival_(cropped_2).jpg",
+      "license": "CC BY 4.0",
+      "artist": "Everwest",
+      "year": 2025
+    },
+    {
+      "label": "Jennifer Lopez",
+      "label_source": "depicts",
+      "file": "jennifer-lopez_20208654.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Jennifer_Lopez_-_Pop_Music_Festival_%2839%29_Cropped.jpg/330px-Jennifer_Lopez_-_Pop_Music_Festival_%2839%29_Cropped.jpg",
+      "sha256": "0e26556c88dd0f1ca4ef61035d94859fe2b7e7e3c8ab48c7ed537aa449588f09",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Jennifer_Lopez_-_Pop_Music_Festival_(39)_Cropped.jpg",
+      "license": "CC BY 2.0",
+      "artist": "Ana Carolina Kley Vita from São Paulo, Brasil",
+      "year": 2012
+    },
+    {
+      "label": "Jeremy Greenstock",
+      "label_source": "depicts",
+      "file": "jeremy-greenstock_26223639.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Sir_Jeremy_Greenstock%2C_Council%2C_Chatham_House_%287414379608%29.jpg/1280px-Sir_Jeremy_Greenstock%2C_Council%2C_Chatham_House_%287414379608%29.jpg",
+      "sha256": "2499abacba8d78936a97f8893cb2d19c770fe354035a502f59f5b2699774058f",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Sir_Jeremy_Greenstock,_Council,_Chatham_House_(7414379608).jpg",
+      "license": "CC BY 2.0",
+      "artist": "Chatham House",
+      "year": 2012
+    },
+    {
+      "label": "Jeremy Greenstock",
+      "label_source": "depicts",
+      "file": "jeremy-greenstock_70830582.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Jeremy_Greenstock_at_United_Nations_Association_2013.jpg/500px-Jeremy_Greenstock_at_United_Nations_Association_2013.jpg",
+      "sha256": "a01ff01ae649ca468e3dc4f288290abc09bc05da8def89520442b075fa226c50",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Jeremy_Greenstock_at_United_Nations_Association_2013.jpg",
+      "license": "OGL v1.0",
+      "artist": "Foreign and Commonwealth Office",
+      "year": 2013
+    },
+    {
+      "label": "Jiang Zemin",
+      "label_source": "depicts",
+      "file": "jiang-zemin_1460888.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Jiang_Zemin_at_Hickam_Air_Base%2C_October_26%2C_1997%2C_cropped.jpg/250px-Jiang_Zemin_at_Hickam_Air_Base%2C_October_26%2C_1997%2C_cropped.jpg",
+      "sha256": "afec1f72bad63c111abc3d4268fb0ade841234fbeaa82e966f3da6199a74c472",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Jiang_Zemin_at_Hickam_Air_Base,_October_26,_1997,_cropped.jpg",
+      "license": "Public domain",
+      "artist": "DoD photo by Petty Officer 2nd Class Tina M. Ackerman, U.S. Navy",
+      "year": 1997
+    },
+    {
+      "label": "Jiang Zemin",
+      "label_source": "depicts",
+      "file": "jiang-zemin_126155083.png",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Vladimir_Putin_with_Jiang_Zemin-9_%28cropped%29.png/500px-Vladimir_Putin_with_Jiang_Zemin-9_%28cropped%29.png",
+      "sha256": "1be67eb5d84946db5154df54100b56e88211d4bde810a8a6328c4ee6f7acb5c9",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Vladimir_Putin_with_Jiang_Zemin-9_(cropped).png",
+      "license": "CC BY 4.0",
+      "artist": "The Presidential Press and Information Office",
+      "year": 2002
+    },
+    {
+      "label": "Jiang Zemin",
+      "label_source": "depicts",
+      "file": "jiang-zemin_103884735.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Jiang_Zemin_2002.jpg/330px-Jiang_Zemin_2002.jpg",
+      "sha256": "97822b1ca3abaf026c2343011d494f6d69746b7f60431aa26a6accc8f2eff73d",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Jiang_Zemin_2002.jpg",
+      "license": "CC BY 4.0",
+      "artist": "Kremlin.ru / Roman Kubanskiy",
+      "year": null
+    },
+    {
+      "label": "Jiang Zemin",
+      "label_source": "depicts",
+      "file": "jiang-zemin_197405300.png",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Jiang_Zemin_by_China_Photo_Studio.png/1280px-Jiang_Zemin_by_China_Photo_Studio.png",
+      "sha256": "02e7b5e8a0c157560453253aa894dbdcc92fecda6c3df5155c1874eaae9bb7ff",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Jiang_Zemin_by_China_Photo_Studio.png",
+      "license": "Public domain",
+      "artist": "China Photo Studio(中國照相馆) in Yangzhou",
+      "year": null
+    },
+    {
+      "label": "Jiang Zemin",
+      "label_source": "depicts",
+      "file": "jiang-zemin_17676084.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Jiang_Zemin_Shanghai2001.jpg/250px-Jiang_Zemin_Shanghai2001.jpg",
+      "sha256": "99e7be30d56110301063e2f13f701691bf1d963aa6c8db144519ffdfa8a90455",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Jiang_Zemin_Shanghai2001.jpg",
+      "license": "Public domain",
+      "artist": "White House photo by Eric Draper",
+      "year": 2001
+    },
+    {
+      "label": "John Ashcroft",
+      "label_source": "depicts",
+      "file": "john-ashcroft_69630377.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Portrait_of_John_D_Ashcroft.jpg/1280px-Portrait_of_John_D_Ashcroft.jpg",
+      "sha256": "4289e4e908def51cc287acc43db1b57d2390bf177e739242417a78f4b62a8922",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Portrait_of_John_D_Ashcroft.jpg",
+      "license": "Public domain",
+      "artist": "Missouri Secretary of State",
+      "year": 1973
+    },
+    {
+      "label": "John Ashcroft",
+      "label_source": "depicts",
+      "file": "john-ashcroft_61602935.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/John_Ashcroft_official_photo_as_Governor_%28cropped%29.jpg/960px-John_Ashcroft_official_photo_as_Governor_%28cropped%29.jpg",
+      "sha256": "1061d0a35b70797e849b32e1dfc85e8fbbe8bd9453a21d2bc157035a9e2dd903",
+      "page_url": "https://commons.wikimedia.org/wiki/File:John_Ashcroft_official_photo_as_Governor_(cropped).jpg",
+      "license": "Public domain",
+      "artist": "Missouri Secretary of State",
+      "year": 1985
+    },
+    {
+      "label": "John Ashcroft",
+      "label_source": "depicts",
+      "file": "john-ashcroft_9520304.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/John_Ashcroft_by_Gage_Skidmore.jpg/1280px-John_Ashcroft_by_Gage_Skidmore.jpg",
+      "sha256": "56f1f8ba674990e6ba75f8014e9d8fdf7b172a16ef117b58039c08fdf6816c0d",
+      "page_url": "https://commons.wikimedia.org/wiki/File:John_Ashcroft_by_Gage_Skidmore.jpg",
+      "license": "CC BY-SA 3.0",
+      "artist": "Gage Skidmore",
+      "year": 2010
+    },
+    {
+      "label": "John Ashcroft",
+      "label_source": "depicts",
+      "file": "john-ashcroft_59331634.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Senator_John_Ashcroft2.jpg/500px-Senator_John_Ashcroft2.jpg",
+      "sha256": "7f7c97d8bbc827a5e76f826f14d2863ac088b386cb972832418e0a0234a8f1a7",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Senator_John_Ashcroft2.jpg",
+      "license": "Public domain",
+      "artist": "United States Congress",
+      "year": 1999
+    },
+    {
+      "label": "John Ashcroft",
+      "label_source": "depicts",
+      "file": "john-ashcroft_69615471.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/John_Ashcroft_delivers_remarks_at_the_30th_Annual_Candlelight_Vigil.jpg/1280px-John_Ashcroft_delivers_remarks_at_the_30th_Annual_Candlelight_Vigil.jpg",
+      "sha256": "1657afcc2a7150e46cdaedd3b482370884c0f1367c2face771737f20869de822",
+      "page_url": "https://commons.wikimedia.org/wiki/File:John_Ashcroft_delivers_remarks_at_the_30th_Annual_Candlelight_Vigil.jpg",
+      "license": "Public domain",
+      "artist": "U.S. Customs and Border Protection",
+      "year": 2018
+    },
+    {
+      "label": "John Negroponte",
+      "label_source": "depicts",
+      "file": "john-negroponte_5392018.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/John_Negroponte_1.jpg/250px-John_Negroponte_1.jpg",
+      "sha256": "4a0c233e04ccce3a5928b19aec71d400988a5f09019c867c6cbe691a2ea0e234",
+      "page_url": "https://commons.wikimedia.org/wiki/File:John_Negroponte_1.jpg",
+      "license": "Public domain",
+      "artist": "",
+      "year": 2003
+    },
+    {
+      "label": "John Negroponte",
+      "label_source": "depicts",
+      "file": "john-negroponte_131954476.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/2_16_2023_Reflections_on_the_50th_Anniversary_of_the_Vietnam_Peace_Settlement_%2852702968940%29.jpg/1280px-2_16_2023_Reflections_on_the_50th_Anniversary_of_the_Vietnam_Peace_Settlement_%2852702968940%29.jpg",
+      "sha256": "d64d84df3777cc920b0e1519d16d432f96738f0588d73a7026ca80c624779863",
+      "page_url": "https://commons.wikimedia.org/wiki/File:2_16_2023_Reflections_on_the_50th_Anniversary_of_the_Vietnam_Peace_Settlement_(52702968940).jpg",
+      "license": "CC BY 2.0",
+      "artist": "U.S. Institute of Peace",
+      "year": 2023
+    },
+    {
+      "label": "John Negroponte",
+      "label_source": "depicts",
+      "file": "john-negroponte_2248573.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/John_Negroponte_official_portrait_State.jpg/500px-John_Negroponte_official_portrait_State.jpg",
+      "sha256": "62f01528bf2890bcb20a07df3b6b58a3c5014b60cdfe9401888baf3d355d365e",
+      "page_url": "https://commons.wikimedia.org/wiki/File:John_Negroponte_official_portrait_State.jpg",
+      "license": "Public domain",
+      "artist": "U.S. Department of State",
+      "year": 2007
+    },
+    {
+      "label": "Jose Maria Aznar",
+      "label_source": "depicts",
+      "file": "jose-maria-aznar_12248458.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Flickr_-_europeanpeoplesparty_-_Economic_Ideas_Forum%2C_Madrid%2C_Spain_%284%29.jpg/1280px-Flickr_-_europeanpeoplesparty_-_Economic_Ideas_Forum%2C_Madrid%2C_Spain_%284%29.jpg",
+      "sha256": "9723005bbbbddfc8cfc48d621d30d9b85414fdecb31bc2224234d8cd29861c5f",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Flickr_-_europeanpeoplesparty_-_Economic_Ideas_Forum,_Madrid,_Spain_(4).jpg",
+      "license": "CC BY 2.0",
+      "artist": "European People's Party",
+      "year": 2010
+    },
+    {
+      "label": "Jose Maria Aznar",
+      "label_source": "depicts",
+      "file": "jose-maria-aznar_1390842.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Aznar_at_the_Azores%2C_March_17%2C_2003.jpg/960px-Aznar_at_the_Azores%2C_March_17%2C_2003.jpg",
+      "sha256": "9e7a33ad2615329a8eddd6384202435af33107a13a89c510bf89d6a0edf5ad53",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Aznar_at_the_Azores,_March_17,_2003.jpg",
+      "license": "Public domain",
+      "artist": "SSGT MICHELLE MICHAUD, USAF",
+      "year": 2003
+    },
+    {
+      "label": "Jose Maria Aznar",
+      "label_source": "depicts",
+      "file": "jose-maria-aznar_64973313.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Jos%C3%A9_Mar%C3%ADa_Aznar_impone_al_diputado_Enrique_M%C3%BAgica_la_Gran_Cruz_de_la_Orden_de_Isabel_la_Cat%C3%B3lica._Pool_Moncloa._12_de_mayo_de_1999_%28cropped%29.jpeg/330px-Jos%C3%A9_Mar%C3%ADa_Aznar_impone_al_diputado_Enrique_M%C3%BAgica_la_Gran_Cruz_de_la_Orden_de_Isabel_la_Cat%C3%B3lica._Pool_Moncloa._12_de_mayo_de_1999_%28cropped%29.jpeg",
+      "sha256": "8d67ee5a556dc3f63f6bdb6fde2204c8c919b35e1932cf6c2642aef293132cc4",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Jos%C3%A9_Mar%C3%ADa_Aznar_impone_al_diputado_Enrique_M%C3%BAgica_la_Gran_Cruz_de_la_Orden_de_Isabel_la_Cat%C3%B3lica._Pool_Moncloa._12_de_mayo_de_1999_(cropped).jpeg",
+      "license": "Attribution",
+      "artist": "Ministerio de la Presidencia. Gobierno de España (Pool Moncloa)",
+      "year": 1999
+    },
+    {
+      "label": "Jose Maria Aznar",
+      "label_source": "depicts",
+      "file": "jose-maria-aznar_72326087.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/%28Jos%C3%A9_Mar%C3%ADa_Aznar%29_EPP_Summit_4_December_2003_Paris_%28cropped%29.jpg/500px-%28Jos%C3%A9_Mar%C3%ADa_Aznar%29_EPP_Summit_4_December_2003_Paris_%28cropped%29.jpg",
+      "sha256": "527853a30283f0e1fab0f523ad961074105c54c4dc5ce73ef9e02ec4cb8168d1",
+      "page_url": "https://commons.wikimedia.org/wiki/File:(Jos%C3%A9_Mar%C3%ADa_Aznar)_EPP_Summit_4_December_2003_Paris_(cropped).jpg",
+      "license": "CC BY 2.0",
+      "artist": "European People's Party",
+      "year": 2003
+    },
+    {
+      "label": "Jose Maria Aznar",
+      "label_source": "depicts",
+      "file": "jose-maria-aznar_20134635.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/JoseMariaAznarWorldJewishCongress2010.jpg/1280px-JoseMariaAznarWorldJewishCongress2010.jpg",
+      "sha256": "a035cc745d86dee1fd3e908845e243e91fa631f3d08c126200436a9cfe8a5ec4",
+      "page_url": "https://commons.wikimedia.org/wiki/File:JoseMariaAznarWorldJewishCongress2010.jpg",
+      "license": "CC BY-SA 3.0",
+      "artist": "Michael Thaidigsmann",
+      "year": 2010
+    },
+    {
+      "label": "Juan Carlos Ferrero",
+      "label_source": "depicts",
+      "file": "juan-carlos-ferrero_22503384.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Flickr_-_Carine06_-_Juan_Carlos_Ferrero_%282%29.jpg/1280px-Flickr_-_Carine06_-_Juan_Carlos_Ferrero_%282%29.jpg",
+      "sha256": "4c34a4100a139c415ae563ec1015c3437ebf1fa5e1ce975434fed0b4a4cb601e",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Flickr_-_Carine06_-_Juan_Carlos_Ferrero_(2).jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "Carine06 from UK",
+      "year": 2012
+    },
+    {
+      "label": "Juan Carlos Ferrero",
+      "label_source": "depicts",
+      "file": "juan-carlos-ferrero_2259722.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Ferrero_Hamburg_Masters_07_2.jpg/1280px-Ferrero_Hamburg_Masters_07_2.jpg",
+      "sha256": "7f7619c70933934a97201a9176789a507985dea7f65d413f1facda1b0c46ec27",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Ferrero_Hamburg_Masters_07_2.jpg",
+      "license": "CC BY-SA 2.5",
+      "artist": "HSV23",
+      "year": 2007
+    },
+    {
+      "label": "Juan Carlos Ferrero",
+      "label_source": "depicts",
+      "file": "juan-carlos-ferrero_16010243.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Ferrero_June_2011_3.jpg/1280px-Ferrero_June_2011_3.jpg",
+      "sha256": "4a05a0846a3fb39ee5741106f487fc439091cd0fcbb159d1fff7592d8c518459",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Ferrero_June_2011_3.jpg",
+      "license": "CC BY 2.0",
+      "artist": "Sergio Ruiz",
+      "year": 2011
+    },
+    {
+      "label": "Juan Carlos Ferrero",
+      "label_source": "depicts",
+      "file": "juan-carlos-ferrero_166993736.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Damir_D%C5%BEumhur_vs_Carlos_Alcaraz%2C_2025_Roland_Garros%2C_2025-05-30_%281115%29_%28Juan_Carlos_Ferrero%29.jpg/500px-Damir_D%C5%BEumhur_vs_Carlos_Alcaraz%2C_2025_Roland_Garros%2C_2025-05-30_%281115%29_%28Juan_Carlos_Ferrero%29.jpg",
+      "sha256": "60564ea9308685f2111a29560dab7abbd12887521ca0fe6b2699d2aa622fd800",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Damir_D%C5%BEumhur_vs_Carlos_Alcaraz,_2025_Roland_Garros,_2025-05-30_(1115)_(Juan_Carlos_Ferrero).jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "Like tears in rain",
+      "year": 2025
+    },
+    {
+      "label": "Juan Carlos Ferrero",
+      "label_source": "depicts",
+      "file": "juan-carlos-ferrero_29653933.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Ferrero_2006_Australian_Open.jpg/1280px-Ferrero_2006_Australian_Open.jpg",
+      "sha256": "518a68b3b8e010e715a82f02531853e3ca31562f6e22cf8ac4cb29bdcb66c68b",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Ferrero_2006_Australian_Open.jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "Brianna Laugher",
+      "year": 2006
+    },
+    {
+      "label": "Junichiro Koizumi",
+      "label_source": "depicts",
+      "file": "junichiro-koizumi_76721150.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Koizumi_Junichiro_200104.jpg/500px-Koizumi_Junichiro_200104.jpg",
+      "sha256": "2fbce31cd8b0fff6abe887e718673ad290f7c73861107420a7cb5bd247dcc95c",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Koizumi_Junichiro_200104.jpg",
+      "license": "CC BY 4.0",
+      "artist": "Cabinet Public Affairs Office, Cabinet Secretariat",
+      "year": null
+    },
+    {
+      "label": "Junichiro Koizumi",
+      "label_source": "depicts",
+      "file": "junichiro-koizumi_77213918.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Junichiro_Koizumi_20010426.jpg/960px-Junichiro_Koizumi_20010426.jpg",
+      "sha256": "e49c39097fd61cfcc8ff07a286f7020b10d05603aa1e6965188193d1ca17ea34",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Junichiro_Koizumi_20010426.jpg",
+      "license": "CC BY 4.0",
+      "artist": "内閣官房内閣広報室",
+      "year": 2002
+    },
+    {
+      "label": "Junichiro Koizumi",
+      "label_source": "depicts",
+      "file": "junichiro-koizumi_158947543.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Junichiro_Koizumi_200104_2.jpg/250px-Junichiro_Koizumi_200104_2.jpg",
+      "sha256": "8fa869cc6ff4152f1e5219ff7cc9e20deb2b019bffb48ec56dea968cd2a62415",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Junichiro_Koizumi_200104_2.jpg",
+      "license": "CC BY 4.0",
+      "artist": "内閣官房内閣広報室",
+      "year": 2001
+    },
+    {
+      "label": "Junichiro Koizumi",
+      "label_source": "depicts",
+      "file": "junichiro-koizumi_102230178.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Junichiro_Koizumi_20010426_%28cropped%29.jpg/500px-Junichiro_Koizumi_20010426_%28cropped%29.jpg",
+      "sha256": "29db24ace4b69090228f70f42a081ba018d8338dfa74f778960dc6f3e0a99712",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Junichiro_Koizumi_20010426_(cropped).jpg",
+      "license": "CC BY 4.0",
+      "artist": "内閣官房内閣広報室",
+      "year": 2003
+    },
+    {
+      "label": "Junichiro Koizumi",
+      "label_source": "depicts",
+      "file": "junichiro-koizumi_10548821.png",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Koizumi_2010_cropped.png/500px-Koizumi_2010_cropped.png",
+      "sha256": "f38f7f10a88ec96fe3fe21cb17e18f4935c24ab98d6e887364ca57b894eb0244",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Koizumi_2010_cropped.png",
+      "license": "CC BY 3.0 br",
+      "artist": "Fabio Rodrigues Pozzebom/ABr",
+      "year": 2010
+    },
+    {
+      "label": "Kofi Annan",
+      "label_source": "depicts",
+      "file": "kofi-annan_15081627.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Kofi_Annan_at_OYW.jpg/500px-Kofi_Annan_at_OYW.jpg",
+      "sha256": "a7dc24f71c7f22465fda58e151cfaccc10dfae04e75e4706b0ba648332d28f91",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Kofi_Annan_at_OYW.jpg",
+      "license": "CC BY-SA 3.0",
+      "artist": "Jmquez",
+      "year": null
+    },
+    {
+      "label": "Kofi Annan",
+      "label_source": "depicts",
+      "file": "kofi-annan_1985115.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Kofi_Annan4_2007_04_20.jpg/330px-Kofi_Annan4_2007_04_20.jpg",
+      "sha256": "94e5079ea26a5976fcf8fcef2200e42639d56b2daba339a3fdccec5bfcd30299",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Kofi_Annan4_2007_04_20.jpg",
+      "license": "CC BY 2.5",
+      "artist": "Copyright © Harry Wad",
+      "year": 2007
+    },
+    {
+      "label": "Kofi Annan",
+      "label_source": "depicts",
+      "file": "kofi-annan_135717872.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Kofi_Annan%2C_Secretary_General_of_the_United_Nations_-_1999.jpg/1280px-Kofi_Annan%2C_Secretary_General_of_the_United_Nations_-_1999.jpg",
+      "sha256": "a29f75c2e4b2b92f8d1321f848c6d400e8923c421a603db169bee1f599ebca48",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Kofi_Annan,_Secretary_General_of_the_United_Nations_-_1999.jpg",
+      "license": "CC BY 4.0",
+      "artist": "Christian Lambiotte / European Communities, 1999 / EC - Audiovisual Service",
+      "year": 1999
+    },
+    {
+      "label": "Kofi Annan",
+      "label_source": "depicts",
+      "file": "kofi-annan_41810082.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Chatham_House_Prize_2014_Award_Ceremony_%2815245047334%29.jpg/1280px-Chatham_House_Prize_2014_Award_Ceremony_%2815245047334%29.jpg",
+      "sha256": "33f6c113f1c23be4500a8c9d73bc8b59ee94c2ce882d134fc69d7a12ab8e089b",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Chatham_House_Prize_2014_Award_Ceremony_(15245047334).jpg",
+      "license": "CC BY 2.0",
+      "artist": "Chatham House, London",
+      "year": 2014
+    },
+    {
+      "label": "Kofi Annan",
+      "label_source": "depicts",
+      "file": "kofi-annan_71808485.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Kofi_Annan_%282018%29.jpg/960px-Kofi_Annan_%282018%29.jpg",
+      "sha256": "5c3c347ac1f7c2f2c6d6db7e406e6c24072c797b52086a107e4d4e194054e5b4",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Kofi_Annan_(2018).jpg",
+      "license": "CC BY 3.0",
+      "artist": "Hecker / MSC",
+      "year": 2018
+    },
+    {
+      "label": "Laura Bush",
+      "label_source": "depicts",
+      "file": "laura-bush_490202.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Laura_Bush.jpg/500px-Laura_Bush.jpg",
+      "sha256": "ae256a111241b49baa7116c1f09b836987a9fff3941e2a3627af227a5d18753a",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Laura_Bush.jpg",
+      "license": "Public domain",
+      "artist": "",
+      "year": null
+    },
+    {
+      "label": "Laura Bush",
+      "label_source": "depicts",
+      "file": "laura-bush_1190898.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/20060918-9_aa0172-772v.jpg/500px-20060918-9_aa0172-772v.jpg",
+      "sha256": "36bb49fb54fbc290fde383204e85f950eddace246fdbe5dc81c3f38d9821dddf",
+      "page_url": "https://commons.wikimedia.org/wiki/File:20060918-9_aa0172-772v.jpg",
+      "license": "Public domain",
+      "artist": "Eric Draper",
+      "year": 2006
+    },
+    {
+      "label": "Laura Bush",
+      "label_source": "depicts",
+      "file": "laura-bush_9544141.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Laura_Bush_portrait-2.jpg/250px-Laura_Bush_portrait-2.jpg",
+      "sha256": "2d60dbd686f7342ff0f2592f8282503697b7bd13e1cda3b1e6c21fa45c6c87c1",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Laura_Bush_portrait-2.jpg",
+      "license": "Public domain",
+      "artist": "Laura_Bush_portrait.jpg: White House photo by Krisanna Johnson derivative work: Hagar (talk)",
+      "year": 2010
+    },
+    {
+      "label": "Laura Bush",
+      "label_source": "depicts",
+      "file": "laura-bush_1267907.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Laura_Bush_speaks_during_a_conference_on_school_safety%2C_2006.jpg/500px-Laura_Bush_speaks_during_a_conference_on_school_safety%2C_2006.jpg",
+      "sha256": "4324c5f78ddc9457aeef3939bf0e04e11808e87e38b4cf1294b2b724e0778278",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Laura_Bush_speaks_during_a_conference_on_school_safety,_2006.jpg",
+      "license": "Public domain",
+      "artist": "Shealeah Craighead",
+      "year": 2006
+    },
+    {
+      "label": "Laura Bush",
+      "label_source": "depicts",
+      "file": "laura-bush_58274264.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Laura_Bush_2012.jpg/500px-Laura_Bush_2012.jpg",
+      "sha256": "b3fbc00410ee1718a33ea9d0e53cd52c1f1146ba9d9a75330de387040679f849",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Laura_Bush_2012.jpg",
+      "license": "Public domain",
+      "artist": "Lauren Gerson",
+      "year": 2012
+    },
+    {
+      "label": "Lindsay Davenport",
+      "label_source": "depicts",
+      "file": "lindsay-davenport_142131515.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Lindsay_Davenport_%28USA%29_%2821012461133%29_%28cropped%29.jpg/500px-Lindsay_Davenport_%28USA%29_%2821012461133%29_%28cropped%29.jpg",
+      "sha256": "944f696bfd571b6da3e5875f43b175f4865d49d004f46afcc83dda3c55281863",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Lindsay_Davenport_(USA)_(21012461133)_(cropped).jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "robbiesaurus from Smithtown, NY, USA",
+      "year": 2015
+    },
+    {
+      "label": "Lindsay Davenport",
+      "label_source": "depicts",
+      "file": "lindsay-davenport_50606068.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Davenport_2013_%28cropped%29.jpg/500px-Davenport_2013_%28cropped%29.jpg",
+      "sha256": "e058719d2f77225e84e3d618542c3409cdbb8b2084c7a7d4338cf93ce7100069",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Davenport_2013_(cropped).jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "GPS",
+      "year": 2013
+    },
+    {
+      "label": "Lindsay Davenport",
+      "label_source": "depicts",
+      "file": "lindsay-davenport_2928568.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Davenport_Lindsay.jpg/500px-Davenport_Lindsay.jpg",
+      "sha256": "c8ad46fb9085f67e21d9b2b957161415dbd214240c1c5e12d6fae4fed7a573be",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Davenport_Lindsay.jpg",
+      "license": "CC BY 2.0",
+      "artist": "Donna &amp; Keith",
+      "year": 2006
+    },
+    {
+      "label": "Lindsay Davenport",
+      "label_source": "depicts",
+      "file": "lindsay-davenport_8824271.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Lindsay_Davenport.JPG/330px-Lindsay_Davenport.JPG",
+      "sha256": "a258a3009747a5f5662c631219fbcb20160fbe917b3275909f7ebc45513e1e03",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Lindsay_Davenport.JPG",
+      "license": "Attribution",
+      "artist": "Bill Mitchell",
+      "year": 2003
+    },
+    {
+      "label": "Lindsay Davenport",
+      "label_source": "depicts",
+      "file": "lindsay-davenport_2000982.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Lindsay_Davenport_Indian_Wells_2006.jpg/960px-Lindsay_Davenport_Indian_Wells_2006.jpg",
+      "sha256": "89b595e26df4e3e09a3803600ce1add6e6a77c326eb0d855f260aa6dd5568320",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Lindsay_Davenport_Indian_Wells_2006.jpg",
+      "license": "CC BY-SA 2.5",
+      "artist": "The original uploader was Akademan at English Wikipedia. (Original text: me (en:w:User:Akademan))",
+      "year": 2006
+    },
+    {
+      "label": "Lleyton Hewitt",
+      "label_source": "depicts",
+      "file": "lleyton-hewitt_578350.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Lleyton_hewitt_medibank_international_2006_02.jpg/1280px-Lleyton_hewitt_medibank_international_2006_02.jpg",
+      "sha256": "743c963fcc05a9709125b34e88a89cee0e853759cb2a4477293f00646b9b513c",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Lleyton_hewitt_medibank_international_2006_02.jpg",
+      "license": "CC BY-SA 2.5",
+      "artist": "",
+      "year": null
+    },
+    {
+      "label": "Lleyton Hewitt",
+      "label_source": "depicts",
+      "file": "lleyton-hewitt_8359005.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Lleyton_Hewitt_at_the_2009_US_Open_03.jpg/1280px-Lleyton_Hewitt_at_the_2009_US_Open_03.jpg",
+      "sha256": "e1c97d3796195855f39881ebb656fd37034ac872acf473a7f50dac24d685ba12",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Lleyton_Hewitt_at_the_2009_US_Open_03.jpg",
+      "license": "CC BY 2.0",
+      "artist": "Charlie Cowins",
+      "year": 2009
+    },
+    {
+      "label": "Lleyton Hewitt",
+      "label_source": "depicts",
+      "file": "lleyton-hewitt_49981529.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Lleyton_Hewitt_%2827501516020%29.jpg/1280px-Lleyton_Hewitt_%2827501516020%29.jpg",
+      "sha256": "fad95f5bd53e04f3b49647e57d374b6e86f5b7e34f496c44a7b21cf17c8bb0da",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Lleyton_Hewitt_(27501516020).jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "Carine06 from UK",
+      "year": 2016
+    },
+    {
+      "label": "Lleyton Hewitt",
+      "label_source": "depicts",
+      "file": "lleyton-hewitt_50252343.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Hewitt_WM16_%2812%29_%2828385918786%29.jpg/1280px-Hewitt_WM16_%2812%29_%2828385918786%29.jpg",
+      "sha256": "f7ece467c84d0763c55177bc7f2ce7ecf851c109f3076271308b0feccee4bc03",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Hewitt_WM16_(12)_(28385918786).jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "si.robi",
+      "year": 2016
+    },
+    {
+      "label": "Lleyton Hewitt",
+      "label_source": "depicts",
+      "file": "lleyton-hewitt_152900179.png",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Hewitt_forehand_Wimbledon_2023.png/960px-Hewitt_forehand_Wimbledon_2023.png",
+      "sha256": "3c32c976993ad780c3ffc5369aee78b06dfc07bf316c46fa86bc9b1374cd3e5f",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Hewitt_forehand_Wimbledon_2023.png",
+      "license": "CC BY 4.0",
+      "artist": "LHC88",
+      "year": 2023
+    },
+    {
+      "label": "Luiz Inacio Lula da Silva",
+      "label_source": "depicts",
+      "file": "luiz-inacio-lula-da-silva_199624675.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/15.09.26_-_Entrevista_ao_Jornal_da_Record_%2855531142579%29.jpg/1280px-15.09.26_-_Entrevista_ao_Jornal_da_Record_%2855531142579%29.jpg",
+      "sha256": "6bdda4d7ee4f4c09b082ea72388e5b7944d1b2a118df1718908a085ebbeed0bb",
+      "page_url": "https://commons.wikimedia.org/wiki/File:15.09.26_-_Entrevista_ao_Jornal_da_Record_(55531142579).jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "Lula Oficial",
+      "year": 2026
+    },
+    {
+      "label": "Luiz Inacio Lula da Silva",
+      "label_source": "depicts",
+      "file": "luiz-inacio-lula-da-silva_171794995.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/03.11.2023_-_Atividade_fisica_no_Pal%C3%A1cio_da_Alvorada._-_53307129123.jpg/1280px-03.11.2023_-_Atividade_fisica_no_Pal%C3%A1cio_da_Alvorada._-_53307129123.jpg",
+      "sha256": "0051f63752f87ce825c3824247890e5b1b50fe28233092c7d9566ad731492730",
+      "page_url": "https://commons.wikimedia.org/wiki/File:03.11.2023_-_Atividade_fisica_no_Pal%C3%A1cio_da_Alvorada._-_53307129123.jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "Lula Oficial",
+      "year": 2023
+    },
+    {
+      "label": "Luiz Inacio Lula da Silva",
+      "label_source": "depicts",
+      "file": "luiz-inacio-lula-da-silva_132702631.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/05.06.2023_-_Cerim%C3%B4nia_por_ocasi%C3%A3o_do_Dia_Mundial_do_Meio_Ambiente_%2852954283563%29.jpg/1280px-05.06.2023_-_Cerim%C3%B4nia_por_ocasi%C3%A3o_do_Dia_Mundial_do_Meio_Ambiente_%2852954283563%29.jpg",
+      "sha256": "46c3b212a526614291a61277117946106726a52979781cbcfe19f117230f65f2",
+      "page_url": "https://commons.wikimedia.org/wiki/File:05.06.2023_-_Cerim%C3%B4nia_por_ocasi%C3%A3o_do_Dia_Mundial_do_Meio_Ambiente_(52954283563).jpg",
+      "license": "CC BY 2.0",
+      "artist": "Palácio do Planalto from Brasilia, Brasil",
+      "year": 2023
+    },
+    {
+      "label": "Luiz Inacio Lula da Silva",
+      "label_source": "depicts",
+      "file": "luiz-inacio-lula-da-silva_134585338.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/18.07.2023_-_Conversa_com_o_Presidente_-_53055373563.jpg/1280px-18.07.2023_-_Conversa_com_o_Presidente_-_53055373563.jpg",
+      "sha256": "45000ba86a7857357da834afc81b3c058a25d653d5b66bc6f526d9ca29d8b182",
+      "page_url": "https://commons.wikimedia.org/wiki/File:18.07.2023_-_Conversa_com_o_Presidente_-_53055373563.jpg",
+      "license": "CC BY 2.0",
+      "artist": "Palácio do Planalto",
+      "year": 2023
+    },
+    {
+      "label": "Luiz Inacio Lula da Silva",
+      "label_source": "depicts",
+      "file": "luiz-inacio-lula-da-silva_130602500.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/10.04.2023_-_Reuni%C3%A3o_ministerial_dos_100_dias_de_governo_%2852807563454%29.jpg/1280px-10.04.2023_-_Reuni%C3%A3o_ministerial_dos_100_dias_de_governo_%2852807563454%29.jpg",
+      "sha256": "3d3ddf8b6667fe822e99d51651ad7ff13361760519b493977cc7d549b265bf9b",
+      "page_url": "https://commons.wikimedia.org/wiki/File:10.04.2023_-_Reuni%C3%A3o_ministerial_dos_100_dias_de_governo_(52807563454).jpg",
+      "license": "CC BY 2.0",
+      "artist": "Palácio do Planalto from Brasilia, Brasil",
+      "year": 2023
+    },
+    {
+      "label": "Mahmoud Abbas",
+      "label_source": "depicts",
+      "file": "mahmoud-abbas_165059122.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Mahmoud_Abbas_2025-05-10_%28cropped%29.jpg/1280px-Mahmoud_Abbas_2025-05-10_%28cropped%29.jpg",
+      "sha256": "7d9a0d2cd882aadb3e00a2ddd4de8ca251edecd5b2df8d208b1d407b98cc6922",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Mahmoud_Abbas_2025-05-10_(cropped).jpg",
+      "license": "CC BY 4.0",
+      "artist": "kremlin.ru",
+      "year": 2025
+    },
+    {
+      "label": "Mahmoud Abbas",
+      "label_source": "depicts",
+      "file": "mahmoud-abbas_154990020.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Mahmoud_Abbas_2024.jpg/500px-Mahmoud_Abbas_2024.jpg",
+      "sha256": "1bf06e2a5aff16bc8d15d700a4ae69fd8c0e3d3d278b1fdb3db3976375c5ab2e",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Mahmoud_Abbas_2024.jpg",
+      "license": "Public domain",
+      "artist": "Fotografía oficial de la Presidencia de Colombia",
+      "year": 2024
+    },
+    {
+      "label": "Mahmoud Abbas",
+      "label_source": "depicts",
+      "file": "mahmoud-abbas_10078028.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Mahmoud_Abbas.jpg/250px-Mahmoud_Abbas.jpg",
+      "sha256": "0388496a8c35e4db356774fac57aed659e8f54ffe057c7bf8fffd13c2e86363a",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Mahmoud_Abbas.jpg",
+      "license": "Public domain",
+      "artist": "Official White House Photo by Lawrence Jackson",
+      "year": 2009
+    },
+    {
+      "label": "Mahmoud Abbas",
+      "label_source": "depicts",
+      "file": "mahmoud-abbas_35601330.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Mahmoud_Abbas_September_2014.jpg/500px-Mahmoud_Abbas_September_2014.jpg",
+      "sha256": "9d8ec96f41bb0f375d68b6d945ea5de0759612ca68b68ab579b1f64228054fbc",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Mahmoud_Abbas_September_2014.jpg",
+      "license": "Public domain",
+      "artist": "U.S. Department of State",
+      "year": 2014
+    },
+    {
+      "label": "Mahmoud Abbas",
+      "label_source": "depicts",
+      "file": "mahmoud-abbas_59242444.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Mahmoud_Abbas_May_2017.jpg/500px-Mahmoud_Abbas_May_2017.jpg",
+      "sha256": "fa97239d342ab2fab49c0f412e42bcaae0e70ba151edcc32bfe2e26dd0181817",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Mahmoud_Abbas_May_2017.jpg",
+      "license": "CC BY 4.0",
+      "artist": "Kremlin.ru",
+      "year": 2017
+    },
+    {
+      "label": "Megawati Sukarnoputri",
+      "label_source": "depicts",
+      "file": "megawati-sukarnoputri_121163316.png",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Official_portrait_of_Megawati_Sukarnoputri.png/330px-Official_portrait_of_Megawati_Sukarnoputri.png",
+      "sha256": "e95e9293d2d534a642e0e0ab22b27b67a67ee301b9d62d998504b2cf00f92acc",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Official_portrait_of_Megawati_Sukarnoputri.png",
+      "license": "Public domain",
+      "artist": "Secretariat of the Vice President of Indonesia",
+      "year": 1999
+    },
+    {
+      "label": "Megawati Sukarnoputri",
+      "label_source": "depicts",
+      "file": "megawati-sukarnoputri_81423411.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Megawati_Taufik_Kiemas%2C_1987.jpg/500px-Megawati_Taufik_Kiemas%2C_1987.jpg",
+      "sha256": "ece4ad5370473334c27f95e6573e041cecb783f986248ca5a7282cd70ddb01bc",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Megawati_Taufik_Kiemas,_1987.jpg",
+      "license": "Public domain",
+      "artist": "General Elections Institution under the Ministry of Home Affairs",
+      "year": 1987
+    },
+    {
+      "label": "Megawati Sukarnoputri",
+      "label_source": "depicts",
+      "file": "megawati-sukarnoputri_72941958.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Megawati_Soekarnoputri_2016.jpg/330px-Megawati_Soekarnoputri_2016.jpg",
+      "sha256": "2d212220eeb95fb942c1f1226f28b964417d3d9668891826bbb91cfddb7a09a2",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Megawati_Soekarnoputri_2016.jpg",
+      "license": "Public domain",
+      "artist": "Cabinet Secretary of Indonesia",
+      "year": 2016
+    },
+    {
+      "label": "Megawati Sukarnoputri",
+      "label_source": "depicts",
+      "file": "megawati-sukarnoputri_2480513.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Megawati_Soekarnoputri.jpg/250px-Megawati_Soekarnoputri.jpg",
+      "sha256": "3936f443609abeb5dd04f2621d6e43d8067e964d47df1d08259450a7ce341d53",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Megawati_Soekarnoputri.jpg",
+      "license": "GFDL 1.2",
+      "artist": "Chancellery of the President of the Republic of Poland",
+      "year": 2004
+    },
+    {
+      "label": "Megawati Sukarnoputri",
+      "label_source": "depicts",
+      "file": "megawati-sukarnoputri_7895666.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Vice_President_Megawati_Sukarnoputri_-_Indonesia.jpg/960px-Vice_President_Megawati_Sukarnoputri_-_Indonesia.jpg",
+      "sha256": "7bc2f72642614689bbac125cca1d265f93148a7e13e04f6ff7e2c8d69bb4a461",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Vice_President_Megawati_Sukarnoputri_-_Indonesia.jpg",
+      "license": "Public domain",
+      "artist": "National Information and Communication Agency Republic of Indonesia",
+      "year": 2001
+    },
+    {
+      "label": "Michael Bloomberg",
+      "label_source": "depicts",
+      "file": "michael-bloomberg_199557791.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/High-Level_Conference_on_Financing_Sustainable_Growth_%28P-036588-00-09%29.jpg/1280px-High-Level_Conference_on_Financing_Sustainable_Growth_%28P-036588-00-09%29.jpg",
+      "sha256": "86a4336f18ea490d192307637ef014d904a340d8e779d93bd5c1c11d827a902c",
+      "page_url": "https://commons.wikimedia.org/wiki/File:High-Level_Conference_on_Financing_Sustainable_Growth_(P-036588-00-09).jpg",
+      "license": "CC BY 4.0",
+      "artist": "Europäische Kommission - Audiovisueller Dienst, Lukasz Kobus, CE - Service audiovisuel, EC - Audiovisual Service, Shimera",
+      "year": 2018
+    },
+    {
+      "label": "Michael Bloomberg",
+      "label_source": "depicts",
+      "file": "michael-bloomberg_81566288.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Michael_Bloomberg_%285941059652%29_%28cropped2%29.jpg/330px-Michael_Bloomberg_%285941059652%29_%28cropped2%29.jpg",
+      "sha256": "94253c15d0d630767878b100f10c35806af558a81d17636659554216ae0af8c9",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Michael_Bloomberg_(5941059652)_(cropped2).jpg",
+      "license": "CC BY 2.0",
+      "artist": "ImagineCup",
+      "year": 2011
+    },
+    {
+      "label": "Michael Bloomberg",
+      "label_source": "depicts",
+      "file": "michael-bloomberg_81562430.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Michael_Bloomberg_%284640149324%29.jpg/1280px-Michael_Bloomberg_%284640149324%29.jpg",
+      "sha256": "5ffe1233cbeec40332ae0281a55c577b67b45f6868492ee2428262e8d2279b93",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Michael_Bloomberg_(4640149324).jpg",
+      "license": "CC BY 2.0",
+      "artist": "TechCrunch",
+      "year": 2010
+    },
+    {
+      "label": "Michael Bloomberg",
+      "label_source": "depicts",
+      "file": "michael-bloomberg_199557488.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Participation_of_Maro%C5%A1_%C5%A0ef%C4%8Dovi%C4%8D%2C_Vice-President_of_the_EC%2C_in_the_%22From_the_Ashes%22_film_screening_%28P-034797-00-04%29.jpg/1280px-Participation_of_Maro%C5%A1_%C5%A0ef%C4%8Dovi%C4%8D%2C_Vice-President_of_the_EC%2C_in_the_%22From_the_Ashes%22_film_screening_%28P-034797-00-04%29.jpg",
+      "sha256": "ae34bcec69cea6e1b777fc0e3145a350ac4a462d6d3fb9f08cdeb96b9ff1e617",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Participation_of_Maro%C5%A1_%C5%A0ef%C4%8Dovi%C4%8D,_Vice-President_of_the_EC,_in_the_%22From_the_Ashes%22_film_screening_(P-034797-00-04).jpg",
+      "license": "CC BY 4.0",
+      "artist": "Europäische Kommission - Audiovisueller Dienst, Lukasz Kobus, CE - Service audiovisuel, EC - Audiovisual Service, Shimera",
+      "year": 2017
+    },
+    {
+      "label": "Michael Bloomberg",
+      "label_source": "depicts",
+      "file": "michael-bloomberg_86504407.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Michael_Bloomberg_%2849475694182%29.jpg/1280px-Michael_Bloomberg_%2849475694182%29.jpg",
+      "sha256": "d8d84a3d750cc99e617e8be794acb77bb9e227134ef8d0427b625dcf8adf7800",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Michael_Bloomberg_(49475694182).jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "Gage Skidmore from Surprise, AZ, United States of America",
+      "year": 2020
+    },
+    {
+      "label": "Naomi Watts",
+      "label_source": "depicts",
+      "file": "naomi-watts_24796490.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Naomi_Watts_%286800618593%29.jpg/960px-Naomi_Watts_%286800618593%29.jpg",
+      "sha256": "09ffac56167420cb8113093068d8681ec03bd7d5939f84984761aecb1072beca",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Naomi_Watts_(6800618593).jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "Eva Rinaldi",
+      "year": 2012
+    },
+    {
+      "label": "Naomi Watts",
+      "label_source": "depicts",
+      "file": "naomi-watts_61305913.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Naomi_Watts_by_Gage_Skidmore.jpg/1280px-Naomi_Watts_by_Gage_Skidmore.jpg",
+      "sha256": "5d4394f71b81b4830a6d8cb3f9b5eb17653f00777ec6006cb87eaf057471a9c0",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Naomi_Watts_by_Gage_Skidmore.jpg",
+      "license": "CC BY-SA 3.0",
+      "artist": "Gage Skidmore",
+      "year": 2017
+    },
+    {
+      "label": "Naomi Watts",
+      "label_source": "depicts",
+      "file": "naomi-watts_35856756.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Naomi_Watts_%286800615125%29_crop.JPG/500px-Naomi_Watts_%286800615125%29_crop.JPG",
+      "sha256": "fbfd5cb9f27ace4fcea4c8c810e453638863249ba5f359430e870587b4eb81c0",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Naomi_Watts_(6800615125)_crop.JPG",
+      "license": "CC BY-SA 2.0",
+      "artist": "Eva Rinaldi",
+      "year": 2014
+    },
+    {
+      "label": "Naomi Watts",
+      "label_source": "depicts",
+      "file": "naomi-watts_19256348.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Naomi_Watts_2%2C_2012.jpg/1280px-Naomi_Watts_2%2C_2012.jpg",
+      "sha256": "cacf2c1f124fe60584e1ef9f4a03ed1f609aa43449241ead392b3fbc6308c9da",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Naomi_Watts_2,_2012.jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "Joella Marano",
+      "year": 2012
+    },
+    {
+      "label": "Naomi Watts",
+      "label_source": "depicts",
+      "file": "naomi-watts_153982186.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Naomi_Watts_at_the_2024_New_York_Film_Festival_2_%28cropped%29.jpg/1280px-Naomi_Watts_at_the_2024_New_York_Film_Festival_2_%28cropped%29.jpg",
+      "sha256": "c34dfa91d39ffa559057014b7bf6a4fb68d1addd324ac28f227710c15592956e",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Naomi_Watts_at_the_2024_New_York_Film_Festival_2_(cropped).jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "Bryan Berlin",
+      "year": 2024
+    },
+    {
+      "label": "Nestor Kirchner",
+      "label_source": "depicts",
+      "file": "nestor-kirchner_57793401.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Presidente_Nestor_Kirchner_%28cropped%29.jpg/960px-Presidente_Nestor_Kirchner_%28cropped%29.jpg",
+      "sha256": "a0317e4ba8b705331b64130ece54917525e59ec721244453ddc0d9b1e1dd06d8",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Presidente_Nestor_Kirchner_(cropped).jpg",
+      "license": "CC BY 2.5 ar",
+      "artist": "Casa Rosada - Gobierno de la Nación",
+      "year": 2005
+    },
+    {
+      "label": "Nestor Kirchner",
+      "label_source": "depicts",
+      "file": "nestor-kirchner_73697941.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/N%C3%A9stor_Kirchner_y_Lula_Da_Silva-Brasil-Marzo_2004_%28cropped%29.jpg/250px-N%C3%A9stor_Kirchner_y_Lula_Da_Silva-Brasil-Marzo_2004_%28cropped%29.jpg",
+      "sha256": "d94758e6971ce852617e201ea5656eac46575b5c5415fab2a7ede40fd5dc1f9e",
+      "page_url": "https://commons.wikimedia.org/wiki/File:N%C3%A9stor_Kirchner_y_Lula_Da_Silva-Brasil-Marzo_2004_(cropped).jpg",
+      "license": "CC BY 2.0",
+      "artist": "Casa Rosada",
+      "year": 2004
+    },
+    {
+      "label": "Nestor Kirchner",
+      "label_source": "depicts",
+      "file": "nestor-kirchner_1753498.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Kirchner_marzo_2007_Congreso.jpg/1280px-Kirchner_marzo_2007_Congreso.jpg",
+      "sha256": "bf8d9a9d7e25ccbd469e4ca38596d78863136eee7770992b717d4d0f10252f67",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Kirchner_marzo_2007_Congreso.jpg",
+      "license": "CC BY 2.0",
+      "artist": "Víctor Hugo Bugge",
+      "year": 2007
+    },
+    {
+      "label": "Nestor Kirchner",
+      "label_source": "depicts",
+      "file": "nestor-kirchner_167960.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/NestorKirchner.jpeg/500px-NestorKirchner.jpeg",
+      "sha256": "ed275b44d88d754cdcc4d2f4543c41c8aba423479d03b89c3e9b66bb1e07da95",
+      "page_url": "https://commons.wikimedia.org/wiki/File:NestorKirchner.jpeg",
+      "license": "CC BY 3.0 br",
+      "artist": "Marcello Casal Jr./ABr",
+      "year": 2003
+    },
+    {
+      "label": "Nestor Kirchner",
+      "label_source": "depicts",
+      "file": "nestor-kirchner_390381.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/N%C3%A9stor_Kirchner-ESMA-Buenos_Aires-24_de_marzo_de_2004.jpg/960px-N%C3%A9stor_Kirchner-ESMA-Buenos_Aires-24_de_marzo_de_2004.jpg",
+      "sha256": "8e61840cbe6b751d5c759fd98548cc88c1855fb4147ec09c2b30944f9391f0c6",
+      "page_url": "https://commons.wikimedia.org/wiki/File:N%C3%A9stor_Kirchner-ESMA-Buenos_Aires-24_de_marzo_de_2004.jpg",
+      "license": "CC BY 2.0",
+      "artist": "Presidency of Argentina",
+      "year": 2004
+    },
+    {
+      "label": "Paul Bremer",
+      "label_source": "depicts",
+      "file": "paul-bremer_160661031.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Paul_Bremer_%283x4_cropped%29.jpg/1280px-Paul_Bremer_%283x4_cropped%29.jpg",
+      "sha256": "4395a1a79fac7bfc2184f785243463306b398f9919728d55636c8a3642af2c10",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Paul_Bremer_(3x4_cropped).jpg",
+      "license": "Public domain",
+      "artist": "DoD photo by Helene C. Stikkel.",
+      "year": 2003
+    },
+    {
+      "label": "Paul Bremer",
+      "label_source": "depicts",
+      "file": "paul-bremer_8010641.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Paulbremer.jpg/960px-Paulbremer.jpg",
+      "sha256": "3f3e9f04a476e40ac5e7e3fdbc3341f3201415d4a2d75923695dcca6ae5f7fbe",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Paulbremer.jpg",
+      "license": "Public domain",
+      "artist": "Staff Sgt Ashley Brokop of the U.S. Air Force",
+      "year": 2004
+    },
+    {
+      "label": "Paul Bremer",
+      "label_source": "category",
+      "file": "paul-bremer_20806162.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Defense.gov_News_Photo_030724-D-9880W-061.jpg/1280px-Defense.gov_News_Photo_030724-D-9880W-061.jpg",
+      "sha256": "f713896042a977360358d30576c35759400c81556e568e2e2b32c3f8337fc60d",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Defense.gov_News_Photo_030724-D-9880W-061.jpg",
+      "license": "Public domain",
+      "artist": "R.D. Ward",
+      "year": 2003
+    },
+    {
+      "label": "Paul Bremer",
+      "label_source": "category",
+      "file": "paul-bremer_66393014.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Aankomst_op_Schiphol%2C_Bestanddeelnr_932-6544.jpg/1280px-Aankomst_op_Schiphol%2C_Bestanddeelnr_932-6544.jpg",
+      "sha256": "2cb93712507bfc633eabc7f9e8b29933610b3359b9f86fafcc1cf6be91dac4cb",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Aankomst_op_Schiphol,_Bestanddeelnr_932-6544.jpg",
+      "license": "CC0",
+      "artist": "Rob Bogaerts for Anefo",
+      "year": 1983
+    },
+    {
+      "label": "Paul Bremer",
+      "label_source": "category",
+      "file": "paul-bremer_41430712.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Paul_Bremer_III_%281983%29.jpg/1280px-Paul_Bremer_III_%281983%29.jpg",
+      "sha256": "35dd00b70b9ebb274a849d3b24075f93be04245ec6f5b3c266b25b1c1bc25eaf",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Paul_Bremer_III_(1983).jpg",
+      "license": "CC0",
+      "artist": "Marcel Antonisse / Anefo",
+      "year": 1983
+    },
+    {
+      "label": "Pete Sampras",
+      "label_source": "depicts",
+      "file": "pete-sampras_2070927.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Pete_Sampras_crop.jpg/960px-Pete_Sampras_crop.jpg",
+      "sha256": "023d233770a0c80c85942d63f90d2522f14b8a5b69825716f9280e3f932cf66b",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Pete_Sampras_crop.jpg",
+      "license": "CC BY-SA 3.0",
+      "artist": "Levg",
+      "year": 2007
+    },
+    {
+      "label": "Pete Sampras",
+      "label_source": "depicts",
+      "file": "pete-sampras_17108704.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Pete_Sampras_Champions_Shootout_2.jpg/330px-Pete_Sampras_Champions_Shootout_2.jpg",
+      "sha256": "b4deecb7dd8bc6c9555b9f4fa740ab946e0700af5be5b33e1a0cf855dd10ffd9",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Pete_Sampras_Champions_Shootout_2.jpg",
+      "license": "CC BY 2.0",
+      "artist": "Shinya Suzuki",
+      "year": 2011
+    },
+    {
+      "label": "Pete Sampras",
+      "label_source": "depicts",
+      "file": "pete-sampras_17108748.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Pete_Sampras_Champions_Shootout.jpg/960px-Pete_Sampras_Champions_Shootout.jpg",
+      "sha256": "272d37dbc14d8f55d9d658b18599828a3332d9afc9d89e1492bacaa4f62763bb",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Pete_Sampras_Champions_Shootout.jpg",
+      "license": "CC BY 2.0",
+      "artist": "Shinya Suzuki",
+      "year": 2011
+    },
+    {
+      "label": "Recep Tayyip Erdogan",
+      "label_source": "depicts",
+      "file": "recep-tayyip-erdogan_86116870.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Recep_Tayyip_Erdogan_%282020-01-19%29.jpg/1280px-Recep_Tayyip_Erdogan_%282020-01-19%29.jpg",
+      "sha256": "ec19723d44226b2cc8eeda1a6be2b59fe29701d28cd0977f43dbaaa8af5bff03",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Recep_Tayyip_Erdogan_(2020-01-19).jpg",
+      "license": "CC BY 4.0",
+      "artist": "Russian Presidential Executive Office",
+      "year": 2020
+    },
+    {
+      "label": "Recep Tayyip Erdogan",
+      "label_source": "depicts",
+      "file": "recep-tayyip-erdogan_92910292.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/President_Trump_and_the_First_Lady_Visit_with_the_President_of_Turkey_and_Mrs._Emine_Erdogan_%2849061622292%29_%28cropped%29.jpg/330px-President_Trump_and_the_First_Lady_Visit_with_the_President_of_Turkey_and_Mrs._Emine_Erdogan_%2849061622292%29_%28cropped%29.jpg",
+      "sha256": "52d9a02861b3e0e1b11238d30b1f298bdad30c45213fb652531045e709d5643a",
+      "page_url": "https://commons.wikimedia.org/wiki/File:President_Trump_and_the_First_Lady_Visit_with_the_President_of_Turkey_and_Mrs._Emine_Erdogan_(49061622292)_(cropped).jpg",
+      "license": "Public domain",
+      "artist": "The White House from Washington, DC",
+      "year": 2019
+    },
+    {
+      "label": "Recep Tayyip Erdogan",
+      "label_source": "depicts",
+      "file": "recep-tayyip-erdogan_4294393.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Prime_Minister_of_Turkey_Recep_Tayyip_Erdogan_%282006%29.jpg/960px-Prime_Minister_of_Turkey_Recep_Tayyip_Erdogan_%282006%29.jpg",
+      "sha256": "6bfe23b2dd3251ff14fa654c6e14fed668e9b84563a7056115a34ffd959e644b",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Prime_Minister_of_Turkey_Recep_Tayyip_Erdogan_(2006).jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "World Economic Forum from Cologny, Switzerland. Retouched by Euromap",
+      "year": 2006
+    },
+    {
+      "label": "Recep Tayyip Erdogan",
+      "label_source": "depicts",
+      "file": "recep-tayyip-erdogan_68789422.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Recep_Tayyip_Erdogan_2017_%28cropped%29.jpg/500px-Recep_Tayyip_Erdogan_2017_%28cropped%29.jpg",
+      "sha256": "dcda2490c70a95aa4071ffeb037434f713790ad7f6f4e13b11fd9f20708cd08f",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Recep_Tayyip_Erdogan_2017_(cropped).jpg",
+      "license": "Public domain",
+      "artist": "US Department of State",
+      "year": 2017
+    },
+    {
+      "label": "Recep Tayyip Erdogan",
+      "label_source": "depicts",
+      "file": "recep-tayyip-erdogan_63998041.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Erdogan_2015.jpg/500px-Erdogan_2015.jpg",
+      "sha256": "4fa847696a93745a8ce9ff44d91d82b76da728d9427ecc1e742689f47592c736",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Erdogan_2015.jpg",
+      "license": "CC BY 4.0",
+      "artist": "The Presidential Press and Information Office",
+      "year": 2015
+    },
+    {
+      "label": "Ricardo Lagos",
+      "label_source": "depicts",
+      "file": "ricardo-lagos_70008052.png",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Ricardo_Lagos_Escobar_2006_%28No_background%29.png/330px-Ricardo_Lagos_Escobar_2006_%28No_background%29.png",
+      "sha256": "968e65f8fff4e41e02c14e6b6fe3a2a7ebc2e69d59213496f6529d3b508d49a6",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Ricardo_Lagos_Escobar_2006_(No_background).png",
+      "license": "CC BY 2.0",
+      "artist": "Presidencia Argentina",
+      "year": 2018
+    },
+    {
+      "label": "Ricardo Lagos",
+      "label_source": "depicts",
+      "file": "ricardo-lagos_147123105.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Ricardo_Lagos_en_una_conferencia_03.jpg/1280px-Ricardo_Lagos_en_una_conferencia_03.jpg",
+      "sha256": "ad61a5862fbe3cb04261d22373d2ea4c704cfed61247a977363ba189c51bc097",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Ricardo_Lagos_en_una_conferencia_03.jpg",
+      "license": "CC BY 4.0",
+      "artist": "Periodismodepaz",
+      "year": 2010
+    },
+    {
+      "label": "Ricardo Lagos",
+      "label_source": "depicts",
+      "file": "ricardo-lagos_48097749.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Ricardo_Lagos_1969.jpg/500px-Ricardo_Lagos_1969.jpg",
+      "sha256": "097413d1a843acdda5f426bd11097ff9a7c0b261819ac912d2b03a9e70acea29",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Ricardo_Lagos_1969.jpg",
+      "license": "CC BY 3.0 cl",
+      "artist": "Biblioteca del Congreso Nacional de Chile",
+      "year": 1969
+    },
+    {
+      "label": "Ricardo Lagos",
+      "label_source": "depicts",
+      "file": "ricardo-lagos_42247465.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Ricardo_Lagos_%282002%29.jpg/330px-Ricardo_Lagos_%282002%29.jpg",
+      "sha256": "c8cc2b98c94d20c12f1bbf9aa7c7b0ad32307a5c9580b040a7929205ff0bd7e2",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Ricardo_Lagos_(2002).jpg",
+      "license": "Public domain",
+      "artist": "U.S. Department of Defensecropped by User:GuarénDeBiblioteca",
+      "year": 2002
+    },
+    {
+      "label": "Ricardo Lagos",
+      "label_source": "depicts",
+      "file": "ricardo-lagos_151533876.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Retrato_Oficial_Presidente_Ricardo_Lagos_Escobar%2C_2000_%28cropped%29.jpg/1280px-Retrato_Oficial_Presidente_Ricardo_Lagos_Escobar%2C_2000_%28cropped%29.jpg",
+      "sha256": "5430e18d1a4f150f207a50b9e6596b76d27def7130f11d4f4f279688700e7299",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Retrato_Oficial_Presidente_Ricardo_Lagos_Escobar,_2000_(cropped).jpg",
+      "license": "CC BY 3.0 cl",
+      "artist": "Julio Donoso",
+      "year": 2000
+    },
+    {
+      "label": "Roh Moo-hyun",
+      "label_source": "depicts",
+      "file": "roh-moo-hyun_68258933.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Roh_Moo-hyun_%28cropped%29.jpg/330px-Roh_Moo-hyun_%28cropped%29.jpg",
+      "sha256": "be986ca217123ab0650b143bf32389dba0a95424462adff5e2c26668f8d6b9a2",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Roh_Moo-hyun_(cropped).jpg",
+      "license": "Public domain",
+      "artist": "United States Department of Defense",
+      "year": 2003
+    },
+    {
+      "label": "Roh Moo-hyun",
+      "label_source": "depicts",
+      "file": "roh-moo-hyun_167256075.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Roh_Moo-hyun_presidential_portrait_%28election_infobox%29.jpg/500px-Roh_Moo-hyun_presidential_portrait_%28election_infobox%29.jpg",
+      "sha256": "0a3e4844e2feb3868a8a10236c6e88598f438dcb0189375b8b4f4a0cd0019e8c",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Roh_Moo-hyun_presidential_portrait_(election_infobox).jpg",
+      "license": "KOGL Type 1",
+      "artist": "대한민국 국가기록원",
+      "year": 2003
+    },
+    {
+      "label": "Roh Moo-hyun",
+      "label_source": "depicts",
+      "file": "roh-moo-hyun_1488852.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Roh_Moo-hyun_cropped%2C_2003-October.jpg/250px-Roh_Moo-hyun_cropped%2C_2003-October.jpg",
+      "sha256": "ac7dc0beab2d66c58c7815608f70c32f106c2624a87555fd46e647202fc6f0fc",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Roh_Moo-hyun_cropped,_2003-October.jpg",
+      "license": "Public domain",
+      "artist": "White House photo by Paul Morse.",
+      "year": 2003
+    },
+    {
+      "label": "Roh Moo-hyun",
+      "label_source": "depicts",
+      "file": "roh-moo-hyun_81922032.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/20030514Roh_Moo-hyun_%28cropped%29.jpg/330px-20030514Roh_Moo-hyun_%28cropped%29.jpg",
+      "sha256": "4ac709e4f5a0aa47011024517c90fc1477cb59c2f9c2e40cd71415a14e2e285c",
+      "page_url": "https://commons.wikimedia.org/wiki/File:20030514Roh_Moo-hyun_(cropped).jpg",
+      "license": "Public domain",
+      "artist": "Department of Commerce",
+      "year": 2003
+    },
+    {
+      "label": "Rudolph Giuliani",
+      "label_source": "depicts",
+      "file": "rudolph-giuliani_85266400.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Rudy_Giuliani_%2849276589227%29.jpg/1280px-Rudy_Giuliani_%2849276589227%29.jpg",
+      "sha256": "d2b22c0148a38fa9c867283a3559a72d223bd0b088996c8485593faeebe347b0",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Rudy_Giuliani_(49276589227).jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "Gage Skidmore from Surprise, AZ, United States of America",
+      "year": 2019
+    },
+    {
+      "label": "Rudolph Giuliani",
+      "label_source": "depicts",
+      "file": "rudolph-giuliani_65598824.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Surprised_Rudy_Giuliani_%282167084169%29.jpg/1280px-Surprised_Rudy_Giuliani_%282167084169%29.jpg",
+      "sha256": "10291942f8f82cb350bb20634854c5a359fb1a1a2737635114765e86c3665255",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Surprised_Rudy_Giuliani_(2167084169).jpg",
+      "license": "CC BY 2.0",
+      "artist": "Marc Nozell from Merrimack, New Hampshire, USA",
+      "year": 2008
+    },
+    {
+      "label": "Rudolph Giuliani",
+      "label_source": "depicts",
+      "file": "rudolph-giuliani_51185135.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Rudy_Giuliani_%2828756447363%29.jpg/1280px-Rudy_Giuliani_%2828756447363%29.jpg",
+      "sha256": "819bfb62c56349ecd4dfb527a54baa7935dede6012f578207b4289e13e21b9e4",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Rudy_Giuliani_(28756447363).jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "Gage Skidmore from Peoria, AZ, United States of America",
+      "year": 2016
+    },
+    {
+      "label": "Rudolph Giuliani",
+      "label_source": "depicts",
+      "file": "rudolph-giuliani_72072095.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Rudy_Giuliani_%28cropped%29.jpg/500px-Rudy_Giuliani_%28cropped%29.jpg",
+      "sha256": "ccd1174bc7b7086c1282a2c712a3bd791d7bc0401f93a7a1302aa6687ebf72fa",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Rudy_Giuliani_(cropped).jpg",
+      "license": "Public domain",
+      "artist": "Crzrussian",
+      "year": 2006
+    },
+    {
+      "label": "Rudolph Giuliani",
+      "label_source": "depicts",
+      "file": "rudolph-giuliani_82512283.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/2019_Rudolph_Giuliani%2C_Ex-Prefeito_de_Nova_York_-_48789790128_%28cropped%29.jpg/960px-2019_Rudolph_Giuliani%2C_Ex-Prefeito_de_Nova_York_-_48789790128_%28cropped%29.jpg",
+      "sha256": "dcca552db30c39d5190be4bf1c2da645835a5e49c5d6a0f01d56b29a1e210a1e",
+      "page_url": "https://commons.wikimedia.org/wiki/File:2019_Rudolph_Giuliani,_Ex-Prefeito_de_Nova_York_-_48789790128_(cropped).jpg",
+      "license": "CC BY 2.0",
+      "artist": "Palácio do Planalto",
+      "year": 2019
+    },
+    {
+      "label": "Saddam Hussein",
+      "label_source": "depicts",
+      "file": "saddam-hussein_143013577.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Saddam_Hussein_1956.jpg/250px-Saddam_Hussein_1956.jpg",
+      "sha256": "4efb30e30923cf8f70a8e3f4de67d7b9d260532b709806c43d131fb89ad20812",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Saddam_Hussein_1956.jpg",
+      "license": "Public domain",
+      "artist": "в источнике не указан; сейчас установить не возможно. Original uploader was Талех at ru.wikipedia",
+      "year": 1956
+    },
+    {
+      "label": "Saddam Hussein",
+      "label_source": "depicts",
+      "file": "saddam-hussein_54584022.png",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Saddam_Hussein_in_1998.png/500px-Saddam_Hussein_in_1998.png",
+      "sha256": "95e361d4b38fc441dae1b3d9edc6c5fb8167eebf46c17f2f168551db55021ea3",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Saddam_Hussein_in_1998.png",
+      "license": "Public domain",
+      "artist": "Iraqi News Agency",
+      "year": 1998
+    },
+    {
+      "label": "Saddam Hussein",
+      "label_source": "depicts",
+      "file": "saddam-hussein_1504832.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Saddam_Hussein_captured_%26_shaven_DD-SD-05-01885.jpg/500px-Saddam_Hussein_captured_%26_shaven_DD-SD-05-01885.jpg",
+      "sha256": "4517bc9e41897b5f67be70c1e4ffb18835b3e0708ff4fc452c249030495c8b10",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Saddam_Hussein_captured_%26_shaven_DD-SD-05-01885.jpg",
+      "license": "Public domain",
+      "artist": "US DoD Photo",
+      "year": 2003
+    },
+    {
+      "label": "Saddam Hussein",
+      "label_source": "depicts",
+      "file": "saddam-hussein_174181990.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Saddam_Hussein_during_1979_Ba%27ath_Party_Purge_%283%29.jpg/960px-Saddam_Hussein_during_1979_Ba%27ath_Party_Purge_%283%29.jpg",
+      "sha256": "aaef64bd9c253b6c08e15215af187f25299a740eaa86c75507b5a8a28352539b",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Saddam_Hussein_during_1979_Ba%27ath_Party_Purge_(3).jpg",
+      "license": "Public domain",
+      "artist": "Unknown authorUnknown author",
+      "year": 1979
+    },
+    {
+      "label": "Saddam Hussein",
+      "label_source": "depicts",
+      "file": "saddam-hussein_10683182.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Saddam_Hussein_1987.jpg/500px-Saddam_Hussein_1987.jpg",
+      "sha256": "0e109e43125de1b138e4b5066cdf26486bb70c9e7ebb9aed82a374b5bff33b38",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Saddam_Hussein_1987.jpg",
+      "license": "Public domain",
+      "artist": "Unknown authorUnknown author",
+      "year": 1987
+    },
+    {
+      "label": "Serena Williams",
+      "label_source": "depicts",
+      "file": "serena-williams_28258091.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Serena_Williams_Eastbourne_%288%29.jpg/1280px-Serena_Williams_Eastbourne_%288%29.jpg",
+      "sha256": "6e70324c687d85444a2c32e50008e83fb3b201a0fc6c5454a9897021999810cf",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Serena_Williams_Eastbourne_(8).jpg",
+      "license": "CC BY 2.0",
+      "artist": "James Boyes from UK",
+      "year": 2011
+    },
+    {
+      "label": "Serena Williams",
+      "label_source": "depicts",
+      "file": "serena-williams_123682972.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/US_Open_2022_Photo_42_%2852391058111%29.jpg/1280px-US_Open_2022_Photo_42_%2852391058111%29.jpg",
+      "sha256": "591b6c8987971b6350e374991200f294554f1179c249164af937ce7006720355",
+      "page_url": "https://commons.wikimedia.org/wiki/File:US_Open_2022_Photo_42_(52391058111).jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "All-Pro Reels from District of Columbia, USA",
+      "year": 2022
+    },
+    {
+      "label": "Serena Williams",
+      "label_source": "depicts",
+      "file": "serena-williams_6058166.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/SerenaWilliamsJuly08.jpg/330px-SerenaWilliamsJuly08.jpg",
+      "sha256": "5d5a11d646faa140f375fa445627717501175bfde3402d48c196cabe0646b0db",
+      "page_url": "https://commons.wikimedia.org/wiki/File:SerenaWilliamsJuly08.jpg",
+      "license": "CC BY-SA 3.0",
+      "artist": "Gina Hughes at http://www.techiediva.com/",
+      "year": 2008
+    },
+    {
+      "label": "Serena Williams",
+      "label_source": "depicts",
+      "file": "serena-williams_41594925.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Serena_Williams_Wimbledon_2015.jpg/1280px-Serena_Williams_Wimbledon_2015.jpg",
+      "sha256": "b1f0e0931490b8d70cdeb30f3564f96206c1c395cc56ccfe37bc9221fcfa3c8b",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Serena_Williams_Wimbledon_2015.jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "Carine06 from UK",
+      "year": 2015
+    },
+    {
+      "label": "Serena Williams",
+      "label_source": "depicts",
+      "file": "serena-williams_28397227.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Serena_Williams_%289630755847%29.jpg/1280px-Serena_Williams_%289630755847%29.jpg",
+      "sha256": "b59fe587545faa5f7f862a2a4597dc6bbeccd6f6da30fff864637bd77caf71e3",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Serena_Williams_(9630755847).jpg",
+      "license": "CC BY 2.0",
+      "artist": "Edwin Martinez from The Bronx",
+      "year": 2013
+    },
+    {
+      "label": "Silvio Berlusconi",
+      "label_source": "depicts",
+      "file": "silvio-berlusconi_15607264.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/EPP_Summit_June_2011_-_Silvio_Berlusconi_2.jpg/1280px-EPP_Summit_June_2011_-_Silvio_Berlusconi_2.jpg",
+      "sha256": "c332c8b4cbddaf99e2c9a77c02da85e51a0f7c118c244292396815e05ba7d3da",
+      "page_url": "https://commons.wikimedia.org/wiki/File:EPP_Summit_June_2011_-_Silvio_Berlusconi_2.jpg",
+      "license": "CC BY 2.0",
+      "artist": "European People's Party",
+      "year": 2011
+    },
+    {
+      "label": "Silvio Berlusconi",
+      "label_source": "depicts",
+      "file": "silvio-berlusconi_46340059.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Silvio_Berlusconi_in_2015.jpeg/500px-Silvio_Berlusconi_in_2015.jpeg",
+      "sha256": "3cf4a83b5a0bbd69b6509059c8dd527beaf811cc0af65008b2ede3a1b0b67c50",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Silvio_Berlusconi_in_2015.jpeg",
+      "license": "CC BY 2.0",
+      "artist": "European People's Party",
+      "year": 2015
+    },
+    {
+      "label": "Silvio Berlusconi",
+      "label_source": "depicts",
+      "file": "silvio-berlusconi_12452142.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Flickr_-_europeanpeoplesparty_-_EPP_Congress_Rome_2006_%28146%29.jpg/1280px-Flickr_-_europeanpeoplesparty_-_EPP_Congress_Rome_2006_%28146%29.jpg",
+      "sha256": "a11914533b9987d0c90e0accb4d10a801a6df39fb93cd40c73822ea7e8f00c27",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Flickr_-_europeanpeoplesparty_-_EPP_Congress_Rome_2006_(146).jpg",
+      "license": "CC BY 2.0",
+      "artist": "European People's Party",
+      "year": 2006
+    },
+    {
+      "label": "Silvio Berlusconi",
+      "label_source": "depicts",
+      "file": "silvio-berlusconi_12470462.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flickr_-_europeanpeoplesparty_-_EPP_Congress_Warsaw_%28256%29.jpg/1280px-Flickr_-_europeanpeoplesparty_-_EPP_Congress_Warsaw_%28256%29.jpg",
+      "sha256": "2b7caed39c4748bc36c3113a2f5cd8b45a1d2fa9b2be1cafc9d551d83b39d847",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Flickr_-_europeanpeoplesparty_-_EPP_Congress_Warsaw_(256).jpg",
+      "license": "CC BY 2.0",
+      "artist": "European People's Party",
+      "year": 2009
+    },
+    {
+      "label": "Silvio Berlusconi",
+      "label_source": "depicts",
+      "file": "silvio-berlusconi_12443454.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Flickr_-_europeanpeoplesparty_-_EPP_Summit_18_June_2009_%2856%29.jpg/1280px-Flickr_-_europeanpeoplesparty_-_EPP_Summit_18_June_2009_%2856%29.jpg",
+      "sha256": "7211c2847c642f07f26f058d4e4d65f273dc69129d6769712c7c1e806b392222",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Flickr_-_europeanpeoplesparty_-_EPP_Summit_18_June_2009_(56).jpg",
+      "license": "CC BY 2.0",
+      "artist": "European People's Party",
+      "year": 2009
+    },
+    {
+      "label": "Tiger Woods",
+      "label_source": "depicts",
+      "file": "tiger-woods_133141931.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/US_Open_-_2008_-_Tiger_Woods_%282578345891%29.jpg/1280px-US_Open_-_2008_-_Tiger_Woods_%282578345891%29.jpg",
+      "sha256": "b649f9d92ae3742bdb4071bbbf6aa3909811765f1ef360967299704be0cd9bd8",
+      "page_url": "https://commons.wikimedia.org/wiki/File:US_Open_-_2008_-_Tiger_Woods_(2578345891).jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "Flash and Mel from San Diego, CA, USA",
+      "year": 2008
+    },
+    {
+      "label": "Tiger Woods",
+      "label_source": "depicts",
+      "file": "tiger-woods_70105820.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Tiger_Woods_at_2018_US_Open_26.jpg/1280px-Tiger_Woods_at_2018_US_Open_26.jpg",
+      "sha256": "327d2bba178e0691944ee8104efc3362c1648216b3d4c2e17edc94396e1252cb",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Tiger_Woods_at_2018_US_Open_26.jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "Peetlesnumber1",
+      "year": 2018
+    },
+    {
+      "label": "Tiger Woods",
+      "label_source": "depicts",
+      "file": "tiger-woods_103664920.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Tiger_Woods_.jpg/1280px-Tiger_Woods_.jpg",
+      "sha256": "c62e3d2626a3d374bf9edaf5b7de467db21910eb455c424198f3ea99aee9c526",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Tiger_Woods_.jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "Theflowerbar",
+      "year": 2021
+    },
+    {
+      "label": "Tiger Woods",
+      "label_source": "depicts",
+      "file": "tiger-woods_1936601.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Tiger_Woods02.jpg/960px-Tiger_Woods02.jpg",
+      "sha256": "dac7ba55eb009d1728f85e36a75ee2e487ddd1652925deb06f5878721dbb1ce0",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Tiger_Woods02.jpg",
+      "license": "Public domain",
+      "artist": "PaddyBriggs at English Wikipedia",
+      "year": 2007
+    },
+    {
+      "label": "Tiger Woods",
+      "label_source": "depicts",
+      "file": "tiger-woods_78791402.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Tiger_Woods_May_2019.jpg/500px-Tiger_Woods_May_2019.jpg",
+      "sha256": "0972d04ec83903474e19e95e2230c9515be8ea86191decfe28e00d02f7b7ca05",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Tiger_Woods_May_2019.jpg",
+      "license": "Public domain",
+      "artist": "The White House from Washington, DC",
+      "year": 2019
+    },
+    {
+      "label": "Tom Daschle",
+      "label_source": "depicts",
+      "file": "tom-daschle_130168855.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/TomDaschle_%281%29.jpg/960px-TomDaschle_%281%29.jpg",
+      "sha256": "5a9c863c2c733545dda66b1d49126be55e937fe631843b85cd1f8efd03e39962",
+      "page_url": "https://commons.wikimedia.org/wiki/File:TomDaschle_(1).jpg",
+      "license": "Public domain",
+      "artist": "U.S. Senate",
+      "year": null
+    },
+    {
+      "label": "Tom Daschle",
+      "label_source": "depicts",
+      "file": "tom-daschle_130169163.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Tom_Daschle_portrait.jpg/960px-Tom_Daschle_portrait.jpg",
+      "sha256": "e300ee5557ea414c431290124dc77eb5efd6cfdb1d696b9af24cc435a94e357a",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Tom_Daschle_portrait.jpg",
+      "license": "Public domain",
+      "artist": "U.S. Senate",
+      "year": 1995
+    },
+    {
+      "label": "Tom Daschle",
+      "label_source": "depicts",
+      "file": "tom-daschle_76507823.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Tom_Daschle_1999.jpg/500px-Tom_Daschle_1999.jpg",
+      "sha256": "c6b764419629bf071318f8958c36a068bf315588236910df62ca622fc1f12eb9",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Tom_Daschle_1999.jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "John Mathew Smith &amp; www.celebrity-photos.com from Laurel Maryland, USA",
+      "year": 2019
+    },
+    {
+      "label": "Tom Daschle",
+      "label_source": "depicts",
+      "file": "tom-daschle_130169733.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/TomDaschlePortrait.jpg/1280px-TomDaschlePortrait.jpg",
+      "sha256": "1a3b57f1e0c6a99befdb5e2c90c812d7ed5c59a06b1dbe9cb2e292f3005e38f4",
+      "page_url": "https://commons.wikimedia.org/wiki/File:TomDaschlePortrait.jpg",
+      "license": "Public domain",
+      "artist": "U.S. Senate",
+      "year": 1988
+    },
+    {
+      "label": "Tom Daschle",
+      "label_source": "depicts",
+      "file": "tom-daschle_81740294.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Tom_Daschle_1998.jpg/960px-Tom_Daschle_1998.jpg",
+      "sha256": "7275ef703ffff839efc7cc9c7b87f4b6df80bc0a14a82436fa755a0977f6b3f0",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Tom_Daschle_1998.jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "John Mathew Smith &amp; www.celebrity-photos.com from Laurel Maryland, USA",
+      "year": 2019
+    },
+    {
+      "label": "Tom Ridge",
+      "label_source": "depicts",
+      "file": "tom-ridge_5304272.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/TomRidge-McCainRallyWashingtonPA2008.jpg/330px-TomRidge-McCainRallyWashingtonPA2008.jpg",
+      "sha256": "a88b17ca8e8c798ce7c42cab4ba96bf5eef60b369c22ebf350ef83c7e7b7c9cc",
+      "page_url": "https://commons.wikimedia.org/wiki/File:TomRidge-McCainRallyWashingtonPA2008.jpg",
+      "license": "CC BY-SA 3.0",
+      "artist": "Jenn Grover",
+      "year": 2008
+    },
+    {
+      "label": "Tom Ridge",
+      "label_source": "depicts",
+      "file": "tom-ridge_72253265.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Tom_Ridge_addresses_the_2014_International_Disaster_Conference_%26_Expo.jpg/1280px-Tom_Ridge_addresses_the_2014_International_Disaster_Conference_%26_Expo.jpg",
+      "sha256": "20ed7b7a9065b11a7358583c3e449c6aacfa724723996b2e0c6bb4d8cd08b166",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Tom_Ridge_addresses_the_2014_International_Disaster_Conference_%26_Expo.jpg",
+      "license": "Public domain",
+      "artist": "Series: Photographs Relating to Disasters and Emergency Management Programs, Activities, and Officials, 1998 - 9/26/2016 Record Group 311: Records of the Federal Emergency Management Agency, 1956 - 2008",
+      "year": 2014
+    },
+    {
+      "label": "Tom Ridge",
+      "label_source": "depicts",
+      "file": "tom-ridge_72253309.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Tom_Ridge_honoring_the_passengers_of_Flight_93.jpg/1280px-Tom_Ridge_honoring_the_passengers_of_Flight_93.jpg",
+      "sha256": "244c7158b1e23e7fd38d5bba256a5860c1fec476deef69c57db0aee60a70e3df",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Tom_Ridge_honoring_the_passengers_of_Flight_93.jpg",
+      "license": "Public domain",
+      "artist": "Series: Photographs Relating to the Secretary's Trips, Speeches, and Other Functions, and Agency Officials, Events, and Managed Sites, 2005 - 2013 Record Group 48: Records of the Office of the Secretary of the Interior, 1826 - 2009",
+      "year": 2009
+    },
+    {
+      "label": "Tom Ridge",
+      "label_source": "depicts",
+      "file": "tom-ridge_151156703.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Tom_Ridge_2019.jpg/500px-Tom_Ridge_2019.jpg",
+      "sha256": "f6af26826562c40a28520af32d7d83e7fd22346bc6ebc48e8b2da1cfc7fe472c",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Tom_Ridge_2019.jpg",
+      "license": "CC BY 2.0",
+      "artist": "Governor Tom Wolf from Harrisburg, PA",
+      "year": 2019
+    },
+    {
+      "label": "Tom Ridge",
+      "label_source": "depicts",
+      "file": "tom-ridge_347515.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Tom_Ridge.jpg/1280px-Tom_Ridge.jpg",
+      "sha256": "503b32efc575fc555d2076f05aab54fa3b8a753b10f2ee9e884545bf05a1be3a",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Tom_Ridge.jpg",
+      "license": "Public domain",
+      "artist": "Department of Homeland Security",
+      "year": 2001
+    },
+    {
+      "label": "Tony Blair",
+      "label_source": "depicts",
+      "file": "tony-blair_156874014.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Tony_Blair_in_1995.jpg/500px-Tony_Blair_in_1995.jpg",
+      "sha256": "85cc63efa7f4ae03a044a2aab3b32376383ebda0e4bd92a14de484de06cc285f",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Tony_Blair_in_1995.jpg",
+      "license": "Attribution",
+      "artist": "© Communautes europeennes 1995",
+      "year": 1995
+    },
+    {
+      "label": "Tony Blair",
+      "label_source": "depicts",
+      "file": "tony-blair_2302746.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Blair_2005.jpg/500px-Blair_2005.jpg",
+      "sha256": "3a0db76ce04e3945df7bfe18d1e8aa8e79182ed2d2730fa7e6056d84bd3bddc9",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Blair_2005.jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "Andrew Skudder",
+      "year": 2005
+    },
+    {
+      "label": "Tony Blair",
+      "label_source": "depicts",
+      "file": "tony-blair_74255867.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Web_Summit_2018_-_Forum_-_Day_2%2C_November_7_HM1_7921_%2831895575938%29.jpg/1280px-Web_Summit_2018_-_Forum_-_Day_2%2C_November_7_HM1_7921_%2831895575938%29.jpg",
+      "sha256": "926887f49427237cf17004bc244620bd7919c6673106df704819b172899a58f2",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Web_Summit_2018_-_Forum_-_Day_2,_November_7_HM1_7921_(31895575938).jpg",
+      "license": "CC BY 2.0",
+      "artist": "Web Summit",
+      "year": 2018
+    },
+    {
+      "label": "Tony Blair",
+      "label_source": "depicts",
+      "file": "tony-blair_52025328.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Tony_Blair%2C_1999_%284153090050%29.jpg/1280px-Tony_Blair%2C_1999_%284153090050%29.jpg",
+      "sha256": "7b9ba407f46e3451bab3079f4e57c946c508c2b32fead17f01cd785b65d0f1de",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Tony_Blair,_1999_(4153090050).jpg",
+      "license": "No restrictions",
+      "artist": "",
+      "year": 1999
+    },
+    {
+      "label": "Tony Blair",
+      "label_source": "depicts",
+      "file": "tony-blair_2692956.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Blair_Heiligendamm_G8_2007_006.jpg/1280px-Blair_Heiligendamm_G8_2007_006.jpg",
+      "sha256": "a95bf6b07b7e4ead6247ac99b687c6a35253881f89064dbaa3f108aff7f9b102",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Blair_Heiligendamm_G8_2007_006.jpg",
+      "license": "Public domain",
+      "artist": "Gryffindor",
+      "year": 2007
+    },
+    {
+      "label": "Vicente Fox",
+      "label_source": "depicts",
+      "file": "vicente-fox_55594288.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Vicente_Fox_by_Gage_Skidmore.jpg/1280px-Vicente_Fox_by_Gage_Skidmore.jpg",
+      "sha256": "357d51b26392231b3bd7db4508adca4c67ef050edcbb0822dc78b5c4829e04fb",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Vicente_Fox_by_Gage_Skidmore.jpg",
+      "license": "CC BY-SA 3.0",
+      "artist": "Gage Skidmore",
+      "year": 2015
+    },
+    {
+      "label": "Vicente Fox",
+      "label_source": "depicts",
+      "file": "vicente-fox_67574511.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Vicente_Fox_%2840949658561%29.jpg/1280px-Vicente_Fox_%2840949658561%29.jpg",
+      "sha256": "8979e94dbbf7d53db200c0b5c8afc203cbf4b4f86bd1b2e3c0abd3c7c7e4f716",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Vicente_Fox_(40949658561).jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "Gage Skidmore from Peoria, AZ, United States of America",
+      "year": 2018
+    },
+    {
+      "label": "Vicente Fox",
+      "label_source": "depicts",
+      "file": "vicente-fox_98060155.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Vicente_Fox_Official_Photo_2000.jpg/960px-Vicente_Fox_Official_Photo_2000.jpg",
+      "sha256": "f544c8eff23942f24daaa70ee6c7406bb152ea266f92035bf7193877f1bc6dad",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Vicente_Fox_Official_Photo_2000.jpg",
+      "license": "Public domain",
+      "artist": "Unknown authorUnknown author",
+      "year": 2000
+    },
+    {
+      "label": "Vicente Fox",
+      "label_source": "depicts",
+      "file": "vicente-fox_63379305.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Vicente_Fox_%2837701078931%29.jpg/1280px-Vicente_Fox_%2837701078931%29.jpg",
+      "sha256": "6a969e09cc0dad154028d4a36e785edd1b81368b3c4c7409c172de4b56321bf4",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Vicente_Fox_(37701078931).jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "Gage Skidmore from Peoria, AZ, United States of America",
+      "year": 2017
+    },
+    {
+      "label": "Vicente Fox",
+      "label_source": "depicts",
+      "file": "vicente-fox_51149346.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Vicente_Fox_en_2016.jpg/1280px-Vicente_Fox_en_2016.jpg",
+      "sha256": "6791541cf333a2eb0464d9c7549cf7b8a196f504a00f99adcc4a1651da4b7592",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Vicente_Fox_en_2016.jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "EneasMx",
+      "year": 2016
+    },
+    {
+      "label": "Vladimir Putin",
+      "label_source": "depicts",
+      "file": "vladimir-putin_60278558.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vladimir_Putin_%282017-06-20%29_01.jpg/1280px-Vladimir_Putin_%282017-06-20%29_01.jpg",
+      "sha256": "63583bc5489345476060e7a5feebf19d66ec00449f94936074ae6036ba4e0508",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Vladimir_Putin_(2017-06-20)_01.jpg",
+      "license": "CC BY 4.0",
+      "artist": "This file comes from the website of the President of the Russian Federation and is licensed under the Creative Commons Attribution 4.0 License. In short: you are free to distribute and modify the file as long as you attribute www.kremlin.ru. Note: Works published on site before April 8, 2015 are also licensed under Creative Commons Attribution 3.0 License. The permission letter from the Press Secretary for the President of the Russian Federation is available here.",
+      "year": 2017
+    },
+    {
+      "label": "Vladimir Putin",
+      "label_source": "depicts",
+      "file": "vladimir-putin_963238.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Russia.VladimirPutin.01.jpg/330px-Russia.VladimirPutin.01.jpg",
+      "sha256": "1044ec8ef9cc3460f2cded95a1d153d31a41e1c753f157144f4e98493ff73efd",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Russia.VladimirPutin.01.jpg",
+      "license": "CC BY 3.0 br",
+      "artist": "Hermínio Oliveira/ABr.",
+      "year": 2003
+    },
+    {
+      "label": "Vladimir Putin",
+      "label_source": "depicts",
+      "file": "vladimir-putin_152149433.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Vladimir_Putin_2008_43.jpg/500px-Vladimir_Putin_2008_43.jpg",
+      "sha256": "876619521c15eac658e94060e2659d314357b0341709c9f47763caac4631ff61",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Vladimir_Putin_2008_43.jpg",
+      "license": "CC BY 4.0",
+      "artist": "premier.gov.ru",
+      "year": 2008
+    },
+    {
+      "label": "Vladimir Putin",
+      "label_source": "depicts",
+      "file": "vladimir-putin_5311618.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vladimir_Putin_22_March_2001-2.jpg/330px-Vladimir_Putin_22_March_2001-2.jpg",
+      "sha256": "e407591562b2db84e8f7df9fd393bb22fae1e072433b8e803762c6b67179a4fe",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Vladimir_Putin_22_March_2001-2.jpg",
+      "license": "CC BY 4.0",
+      "artist": "Presidential Press and Information Office",
+      "year": 2001
+    },
+    {
+      "label": "Vladimir Putin",
+      "label_source": "depicts",
+      "file": "vladimir-putin_123495816.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Vladimir_Putin_13_March_2002-3_%28cropped%29.jpg/250px-Vladimir_Putin_13_March_2002-3_%28cropped%29.jpg",
+      "sha256": "de9e7dede35cba98e8101488b155845e22a862734ec6f1804e87ea80200b19ee",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Vladimir_Putin_13_March_2002-3_(cropped).jpg",
+      "license": "CC BY 4.0",
+      "artist": "Presidential Press and Information Office",
+      "year": 2002
+    },
+    {
+      "label": "Winona Ryder",
+      "label_source": "depicts",
+      "file": "winona-ryder_15771575.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Winona_Ryder_2010_TIFF.jpg/960px-Winona_Ryder_2010_TIFF.jpg",
+      "sha256": "8c34c537d2fcef47ff6dfd93b09be8b2577d982d9a4be942b228a70e11ff5f32",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Winona_Ryder_2010_TIFF.jpg",
+      "license": "CC BY 2.0",
+      "artist": "Karon Liu at https://www.flickr.com/people/32153970@N07",
+      "year": 2010
+    },
+    {
+      "label": "Winona Ryder",
+      "label_source": "depicts",
+      "file": "winona-ryder_135947160.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Winona_Ryder_Giffoni_2009.jpg/1280px-Winona_Ryder_Giffoni_2009.jpg",
+      "sha256": "154e3d46d666477968ec1d8183234980a4c903a590ec5c5db1cb8703ac77f09e",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Winona_Ryder_Giffoni_2009.jpg",
+      "license": "CC BY 2.0",
+      "artist": "Luni's",
+      "year": 2009
+    },
+    {
+      "label": "Winona Ryder",
+      "label_source": "depicts",
+      "file": "winona-ryder_33547119.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Winona_Ryder_%28cropped%29.jpg/1280px-Winona_Ryder_%28cropped%29.jpg",
+      "sha256": "09c3cd3af057e34c9925a6d1a4ac26b67d958bd9e0ff9cbe5a44e38547a7c67d",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Winona_Ryder_(cropped).jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "PM - Il Piccolo Missionario",
+      "year": 2009
+    },
+    {
+      "label": "Winona Ryder",
+      "label_source": "depicts",
+      "file": "winona-ryder_128658243.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Frankenweenie_premiere_at_the_Fantastic_Fest%2C_Winona_Ryder_%28cropped%29.jpg/500px-Frankenweenie_premiere_at_the_Fantastic_Fest%2C_Winona_Ryder_%28cropped%29.jpg",
+      "sha256": "219d1aa49dddf546171dc4a3c6eef60041f6e63f3ea35cb03ec7a3d34617bee1",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Frankenweenie_premiere_at_the_Fantastic_Fest,_Winona_Ryder_(cropped).jpg",
+      "license": "CC BY 2.0",
+      "artist": "Anna Hanks",
+      "year": 2012
+    }
+  ]
+}

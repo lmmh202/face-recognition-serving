@@ -12,7 +12,7 @@ LFW 얼굴 분류 모델(CNN, PCA+KNN)을 FastAPI로 서빙하는 프로젝트�
 - LFW 형식 입력의 test 정확도는 인물당 20장으로 학습한 CNN이 30.32%, PCA+KNN이 22.26%다.
 - `cnn-v2`는 전체 사진과 증강, 검출 crop으로 학습했으며 얼굴 검출 경로의 test 정확도가 58.39%다(CNN 30.65%, PCA+KNN 14.52%).
 - 최고 확률이 임계값보다 낮으면 `identity`가 `unknown`이다. 임계값이 높아 학습된 인물도 대부분 `unknown`이 된다.
-- 실제 사진의 정확도는 측정하지 않았다. 자세한 내용은 [docs/FACE_DETECTION.md](docs/FACE_DETECTION.md)에 있다.
+- Wikimedia Commons의 실제 사진 287장(62명)에서 top-1은 cnn-v2 23.34%, CNN 10.45%, PCA+KNN 11.50%다. LFW에서보다 크게 낮다. 자세한 내용은 [docs/REAL_PHOTOS.md](docs/REAL_PHOTOS.md)에 있다.
 
 ## 실행
 
