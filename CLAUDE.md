@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project status
 
-Phases 1–6 (training, shared preprocessing, FastAPI service, face detection with `unknown`, tests and load measurements, Docker) are done. Phase 7 deploys to Azure Container Apps with Terraform in `infra/`. The image is `linux/amd64` because Container Apps doesn't run arm64, and it bakes in `artifacts/`. ACR Tasks (`az acr build`) is blocked on the Azure for Students subscription, so build locally under emulation and `docker push`. Docker build and test commands are in `README.md`. `?detect=false` skips face detection so LFW-format inputs keep the exact accuracy check against the manifest. CI (`.github/workflows/test.yml`) runs the full suite with `REQUIRE_TEST_DATA=1`, so missing LFW or models fail instead of skip; it pulls models from the GitHub Release named in `MODELS_RELEASE`, so after retraining upload a new release and update `MODELS_RELEASE` and `MODELS_SHA256`. `docs/PLAN.md` is the phased plan (in Korean) and `reference/original_train.py` is the original LFW coursework script.
+Phases 1–7 (training, shared preprocessing, FastAPI service, face detection with `unknown`, tests and load measurements, Docker, deployment) are done. Production runs on the shared OCI A1 instance (arm64) from the `lmmh202/infra` repo: `.github/workflows/deploy.yml` builds the image on a self-hosted runner there after `test` passes on `main` and starts `deploy/compose.yaml` as a Dockge stack behind Caddy. The image bakes in `artifacts/`. The earlier Azure Container Apps deployment (Terraform in `infra/`, `linux/amd64`) is kept for now but no longer receives the domain. Docker build and test commands are in `README.md`. `?detect=false` skips face detection so LFW-format inputs keep the exact accuracy check against the manifest. CI (`.github/workflows/test.yml`) runs the full suite with `REQUIRE_TEST_DATA=1`, so missing LFW or models fail instead of skip; it and the deploy workflow pull models from the GitHub Release named in `.github/models.env`, so after retraining upload a new release and update `MODELS_RELEASE` and `MODELS_SHA256` there. `docs/PLAN.md` is the phased plan (in Korean) and `reference/original_train.py` is the original LFW coursework script.
 
 ## Commands
 
@@ -30,7 +30,7 @@ Python 3.14 needs the pinned `tensorflow==2.22.0rc0` and `keras-nightly`: stable
 
 ## What is being built
 
-A FastAPI service that serves 62-person LFW face classifiers (CNN v1 and `cnn-v2` as `.keras`, PCA+KNN as one `sklearn.Pipeline` saved with joblib), deployed with Docker on Azure Container Apps at https://face-recognition-serving.hyeong.space. `ml/` holds training and preprocessing, `app/` holds serving, and `artifacts/` holds the git-ignored models, which the `ml.train*` modules regenerate. Deployment steps, the custom domain binding (done with `az`, outside Terraform), and known snags are in `README.md`.
+A FastAPI service that serves 62-person LFW face classifiers (CNN v1 and `cnn-v2` as `.keras`, PCA+KNN as one `sklearn.Pipeline` saved with joblib), deployed with Docker on OCI at https://face-recognition-serving.hyeong.space. `ml/` holds training and preprocessing, `app/` holds serving, and `artifacts/` holds the git-ignored models, which the `ml.train*` modules regenerate. Deployment steps, rollback, and the old Azure notes are in `README.md`.
 
 ## Core invariant: training/serving preprocessing parity
 
@@ -62,7 +62,7 @@ Phase 1 is done when reloaded models match the post-training test accuracy.
 - Load models once in the lifespan handler.
 - Declare inference endpoints with `def`, not `async def`, because inference is blocking CPU work.
 - Enforce file size and pixel limits before decoding, and apply EXIF rotation.
-- Never store or log uploaded images. The service is a public demo over real public figures, so keep the "not for identity verification" notice in `README.md` and the FastAPI description, and keep `max_replicas = 1` as the cost cap.
+- Never store or log uploaded images. The service is a public demo over real public figures, so keep the "not for identity verification" notice in `README.md` and the FastAPI description, and keep a single container with the memory and CPU limits in `deploy/compose.yaml` as the cost and abuse cap.
 
 ## Repository publishing
 

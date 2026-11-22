@@ -1,0 +1,83 @@
+name: deploy
+
+# Builds and deploys on the production instance itself: a self-hosted runner (lmmh202/infra,
+# server/github-runner) builds the arm64 image natively and runs deploy/deploy.sh.
+# Runs after the test workflow passes on main. No cloud credentials live in GitHub.
+on:
+  workflow_run:
+    workflows: [test]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Redeploy an image tag still on the server (rollback), e.g. 05a2f42d6b1c. Empty builds the selected ref."
+        required: false
+        default: ""
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    if: github.event_name == 'workflow_dispatch' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.event == 'push')
+    runs-on: [self-hosted, face-recognition-serving]
+    environment:
+      name: production
+      url: https://face-recognition-serving.hyeong.space
+    timeout-minutes: 40
+    env:
+      APP_DIR: /opt/stacks/face-recognition-serving # a Dockge stack (lmmh202/infra, server/dockge)
+      # Inputs go through env, never straight into a script.
+      REQUESTED_TAG: ${{ inputs.tag }}
+      SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          ref: ${{ env.SHA }}
+
+      - name: Choose tag
+        run: |
+          if [ -n "$REQUESTED_TAG" ]; then
+            [[ "$REQUESTED_TAG" =~ ^[0-9a-f]{7,40}$ ]] || { echo "tag must be a git SHA prefix" >&2; exit 1; }
+            echo "TAG=$REQUESTED_TAG" >> "$GITHUB_ENV"
+          else
+            echo "TAG=${SHA::12}" >> "$GITHUB_ENV"
+          fi
+
+      - name: Download models
+        if: env.REQUESTED_TAG == ''
+        run: |
+          source .github/models.env
+          curl -fsSL -o artifacts.tar.gz \
+            "https://github.com/${{ github.repository }}/releases/download/$MODELS_RELEASE/artifacts.tar.gz"
+          echo "$MODELS_SHA256  artifacts.tar.gz" | sha256sum --check -
+          tar -xzf artifacts.tar.gz
+          rm artifacts.tar.gz
+
+      - name: Build image
+        if: env.REQUESTED_TAG == ''
+        run: docker build --target runtime -t "face-recognition-serving:$TAG" .
+
+      - name: Sync deploy files
+        run: |
+          mkdir -p "$APP_DIR/deploy"
+          cp deploy/deploy.sh "$APP_DIR/deploy/deploy.sh"
+          cp deploy/compose.yaml "$APP_DIR/compose.yaml"
+
+      - name: Deploy
+        run: |
+          echo "previous: $(cat "$APP_DIR/.deployed-tag" 2>/dev/null || echo none)"
+          "$APP_DIR/deploy/deploy.sh" "$TAG"
+
+      - name: Prune old images
+        if: always()
+        run: |
+          # Keep the three newest tags for rollback; the image in use is never removed.
+          docker images face-recognition-serving --format '{{.Tag}}' | tail -n +4 |
+            xargs -r -I{} docker rmi "face-recognition-serving:{}" || true
+          docker builder prune -f --filter until=168h > /dev/null

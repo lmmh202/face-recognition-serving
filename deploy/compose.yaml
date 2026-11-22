@@ -1,0 +1,31 @@
+# Production on minhyeong-cloud (OCI A1, arm64), copied to /opt/stacks/face-recognition-serving/compose.yaml,
+# a Dockge stack (lmmh202/infra). IMAGE_TAG comes from .env, written by deploy/deploy.sh.
+# The image is built on the instance and never pushed, so there is no registry.
+# Caddy (lmmh202/infra, server/proxy/sites/face-recognition-serving.caddy) reaches it as
+# face-recognition-serving:8000 on the shared "proxy" network.
+#   cd /opt/stacks/face-recognition-serving && docker compose up -d
+name: face-recognition-serving
+
+services:
+  app:
+    image: face-recognition-serving:${IMAGE_TAG:?}
+    container_name: face-recognition-serving
+    restart: unless-stopped
+    networks:
+      - proxy
+    healthcheck:
+      # The slim image has no curl; TensorFlow and three models take a while to load.
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=3)"]
+      interval: 15s
+      timeout: 5s
+      start_period: 120s
+      retries: 3
+    # One container is the cost and abuse cap (the role max_replicas = 1 had on Azure). The instance has
+    # 2 OCPU / 12GB shared with other services. On arm64 Linux the container cgroup peaked at about 510MB
+    # after 1,200 concurrent requests across all models; page cache counted above that is reclaimed first.
+    mem_limit: 1g
+    cpus: 1.0
+
+networks:
+  proxy:
+    external: true

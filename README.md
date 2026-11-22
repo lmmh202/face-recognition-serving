@@ -28,21 +28,53 @@ uv run uvicorn app.main:app --no-access-log
 
 ## Docker
 
-이미지는 Azure Container Apps에 맞춰 `linux/amd64`로 빌드하며 `artifacts/`의 모델을 포함하므로, 빌드 전에 학습이 끝나 있어야 한다. non-root로 실행된다. Azure for Students 구독에서는 ACR Tasks(`az acr build`)가 막혀 있어 로컬에서 빌드해 push한다.
+이미지는 `artifacts/`의 모델을 포함하므로, 빌드 전에 학습이 끝나 있거나 모델 Release를 받아 둬야 한다. non-root로 실행된다. 운영(OCI)은 `linux/arm64`, 예전 Azure 배포는 `linux/amd64`다. x86 Linux에서는 `tensorflow-cpu`, 그 밖에서는 `tensorflow`가 설치되어 arm64 이미지가 더 크다(약 2.3GB).
 
 ```
-docker buildx build --platform linux/amd64 --load -t face-recognition-serving:local .
+docker build --target runtime -t face-recognition-serving:local .
 docker run --rm -p 8000:8000 face-recognition-serving:local
 ```
 
 컨테이너 안에서 테스트하려면 `--target test`로 빌드한다. LFW 데이터를 마운트해야 golden test와 정확도 검증까지 실행된다.
 
 ```
-docker buildx build --platform linux/amd64 --load --target test -t face-recognition-serving:test .
+docker build --target test -t face-recognition-serving:test .
 docker run --rm -v ~/scikit_learn_data:/data:ro -e SCIKIT_LEARN_DATA=/data face-recognition-serving:test
 ```
 
-## 배포 (Azure Container Apps)
+## 배포 (OCI)
+
+운영 환경은 공용 인프라 레포 `lmmh202/infra`의 OCI A1 인스턴스(`minhyeong-cloud`, arm64, 2 OCPU / 12GB)다. Dockge 스택 `/opt/stacks/face-recognition-serving`에서 컨테이너 1개로 돌고, Caddy가 HTTPS를 맡는다.
+
+| 파일 | 역할 |
+|---|---|
+| `.github/workflows/deploy.yml` | `test`가 `main`에서 통과하면 인스턴스의 self-hosted runner(`face-recognition-serving` 라벨)가 모델 Release를 받아 이미지를 빌드하고 배포한다. 레지스트리는 쓰지 않는다 |
+| `deploy/compose.yaml` | 스택 정의. `proxy` 네트워크, `/health` 검사, 메모리 1GB / CPU 1개 제한. 컨테이너 1개가 비용과 남용 상한이다 |
+| `deploy/deploy.sh` | `.env`에 태그를 쓰고 `docker compose up --wait` 후 `.deployed-tag`에 기록한다 |
+| `.github/models.env` | 모델 Release 이름과 SHA-256. `test`와 `deploy`가 함께 읽는다 |
+
+`infra` 쪽에는 `server/proxy/sites/face-recognition-serving.caddy`와 `terraform/cloudflare`의 A 레코드가 있다.
+
+### 처음 설정
+
+```
+# infra 레포에서
+scripts/install-runner.sh lmmh202/face-recognition-serving face-recognition-serving
+ssh oci-osaka 'sudo mkdir -p /opt/stacks/face-recognition-serving && sudo chown github-runner:github-runner /opt/stacks/face-recognition-serving'
+scripts/deploy-proxy.sh
+```
+
+레포가 공개라서, 레포 설정의 fork PR 워크플로 승인 정책을 "모든 외부 기여자 승인 필요"(`all_external_contributors`)로 둔다. runner는 docker 그룹이라 서버의 root 권한과 같으므로, 외부 PR의 Actions를 승인하기 전에 워크플로 변경(특히 `runs-on`)을 확인한다.
+
+그다음 Actions에서 `deploy`를 수동 실행(`workflow_dispatch`)하고, 동작을 확인한 뒤 `terraform/cloudflare`를 apply해 DNS를 옮긴다.
+
+### 롤백
+
+`deploy`를 수동 실행하면서 `tag`에 서버에 남아 있는 이전 태그(최근 3개 보관)를 넣는다. 현재 태그는 서버의 `.deployed-tag`에 있다.
+
+## 이전 배포 (Azure Container Apps)
+
+OCI로 옮기기 전 배포다. 리소스는 당분간 남겨 두며, DNS를 옮긴 뒤에는 `azurecontainerapps.io` 주소로만 접근된다.
 
 인프라는 `infra/`의 Terraform 코드로 관리한다. 리전은 Azure for Students 구독 정책에 따라 `koreacentral`이다.
 
@@ -126,7 +158,7 @@ terraform apply
 cd infra && terraform destroy
 ```
 
-삭제한 뒤에는 서브도메인 탈취를 막기 위해 DNS의 CNAME과 TXT 레코드도 지운다.
+DNS는 이미 OCI를 가리키므로 따로 지울 레코드는 없다.
 
 ## API
 

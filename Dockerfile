@@ -1,4 +1,4 @@
-# Build for linux/amd64: Azure Container Apps does not run arm64 images.
+# Builds natively for the host: linux/arm64 on the OCI A1 instance, linux/amd64 for Azure Container Apps.
 FROM python:3.14.6-slim AS builder
 COPY --from=ghcr.io/astral-sh/uv:0.13.7 /uv /usr/local/bin/uv
 ENV UV_PROJECT_ENVIRONMENT=/opt/venv \

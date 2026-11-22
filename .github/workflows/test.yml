@@ -9,12 +9,6 @@ on:
 permissions:
   contents: read
 
-env:
-  # Models are git-ignored; the trained artifacts/ directory is attached to this
-  # release. Update both values when the models are retrained (see README).
-  MODELS_RELEASE: models-2026-11-08
-  MODELS_SHA256: 7698a29d8f98a524e6e68163d0f4a06d5e37b0599b7fb69f8d378ede8e5a4250
-
 jobs:
   test:
     runs-on: ubuntu-24.04
@@ -42,6 +36,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          source .github/models.env
           gh release download "$MODELS_RELEASE" --pattern artifacts.tar.gz
           echo "$MODELS_SHA256  artifacts.tar.gz" | sha256sum --check -
           tar -xzf artifacts.tar.gz
